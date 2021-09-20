@@ -2,9 +2,13 @@
 ## Fall 2021 - Group 5
 <b>
 Team Members: <br>
+$nbsp;$nbsp;$nbsp;
 Paul Arcos <br>
+$nbsp;$nbsp;$nbsp;
 JunSean Fung <br>
+$nbsp;$nbsp;$nbsp;
 Zachary Veliky <br>
+$nbsp;$nbsp;$nbsp;
 Samer Alqaralleh <br>
 <br>
 </b>
