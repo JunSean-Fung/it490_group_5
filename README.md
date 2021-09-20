@@ -1,6 +1,7 @@
 # Project X 
 ## Fall 2021 - Group 5
 <b>
+Team Members: <br>
 Paul Arcos <br>
 JunSean Fung <br>
 Zachary Veliky <br>
