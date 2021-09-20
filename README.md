@@ -1,10 +1,11 @@
 # Project X 
 ## Fall 2021 - Group 5
 <b>
-Paul Arcos
-<br>JunSean Fung
-<br>Zachary Veliky
-<br>Samer Alqaralleh
+Paul Arcos <br>
+JunSean Fung <br>
+Zachary Veliky <br>
+Samer Alqaralleh <br>
+<br>
 </b>
 Part of the project is our interest and part of the reason is because we have not seen or used a site where
 it combines video game-related topics with crypto. This project will allow gamers and investors to utilize
