@@ -1,16 +1,16 @@
 ## Composer Scripts
 
-<ol>
+<ul>
     <li><b>For Window</b>
-        <ol>
+        <ul>
             <li>To Start Messaging: <br> net start RabbitMQ</li>
             <li>To Start SQL: <br> net start MySQL80</li>
-        </ol>
+        </ul>
     </li>
     <li><b>For Mac:</b>
-        <ol>
+        <ul>
             <li>To Start Messaging: <br> </li>
             <li>To Start SQL: <br> </li>
-        </ol>
+        </ul>
     </li>
-</ol>
+</ul>
