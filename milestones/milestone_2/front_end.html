@@ -1,10 +1,23 @@
 <html>
     <head>
         <title>Front-End</title>
-        <link ref="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <script type="text/javascript">
+            function getPort() {
+                port = location.port;
+                document.querySelector('.port').textContent = port;
+            }
+        </script>
     </head>
-    <body>
-        Hello World!
+    <body onload = "getPort();">
+        <h1>Hello World!</h1>
+        <p>
+            Port is:
+            <span class="port"></span>
+        </p>
+        <!--
+            <button onclick="getPort()">Get Port number</button>
+        -->
+        
     </body>
-    
 </html>
