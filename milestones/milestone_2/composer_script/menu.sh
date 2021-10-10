@@ -16,12 +16,12 @@ do
     startapache=`sudo systemctl start apache2`
 
     case $choice in
-            1) echo Status of apache is $apache
+            1) echo -e "Status of apache is" $apache "\n\n"
                             ;;
-            2) echo Starting apache server
+            2) echo -e "Starting apache server\n\n"
                 sudo systemctl start apache2
                             ;;
-            3) echo Stopping Apache server
+            3) echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
             *) echo exit
