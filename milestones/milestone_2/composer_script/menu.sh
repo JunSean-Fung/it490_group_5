@@ -1,6 +1,6 @@
 a=1
 b=1
-while [$a -eq $b]
+while [ $a -eq $b ]
 do
     echo "Control Menu"
     echo "=============Options======================"
