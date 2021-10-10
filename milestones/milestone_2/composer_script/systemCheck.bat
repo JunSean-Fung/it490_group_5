@@ -9,11 +9,10 @@ set messaging = \\25.51.161.242
 set database = \\25.51.181.62
 :: Continuous loop for system check
 :check
-
 :: Perform systems check
-sc query %frontEnd% Apache2.4
-sc query %messaging% RabbitMQ
-sc query %database% mySQL80
+sc \\25.51.181.62 query Apache2.4
+sc \\25.51.161.242 query RabbitMQ
+sc \\25.51.181.62 query mySQL80
 echo ===================================================================
 timeout /t 5 /nobreak
 goto check
