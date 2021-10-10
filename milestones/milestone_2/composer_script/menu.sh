@@ -1,8 +1,6 @@
 echo "welcome please select your options"
 read choice
-firewall=`sudo systemctl status firewalld`
-apache=`sudo systemctl status apache2`
-firewall1=`sudo systemctl stop firewalld`
+apache=`sudo systemctl check apache2`
 apache1=`sudo systemctl stop apache2`
 startapache=`sudo systemctl start apache2`
 
