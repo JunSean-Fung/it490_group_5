@@ -1,11 +1,8 @@
 set +v echo off
 
 #Status Check
-status = $(ssh ip address systemctl check mysql)
-
-offStatus = "inactive"
-if [$status == $offStatus]
-then
+status = $(systemctl check mysql)
+if [$status == "inactive"] then
 	echo "MySQL is" $status, "attempting to start MySQL"
 	sudo systemctl start mysql
 else
