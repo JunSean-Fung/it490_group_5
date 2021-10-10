@@ -1,7 +1,7 @@
 set +v echo off
 
 # Check for apache 2.4 status
-status=$(systemctl check apache2)
+status=$(ssh 25.83.212.229 systemctl check apache2)
 
 offStatus="inactive"
 if [ $status == $offStatus ]
