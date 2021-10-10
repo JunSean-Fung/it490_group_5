@@ -1,4 +1,6 @@
-while [1]
+a=1
+b=1
+while [$a -eq $b]
 do
     echo "Control Menu"
     echo "=============Options======================"
@@ -14,7 +16,7 @@ do
     startapache=`sudo systemctl start apache2`
 
     case $choice in
-            1) echo status of apache is $apache
+            1) echo Status of apache is $apache
                             ;;
             2) echo Starting apache server
                 sudo systemctl start apache2
@@ -24,4 +26,5 @@ do
                             ;;
             *) echo exit
     esac
+    
 done
