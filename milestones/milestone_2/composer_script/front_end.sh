@@ -6,7 +6,7 @@ status=$(systemctl check apache2)
 offStatus="inactive"
 if [ $status == $offStatus ]
 then
-    echo "Apache is" $status ", attempting to start Apache"
+    echo "Apache is" $status", attempting to start Apache"
     sudo systemctl start apache2 
 else
     echo -e "Apache is" $status "\n\n"
