@@ -8,8 +8,8 @@ while [ $a -eq $b ]
 do
     # Front End Server
     #echo Attempting to Ping Front-End server...
-    #ping -c 4 25.83.212.229
-    echo Attempting to check front-end service
+    ping -c 4 25.4.8.61
+    #echo Attempting to check front-end service
     #ssh debian@25.83.212.229 systemctl check apache2
     echo ===================================================================
     # Messaging Server
