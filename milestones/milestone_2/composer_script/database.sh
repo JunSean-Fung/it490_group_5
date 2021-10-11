@@ -1,7 +1,7 @@
 set +v echo off
 
 #Status Check
-status = $(systemctl check mysql)
+status=$(systemctl check mysql)
 if [ "$status" = "inactive" ]; 
 then
 	echo "MySQL is" $status", attempting to start MySQL"
