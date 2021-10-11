@@ -7,10 +7,10 @@ b=1
 while [ $a -eq $b ]
 do
     # Front End Server
-    #echo Attempting to Ping Front-End server...
+    echo Attempting to Ping Front-End server...
     ping -c 4 25.4.8.61
-    #echo Attempting to check front-end service
-    #ssh pauldebian@4 25.4.8.61 systemctl check apache2
+    echo Attempting to check front-end service
+    ssh paul@25.4.8.61 systemctl check apache2
     echo ===================================================================
     # Messaging Server
     echo Attempting to Ping Messaging server...
