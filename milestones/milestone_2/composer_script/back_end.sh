@@ -10,7 +10,7 @@ do
     #echo Attempting to Ping Front-End server...
     ping -c 4 25.4.8.61
     #echo Attempting to check front-end service
-    #ssh debian@25.83.212.229 systemctl check apache2
+    #ssh pauldebian@4 25.4.8.61 systemctl check apache2
     echo ===================================================================
     # Messaging Server
     echo Attempting to Ping Messaging server...
@@ -25,7 +25,7 @@ do
     ssh samer@25.79.46.137 systemctl check mysql
     echo ===================================================================
 
-    echo ===========================Ping End================================
+    echo ===========================Check End================================
     echo ===================================================================
 done
 
