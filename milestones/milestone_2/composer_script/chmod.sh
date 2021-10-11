@@ -4,3 +4,5 @@
 chmod +x ./back_end.sh
 chmod +x ./front_end.sh
 chmod +x ./menu.sh
+chmod +x ./database.sh
+chmod +x ./message.sh
