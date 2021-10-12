@@ -24,14 +24,17 @@ do
     mysqlStatus=$(sudo systemctl status mysql)
 
     case $option in
-            1)  echo -e "Status of apache is" $apacheCheck "\n\n"
-                echo -e "Status of rabbitmq is" $rabbitCheck "\n\n"
-                echo -e "Status of mysql is" $mysqlCheck "\n\n"
+            1)  echo -e "Apache is" $apacheCheck "\n\n"
+                echo -e "Rabbitmq is" $rabbitCheck "\n\n"
+                echo -e "mySQL is" $mysqlCheck "\n\n"
                             ;;
-            2)  echo -e "Starting apache server\n\n"
+            2)  echo -e "Status of apache is" $apacheStatus "\n\n"
+                echo -e "Status of Rabbitmq is" $apacheStatus "\n\n"
+                echo -e "Status of mySQL is" $apacheStatus "\n\n"
+                            ;;
+            3)  echo -e "Starting apache server\n\n"
                 sudo systemctl start apache2
-                            ;;
-            3)  echo -e "Stopping Apache server\n\n"
+                echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
             *)  echo exit
