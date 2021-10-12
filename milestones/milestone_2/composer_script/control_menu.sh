@@ -1,6 +1,9 @@
 testFunction () {
     echo "This works!"
 }
+checkActive(){
+    ssh $1 systemctl check $2
+}
 a=1
 b=1
 while [ $a -eq $b ]
@@ -38,7 +41,7 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  testFunction
+            z)  checkActive $frontEnd
                             ;;
             *)  echo exit
     esac
