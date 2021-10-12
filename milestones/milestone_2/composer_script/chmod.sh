@@ -9,5 +9,5 @@
 #chmod +x ./sshAddKey.sh
 #chmod +x ./git.sh
 
-find /home/junseanfung/it490_group_5/milestones/milestones_2/composer_script -type f -iname "*.sh" -exec chmod +x {} \;
-find /home/junseanfung/it490_group_5/milestones/milestones_2/composer_script -type f -iname "*.py" -exec chmod +x {} \;
+find /home/junseanfung/it490_group_5/milestones/milestone_2/composer_script -type f -iname "*.sh" -exec chmod +x {} \;
+find /home/junseanfung/it490_group_5/milestones/milestone_2/composer_script -type f -iname "*.py" -exec chmod +x {} \;

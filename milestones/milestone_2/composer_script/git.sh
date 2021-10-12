@@ -5,4 +5,4 @@ git pull
 # give the file permission
 chmod +x ./chmod.sh
 # Run the script
-./chmod.sh
+sudo ./chmod.sh
