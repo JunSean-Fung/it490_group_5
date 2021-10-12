@@ -20,11 +20,12 @@ do
     echo "=============Options======================"
     
     read option
-    # hosts 
+    # host and ip 
     frontEnd=paul@25.4.8.61
     message=rabbit@25.74.57.122
     database=samer@25.79.46.137
     debugTest=junseanfung@25.80.87.100
+
     case $option in
             1)  echo -e "Checking all services activity:\n"
                 echo -e "Apache is: "
@@ -41,7 +42,7 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  checkActive $frontEnd
+            z)  checkActive $debugTest
                             ;;
             *)  echo exit
     esac
