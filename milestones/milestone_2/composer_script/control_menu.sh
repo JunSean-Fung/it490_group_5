@@ -1,3 +1,6 @@
+testFunction () {
+    echo "This works!"
+}
 a=1
 b=1
 while [ $a -eq $b ]
@@ -35,7 +38,7 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  
+            z)  testFunction
                             ;;
             *)  echo exit
     esac
