@@ -11,26 +11,20 @@ do
     echo " 4: Turn off all services"
     echo " CTR-C can also exit the control menu"
     echo "=============Options======================"
-
+    
     read option
-    # Apache
-    apacheCheck=$(sudo systemctl check apache2)
-    apacheStatus=$(sudo systemctl status apache2)
-    # Rabbitmq
-    rabbitCheck=$(sudo systemctl check rabbitmq)
-    rabbitStatus=$(sudo systemctl status rabbitmq)
-    # mySQL
-    mysqlCheck=$(sudo systemctl cehck mysql)
-    mysqlStatus=$(sudo systemctl status mysql)
-
+    # hosts 
+    frontEnd=junseanfung@25.80.87.100
     case $option in
-            1)  echo -e "Apache is" $apacheCheck "\n\n"
-                echo -e "Rabbitmq is" $rabbitCheck "\n\n"
-                echo -e "mySQL is" $mysqlCheck "\n\n"
+            1)  echo -e "Checking all services activity:\n"
+                echo -e "Apache is: "
+                ssh paul@25.4.8.61 systemctl check apache2
+                echo -e "\nRabbitmq is: "
+                ssh rabbit@25.74.57.122 systemctl check rabbitmq-server
+                echo -e "\nmySQL is: "
+                ssh samer@25.79.46.137 systemctl check mysql
                             ;;
-            2)  echo -e "Status of apache is" $apacheStatus "\n\n"
-                echo -e "Status of Rabbitmq is" $apacheStatus "\n\n"
-                echo -e "Status of mySQL is" $apacheStatus "\n\n"
+            2)  ssh $frontEnd systemctl check apache2
                             ;;
             3)  echo -e "Starting apache server\n\n"
                 sudo systemctl start apache2
