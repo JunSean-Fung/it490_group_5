@@ -54,13 +54,13 @@ do
     read option
     case $option in
             1)  echo -e "Checking all services activity:\n"
-                echo -e -n "Apache: "
+                echo -e "Apache: "
                 checkActive $frontEnd apache2
-                echo -e -n "\nRabbitmq: "
+                echo -e "\nRabbitmq: "
                 checkActive $message rabbitmq
-                echo -e -n "\nmySQL: "
+                echo -e "\nmySQL: "
                 checkActive $database mysql
-                echo -e -n "\debug apache: "
+                echo -e "\debug apache: "
                 checkActive $debugTest apache2
                             ;;
             2)  echo "========================"
