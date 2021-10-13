@@ -3,6 +3,7 @@ lineSeperate(){
     msg=${1:-=}
     echo -n $msg
     printf '=%.0s' {1..25}
+    echo ""
 }
 showOptions(){
     # Purpose: Show options in the terminal
