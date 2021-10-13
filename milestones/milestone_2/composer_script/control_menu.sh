@@ -103,6 +103,25 @@ turnOnOneService(){
             *)  echo exit
     esac
 }
+turnOffOneService(){
+    lineSeperate "which service to turn on?"
+    echo "1: Front-End"
+    echo "2: Message"
+    echo "3: Database"
+    echo "4: Debug"
+    read serName
+    case $serName in
+            1)  turnOffService $frontEnd apache2
+                            ;;
+            2)  turnOffService $message rabbitmq
+                            ;;
+            3)  turnOffService $database mysql
+                            ;;
+            4)  turnOffService $debugTest apache2
+                            ;;
+            *)  echo exit
+    esac
+}
 # host + ip
 frontEnd=paul@25.4.8.61
 message=rabbit@25.74.57.122
@@ -159,6 +178,8 @@ do
                 turnOffService $debugTest apache2
                             ;;
             5)  turnOnOneService
+                            ;;
+            6)  turnOffOneService
                             ;;
             z)  checkActive $debugTest apache2
                             ;;
