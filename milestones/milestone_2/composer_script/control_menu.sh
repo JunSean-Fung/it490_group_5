@@ -19,7 +19,7 @@ checkStatus(){
     ssh $1 systemctl status $2
 }
 pingServer(){
-    ip=${$1#*@}
+    ip=$(cut -d "@" -f2 $1)
     ping -c 2 $ip
 }
 # host + ip
