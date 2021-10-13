@@ -49,7 +49,7 @@ checkActive(){
 }
 checkStatus(){
     connection=$(pingServer $1)
-    # Purpose: check if a service is active or inactive
+    # Purpose: provide detailed service information
     if [ "$connection" == "Good" ]
     then
         ssh $1 systemctl status $2
@@ -57,7 +57,19 @@ checkStatus(){
         echo "Unable to reach host"
     fi
 }
-
+turnOnService (){
+    connection=$(pingServer $1)
+    # Purpose: turn on service
+    if [ "$connection" == "Good" ]
+    then
+        echo "Attempting to start service"
+        ssh $1 sudo systemctl start $2
+        checkActive $1 $2
+    else 
+        echo "Unable to reach host"
+    fi
+    
+}
 # host + ip
 frontEnd=paul@25.4.8.61
 message=rabbit@25.74.57.122
