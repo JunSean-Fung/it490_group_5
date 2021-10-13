@@ -29,7 +29,8 @@ checkActive(){
     connection=$(pingServer $1)
     echo "Ping is "$connection
     # Purpose: check if a service is active or inactive
-    if [ $connection == "Good"] then
+    if [ $connection == "Good"] 
+    then
         ssh $1 systemctl check $2
     else 
         echo "Unable to ping host"
