@@ -158,7 +158,7 @@ do
                 echo -e "\ndebug apache: "
                 turnOffService $debugTest apache2
                             ;;
-            5)  turnOnService
+            5)  turnOnOneService
                             ;;
             z)  checkActive $debugTest apache2
                             ;;
