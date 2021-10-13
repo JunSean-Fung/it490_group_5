@@ -79,7 +79,7 @@ turnOnOneService(){
     case $serName in
             1)  turnOnService $frontEnd apache2
                             ;;
-            2)  turnOnService $message rabbitmq
+            2)  turnOnService $message rabbitmq-server
                             ;;
             3)  turnOnService $database mysql
                             ;;
@@ -98,7 +98,7 @@ turnOffOneService(){
     case $serName in
             1)  turnOffService $frontEnd apache2
                             ;;
-            2)  turnOffService $message rabbitmq
+            2)  turnOffService $message rabbitmq-server
                             ;;
             3)  turnOffService $database mysql
                             ;;
