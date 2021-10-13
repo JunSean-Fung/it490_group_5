@@ -1,10 +1,5 @@
-testFunction () {
-    echo "This works!"
-}
-checkActive(){
-    ssh $1 systemctl check $2
-}
 showOptions(){
+    # Purpose: Show options in the terminal
     echo "Control Menu"
     echo "=============Options======================"
     echo " 1: Check all services activity"
@@ -15,6 +10,16 @@ showOptions(){
     echo " z: Debug"
     echo " CTR-C can also exit the control menu"
     echo "=============Options======================"
+}
+checkActive(){
+    # Purpose: check if a service is active or inactive
+    ssh $1 systemctl check $2
+}
+checkStatus(){
+    ssh $1 systemctl status $2
+}
+pingServer(){
+    ping -c 2 $1
 }
 # host and ip 
 frontEnd=paul@25.4.8.61
@@ -31,11 +36,11 @@ do
     case $option in
             1)  echo -e "Checking all services activity:\n"
                 echo -e "Apache is: "
-                ssh $frontEnd systemctl check apache2
+                checkActive $frontEnd apache2
                 echo -e "\nRabbitmq is: "
-                ssh $message systemctl check rabbitmq-server
+                checkActive $message rabbitmq
                 echo -e "\nmySQL is: "
-                ssh $database systemctl check mysql
+                checkActive $database mysql
                             ;;
             2)  ssh $frontEnd systemctl status apache2
                             ;;
@@ -44,7 +49,7 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  checkActive $debugTest apache2
+            z)  pingServer $debugTest
                             ;;
             *)  echo exit
     esac
