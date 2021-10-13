@@ -1,12 +1,11 @@
 # Control Menu script
 
 lineSeperate(){
-    printf '=%.0s' {1..25}
+    printf '=%.0s' {1..$count-25}
     msg=${1:-=}
     count=${#msg}
-    echo $count
     echo -n $msg
-    printf '=%.0s' {1..25}
+    printf '=%.0s' {1..$count-25}
     echo ""
 }
 showOptions(){
