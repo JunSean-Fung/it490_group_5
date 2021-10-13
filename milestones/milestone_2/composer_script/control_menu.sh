@@ -19,9 +19,10 @@ checkStatus(){
     ssh $1 systemctl status $2
 }
 pingServer(){
-    ping -c 2 $1
+    ip=${str#*@}
+    ping -c 2 $ip
 }
-# host and ip 
+# host + ip
 frontEnd=paul@25.4.8.61
 message=rabbit@25.74.57.122
 database=samer@25.79.46.137
