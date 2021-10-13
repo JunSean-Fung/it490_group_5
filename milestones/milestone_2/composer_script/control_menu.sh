@@ -3,6 +3,8 @@
 lineSeperate(){
     printf '=%.0s' {1..25}
     msg=${1:-=}
+    count=$(msg | wc -w)
+    echo $count
     echo -n $msg
     printf '=%.0s' {1..25}
     echo ""
