@@ -1,7 +1,9 @@
 showOptions(){
     # Purpose: Show options in the terminal
-    echo -e "\n============Control Menu=================="
-    echo "=============Options======================"
+    #echo -e "\n============Control Menu=================="
+    printf '=%.0s' {1..25}
+    echo "Options"
+    printf '=%.0s' {1..25}
     echo " 1: Check all services activity"
     echo " 2: Show service status"
     echo " 3: Turn on all services"
@@ -9,7 +11,9 @@ showOptions(){
     echo " 4: Turn off all services"
     echo " z: Debug"
     echo " CTR-C can also exit the control menu"
-    echo "=============Options======================"
+    printf '=%.0s' {1..25}
+    echo "Options"
+    printf '=%.0s' {1..25}
 }
 checkActive(){
     # Purpose: check if a service is active or inactive
