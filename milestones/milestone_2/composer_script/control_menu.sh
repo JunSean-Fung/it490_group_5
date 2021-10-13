@@ -52,7 +52,7 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  printf '=%.0s' {1..100}
+            z)  printf 'overhere=%.0s' {1..100}
                             ;;
             *)  echo exit
     esac
