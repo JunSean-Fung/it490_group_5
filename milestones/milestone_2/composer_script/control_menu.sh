@@ -1,6 +1,7 @@
 # Control Menu script
 
 lineSeperate(){
+    echo -e "\n\n"
     printf '=%.0s' {1..25}
     msg=${1:-=}
     #count=${#msg}
@@ -42,7 +43,7 @@ checkActive(){
     connection=$(pingServer $1)
     if [ "$connection" == "Good" ]
     then
-        echo -n $2 "is"
+        echo -n $2 "is "
         ssh $1 systemctl check $2
     else 
         echo "Unable to reach host"
