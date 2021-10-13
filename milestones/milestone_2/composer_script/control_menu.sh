@@ -31,18 +31,7 @@ pingServer(){
     ip=${1#*@}
     ping -qc1 $ip 2>&1 | awk -F'/' 'END{ print (/^rtt/? "Good":"FAIL") }'
 }
-checkServer(){
-    # Not used
-    ip=${1#*@}
-    connection =$(ping -qc1 $ip 2>&1 | awk -F'/' 'END{ print (/^rtt/? "Good":"FAIL") }')
-    
-    if [ "$connection" == "Good" ]
-    then
-        $2
-    else 
-        echo "Unable to reach host"
-    fi
-}
+
 checkActive(){
     # Purpose: check if a service is active or inactive
     connection=$(pingServer $1)
@@ -74,8 +63,7 @@ turnOnService (){
         checkActive $1 $2
     else 
         echo "Unable to reach host"
-    fi
-    
+    fi 
 }
 turnOffService (){
     connection=$(pingServer $1)
@@ -87,8 +75,7 @@ turnOffService (){
         checkActive $1 $2
     else 
         echo "Unable to reach host"
-    fi
-    
+    fi 
 }
 turnOnOneService(){
     lineSeperate "which service to turn on?"
