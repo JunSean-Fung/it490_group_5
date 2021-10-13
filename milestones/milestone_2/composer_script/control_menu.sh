@@ -22,11 +22,12 @@ showOptions(){
 }
 pingServer(){
     ip=${1#*@}
-    ping -c 2 $ip ; echo $?
+    ping -qc1 $ip 2>&1 | awk -F'/' 'END{ print (/^rtt/? "OK "$5" ms":"FAIL") }'
+    #ping -c 1 $ip ; echo $?
 }
 checkActive(){
     reach=$(pingServer $1)
-    echo $reach
+    echo "reach is "$reach
     # Purpose: check if a service is active or inactive
     ssh $1 systemctl check $2
 }
