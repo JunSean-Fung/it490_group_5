@@ -2,9 +2,14 @@
 source ./system.sh
 # host + ip
 frontEnd=paul@25.4.8.61
+frontEndPasswd="123456"
 message=rabbit@25.74.57.122
+messagePasswd="rabbit"
 database=samer@25.79.46.137
+databasePasswd="fall2021"
 debugTest=junseanfung@25.80.87.100
+debugTestPasswd="1234"
+
 run (){
     echo ""
     showOptions
@@ -32,13 +37,13 @@ run (){
                             ;;
             3)  echo -e "Turning on all services:\n"
                 echo -e "Apache: "
-                turnOnService $frontEnd apache2
+                turnOnService $frontEnd apache2 $frontEndPasswd
                 echo -e "\nRabbitmq: "
-                turnOnService $message rabbitmq-server
+                turnOnService $message rabbitmq-server $messagePasswd
                 echo -e "\nmySQL: "
-                turnOnService $database mysql
+                turnOnService $database mysql $databasePasswd
                 echo -e "\ndebug apache: "
-                turnOnService $debugTest apache2
+                turnOnService $debugTest apache2 $debugTestPasswd
                             ;;
             4)  echo -e "Turning off all services:\n"
                 echo -e "Apache: "
