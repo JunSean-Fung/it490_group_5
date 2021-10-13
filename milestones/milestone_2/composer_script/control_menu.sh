@@ -1,7 +1,6 @@
 # Control Menu script
 
 lineSeperate(){
-    echo -e "\n\n"
     printf '=%.0s' {1..25}
     msg=${1:-=}
     #count=${#msg}
@@ -96,6 +95,7 @@ a=1
 b=1
 while [ $a -eq $b ]
 do
+    echo -e "\n\n"
     showOptions
     read option
     case $option in
