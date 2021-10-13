@@ -10,7 +10,6 @@ lineSeperate(){
 }
 showOptions(){
     # Purpose: Show options in the terminal
-    lineSeperate "Control Menu"
     lineSeperate "Options"
     echo " 1: Check all services activity"
     echo " 2: Show service status"
