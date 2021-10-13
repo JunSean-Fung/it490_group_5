@@ -119,7 +119,15 @@ do
                 echo -e "\ndebug apache: "
                 checkStatus $debugTest apache2
                             ;;
-            3)  turnOnService $debugTest apache2
+            3)  echo -e "Turning on all services:\n"
+                echo -e "Apache: "
+                turnOnService $frontEnd apache2
+                echo -e "\nRabbitmq: "
+                turnOnService $message rabbitmq
+                echo -e "\nmySQL: "
+                turnOnService $database mysql
+                echo -e "\ndebug apache: "
+                turnOnService $debugTest apache2
                             ;;
             4)  turnOffService $debugTest apache2
                             ;;
