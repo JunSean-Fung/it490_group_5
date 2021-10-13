@@ -104,10 +104,7 @@ do
                 echo -e "\ndebug apache: "
                 checkStatus $debugTest apache2
                             ;;
-            3)  echo -e "Starting apache server\n\n"
-                sudo systemctl start apache2
-                echo -e "Stopping Apache server\n\n"
-                sudo systemctl stop apache2
+            3)  turnOnService $debugTest apache2
                             ;;
             z)  checkActive $debugTest apache2
                             ;;
