@@ -71,7 +71,7 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  checkActive $debugTest
+            z)  checkActive $debugTest apache2
                             ;;
             *)  echo exit
     esac
