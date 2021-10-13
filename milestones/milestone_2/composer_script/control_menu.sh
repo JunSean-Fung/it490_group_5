@@ -42,6 +42,7 @@ checkActive(){
     connection=$(pingServer $1)
     if [ "$connection" == "Good" ]
     then
+        echo -n $2 "is"
         ssh $1 systemctl check $2
     else 
         echo "Unable to reach host"
@@ -63,7 +64,7 @@ turnOnService (){
     if [ "$connection" == "Good" ]
     then
         echo "Attempting to start service"
-        ssh $1 systemctl start $2
+        ssh $1 sudo -S systemctl start $2
         checkActive $1 $2
     else 
         echo "Unable to reach host"
@@ -76,7 +77,7 @@ turnOffService (){
     if [ "$connection" == "Good" ]
     then
         echo "Attempting to start service"
-        ssh $1 systemctl stop $2
+        ssh $1 sudo -S systemctl stop $2
         checkActive $1 $2
     else 
         echo "Unable to reach host"
