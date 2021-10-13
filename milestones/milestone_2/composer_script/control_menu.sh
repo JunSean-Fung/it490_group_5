@@ -26,6 +26,7 @@ pingServer(){
     ping -qc1 $ip 2>&1 | awk -F'/' 'END{ print (/^rtt/? "Good":"FAIL") }'
 }
 checkServer(){
+    # Not used
     ip=${1#*@}
     connection =$(ping -qc1 $ip 2>&1 | awk -F'/' 'END{ print (/^rtt/? "Good":"FAIL") }')
     
@@ -38,16 +39,13 @@ checkServer(){
 }
 checkActive(){
     # Purpose: check if a service is active or inactive
-    command=$(ssh $1 systemctl check $2)
-    checkServer $command
-    
-    #connection=$(pingServer $1)
-    #if [ "$connection" == "Good" ]
-    #then
-    #    ssh $1 systemctl check $2
-    #else 
-    #    echo "Unable to reach host"
-    #fi
+    connection=$(pingServer $1)
+    if [ "$connection" == "Good" ]
+    then
+        ssh $1 systemctl check $2
+    else 
+        echo "Unable to reach host"
+    fi
 }
 checkStatus(){
     connection=$(pingServer $1)
