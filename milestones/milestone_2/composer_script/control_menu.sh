@@ -14,7 +14,7 @@ run (){
                 echo -e "Apache: "
                 checkActive $frontEnd apache2
                 echo -e "\nRabbitmq: "
-                checkActive $message rabbitmq
+                checkActive $message rabbitmq-server
                 echo -e "\nmySQL: "
                 checkActive $database mysql
                 echo -e "\ndebug apache: "
