@@ -20,17 +20,20 @@ showOptions(){
     echo " CTR-C to exit the control menu"
     lineSeperate "Options"
 }
+pingServer(){
+    ip=${1#*@}
+    ping -c 2 $ip ; echo $?
+}
 checkActive(){
+    reach=pingServer $1
+    echo $reach
     # Purpose: check if a service is active or inactive
     ssh $1 systemctl check $2
 }
 checkStatus(){
     ssh $1 systemctl status $2
 }
-pingServer(){
-    ip=${1#*@}
-    ping -c 2 $ip ; echo $?
-}
+
 # host + ip
 frontEnd=paul@25.4.8.61
 message=rabbit@25.74.57.122
@@ -62,7 +65,7 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  pingServer $frontEnd
+            z)  checkActive $frontEnd
                             ;;
             *)  echo exit
     esac
