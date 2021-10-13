@@ -84,11 +84,11 @@ do
                             ;;
             2)  echo -e "Checking all services status(detailed):\n"
                 echo -e "Apache: "
-                checkStatus $debugTest apache2
+                checkStatus $frontEnd apache2
                 echo -e "\nRabbitmq: "
-                checkStatus $debugTest rabbitmq
+                checkStatus $message rabbitmq
                 echo -e "\nmySQL: "
-                checkStatus $debugTest mysql
+                checkStatus $database mysql
                 echo -e "\ndebug apache: "
                 checkStatus $debugTest apache2
                             ;;
