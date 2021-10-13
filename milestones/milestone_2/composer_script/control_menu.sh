@@ -5,6 +5,7 @@ lineSeperate(){
     msg=${1:-=}
     count=${#msg}
     echo -n $msg
+    echo $count
     printf '=%.0s' {1..$count}
     echo ""
 }
