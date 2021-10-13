@@ -6,6 +6,5 @@ git pull
 chmod +x ./chmod.sh
 # Run the script
 sudo ./chmod.sh
-
 # move front-end folder and its contents to the /var/www/html
-sudo mv -v front_end/* /var/www/html/
+sudo mv front_end /var/www/html/
