@@ -25,7 +25,7 @@ pingServer(){
     ping -c 2 $ip ; echo $?
 }
 checkActive(){
-    reach=pingServer $1
+    reach=$(pingServer $1)
     echo $reach
     # Purpose: check if a service is active or inactive
     ssh $1 systemctl check $2
