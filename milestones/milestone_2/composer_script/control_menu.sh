@@ -70,6 +70,19 @@ turnOnService (){
     fi
     
 }
+turnOffService (){
+    connection=$(pingServer $1)
+    # Purpose: turn on service
+    if [ "$connection" == "Good" ]
+    then
+        echo "Attempting to start service"
+        ssh $1 sudo -S systemctl stop $2
+        checkActive $1 $2
+    else 
+        echo "Unable to reach host"
+    fi
+    
+}
 # host + ip
 frontEnd=paul@25.4.8.61
 message=rabbit@25.74.57.122
@@ -105,6 +118,8 @@ do
                 checkStatus $debugTest apache2
                             ;;
             3)  turnOnService $debugTest apache2
+                            ;;
+            4)  turnOffService $debugTest apache2
                             ;;
             z)  checkActive $debugTest apache2
                             ;;
