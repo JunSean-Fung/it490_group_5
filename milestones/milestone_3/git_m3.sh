@@ -8,4 +8,4 @@ chmod +x ./chmod.sh
 sudo ./chmod.sh
 
 # move front-end folder and its contents to the /var/www/html
-mv -v front_end/* /var/www/html/
+sudo mv -v front_end/* /var/www/html/
