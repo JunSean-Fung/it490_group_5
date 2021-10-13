@@ -17,10 +17,9 @@ showOptions(){
     echo " 4: Turn off all services"
     echo " 4: Turn off all services"
     echo " z: Debug"
-    echo " CTR-C can also exit the control menu"
+    echo " CTR-C to exit the control menu"
     lineSeperate "Options"
 }
-
 checkActive(){
     # Purpose: check if a service is active or inactive
     ssh $1 systemctl check $2
@@ -30,13 +29,14 @@ checkStatus(){
 }
 pingServer(){
     ip=${1#*@}
-    ping -c 2 $ip
+    ping -c 2 $ip ; echo $?
 }
 # host + ip
 frontEnd=paul@25.4.8.61
 message=rabbit@25.74.57.122
 database=samer@25.79.46.137
 debugTest=junseanfung@25.80.87.100
+
 # A endless loop until Ctl-C
 a=1
 b=1
@@ -62,7 +62,7 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  printf '=%.0s' {1..50}
+            z)  pingServer $frontEnd
                             ;;
             *)  echo exit
     esac
