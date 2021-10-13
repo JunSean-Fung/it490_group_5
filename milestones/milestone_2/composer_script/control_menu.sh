@@ -43,7 +43,9 @@ do
                 echo -e "\nmySQL is: "
                 checkActive $database mysql
                             ;;
-            2)  checkStatus $debugTest apache2
+            2)  echo "========================"
+                checkStatus $debugTest apache2
+                echo "\n========================"
                             ;;
             3)  echo -e "Starting apache server\n\n"
                 sudo systemctl start apache2
