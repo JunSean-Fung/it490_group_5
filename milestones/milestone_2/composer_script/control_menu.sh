@@ -50,7 +50,8 @@ do
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  pingServer $debugTest
+            z)  echo $debugTest
+                pingServer $debugTest
                             ;;
             *)  echo exit
     esac
