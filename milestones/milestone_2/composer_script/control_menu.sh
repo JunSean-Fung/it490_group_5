@@ -22,7 +22,7 @@ showOptions(){
 }
 pingServer(){
     ip=${1#*@}
-    ping -qc1 $ip 2>&1 | awk -F'/' 'END{ print (/^rtt/? "Good "$5" ms":"FAIL") }'
+    ping -qc1 $ip 2>&1 | awk -F'/' 'END{ print (/^rtt/? "Good "$5"":"FAIL") }'
     #ping -c 1 $ip ; echo $?
 }
 checkActive(){
