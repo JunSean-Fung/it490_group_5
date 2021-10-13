@@ -27,7 +27,6 @@ pingServer(){
 }
 checkActive(){
     connection=$(pingServer $1)
-    echo "Ping is "$connection
     # Purpose: check if a service is active or inactive
     if [ "$connection" == "Good" ]
     then
@@ -55,11 +54,11 @@ do
     read option
     case $option in
             1)  echo -e "Checking all services activity:\n"
-                echo -e "Apache is: "
+                echo -e -n "Apache: "
                 checkActive $frontEnd apache2
-                echo -e "\nRabbitmq is: "
+                echo -e -n "\nRabbitmq: "
                 checkActive $message rabbitmq
-                echo -e "\nmySQL is: "
+                echo -e -n "\nmySQL: "
                 checkActive $database mysql
                             ;;
             2)  echo "========================"
