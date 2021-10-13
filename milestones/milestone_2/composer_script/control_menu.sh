@@ -60,6 +60,8 @@ do
                 checkActive $message rabbitmq
                 echo -e -n "\nmySQL: "
                 checkActive $database mysql
+                echo -e -n "\debug apache: "
+                checkActive $debugTest apache2
                             ;;
             2)  echo "========================"
                 checkStatus $debugTest apache2
