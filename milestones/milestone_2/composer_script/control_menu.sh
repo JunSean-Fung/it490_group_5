@@ -15,7 +15,8 @@ showOptions(){
     echo " 2: Show service status"
     echo " 3: Turn on all services"
     echo " 4: Turn off all services"
-    echo " 4: Turn off all services"
+    echo " 5: Turn on specific service"
+    echo " 6: Turn off specific service"
     echo " z: Debug"
     echo " CTR-C to exit the control menu"
     lineSeperate "Options"
@@ -60,12 +61,18 @@ do
                 checkActive $message rabbitmq
                 echo -e "\nmySQL: "
                 checkActive $database mysql
-                echo -e "\debug apache: "
+                echo -e "\ndebug apache: "
                 checkActive $debugTest apache2
                             ;;
-            2)  echo "========================"
+            2)  echo -e "Checking all services status(detailed):\n"
+                echo -e "Apache: "
+                checkStatus $frontEnd apache2
+                echo -e "\nRabbitmq: "
+                checkStatus $message rabbitmq
+                echo -e "\nmySQL: "
+                checkStatus $database mysql
+                echo -e "\ndebug apache: "
                 checkStatus $debugTest apache2
-                echo -e "\n========================"
                             ;;
             3)  echo -e "Starting apache server\n\n"
                 sudo systemctl start apache2
