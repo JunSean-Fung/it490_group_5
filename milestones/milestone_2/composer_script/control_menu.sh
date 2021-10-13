@@ -95,7 +95,7 @@ a=1
 b=1
 while [ $a -eq $b ]
 do
-    echo -e "\n\n"
+    echo -e "\n"
     showOptions
     read option
     case $option in
