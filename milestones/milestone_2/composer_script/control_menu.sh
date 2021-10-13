@@ -1,6 +1,6 @@
 showOptions(){
     # Purpose: Show options in the terminal
-    echo "Control Menu"
+    echo -e "\n============Control Menu=================="
     echo "=============Options======================"
     echo " 1: Check all services activity"
     echo " 2: Show service status"
