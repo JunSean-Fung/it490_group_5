@@ -63,7 +63,7 @@ turnOnService (){
     if [ "$connection" == "Good" ]
     then
         echo "Attempting to start service"
-        ssh $1 sudo -s systemctl start $2
+        ssh $1 sudo -S systemctl start $2
         checkActive $1 $2
     else 
         echo "Unable to reach host"
