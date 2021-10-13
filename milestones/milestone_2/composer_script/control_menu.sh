@@ -24,7 +24,7 @@ run (){
                 echo -e "Apache: "
                 checkStatus $frontEnd apache2
                 echo -e "\nRabbitmq: "
-                checkStatus $message rabbitmq
+                checkStatus $message rabbitmq-server
                 echo -e "\nmySQL: "
                 checkStatus $database mysql
                 echo -e "\ndebug apache: "
@@ -34,7 +34,7 @@ run (){
                 echo -e "Apache: "
                 turnOnService $frontEnd apache2
                 echo -e "\nRabbitmq: "
-                turnOnService $message rabbitmq
+                turnOnService $message rabbitmq-server
                 echo -e "\nmySQL: "
                 turnOnService $database mysql
                 echo -e "\ndebug apache: "
@@ -44,7 +44,7 @@ run (){
                 echo -e "Apache: "
                 turnOffService $frontEnd apache2
                 echo -e "\nRabbitmq: "
-                turnOffService $message rabbitmq
+                turnOffService $message rabbitmq-server
                 echo -e "\nmySQL: "
                 turnOffService $database mysql
                 echo -e "\ndebug apache: "
