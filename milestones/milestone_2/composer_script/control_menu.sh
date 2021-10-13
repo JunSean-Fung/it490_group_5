@@ -1,3 +1,5 @@
+# Control Menu script
+
 lineSeperate(){
     printf '=%.0s' {1..25}
     msg=${1:-=}
@@ -7,7 +9,7 @@ lineSeperate(){
 }
 showOptions(){
     # Purpose: Show options in the terminal
-    #echo -e "\n============Control Menu=================="
+    lineSeperate "Control Menu"
     lineSeperate "Options"
     echo " 1: Check all services activity"
     echo " 2: Show service status"
