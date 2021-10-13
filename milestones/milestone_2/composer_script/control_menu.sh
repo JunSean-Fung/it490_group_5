@@ -32,7 +32,7 @@ checkActive(){
     then
         ssh $1 systemctl check $2
     else 
-        echo "Unable to ping host"
+        echo "Unable to reach host"
     fi
 }
 checkStatus(){
