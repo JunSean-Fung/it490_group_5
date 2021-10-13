@@ -1,9 +1,13 @@
+lineSeperate(){
+    printf '=%.0s' {1..25}
+    msg=${1:-=}
+    echo -n $msg
+    printf '=%.0s' {1..25}
+}
 showOptions(){
     # Purpose: Show options in the terminal
     #echo -e "\n============Control Menu=================="
-    printf '=%.0s' {1..25}
-    echo "Options"
-    printf '=%.0s' {1..25}
+    lineSeperate "Options"
     echo " 1: Check all services activity"
     echo " 2: Show service status"
     echo " 3: Turn on all services"
@@ -11,10 +15,9 @@ showOptions(){
     echo " 4: Turn off all services"
     echo " z: Debug"
     echo " CTR-C can also exit the control menu"
-    printf '=%.0s' {1..25}
-    echo "Options"
-    printf '=%.0s' {1..25}
+    lineSeperate "Options"
 }
+
 checkActive(){
     # Purpose: check if a service is active or inactive
     ssh $1 systemctl check $2
