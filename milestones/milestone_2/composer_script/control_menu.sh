@@ -12,7 +12,6 @@ showOptions(){
     # Purpose: Show options in the terminal
     lineSeperate "Control Menu"
     lineSeperate "Options"
-    lineSeperate
     echo " 1: Check all services activity"
     echo " 2: Show service status"
     echo " 3: Turn on all services"
