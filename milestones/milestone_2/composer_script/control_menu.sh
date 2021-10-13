@@ -43,7 +43,7 @@ do
                 echo -e "\nmySQL is: "
                 checkActive $database mysql
                             ;;
-            2)  ssh $frontEnd systemctl status apache2
+            2)  checkStatus $debugTest apache2
                             ;;
             3)  echo -e "Starting apache server\n\n"
                 sudo systemctl start apache2
