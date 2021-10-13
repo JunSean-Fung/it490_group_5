@@ -99,6 +99,8 @@ turnOnOneService(){
             3)  turnOnService $database mysql
                             ;;
             4)  turnOnService $debugTest apache2
+                            ;;
+            *)  echo exit
     esac
 }
 # host + ip
@@ -156,7 +158,7 @@ do
                 echo -e "\ndebug apache: "
                 turnOffService $debugTest apache2
                             ;;
-            5)  turnOnService            
+            5)  turnOnService
                             ;;
             z)  checkActive $debugTest apache2
                             ;;
