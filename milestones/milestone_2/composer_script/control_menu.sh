@@ -45,14 +45,14 @@ do
                             ;;
             2)  echo "========================"
                 checkStatus $debugTest apache2
-                echo "\n========================"
+                echo -e "\n========================"
                             ;;
             3)  echo -e "Starting apache server\n\n"
                 sudo systemctl start apache2
                 echo -e "Stopping Apache server\n\n"
                 sudo systemctl stop apache2
                             ;;
-            z)  pingServer $frontEnd
+            z)  printf '=%.0s' {1..100}
                             ;;
             *)  echo exit
     esac
