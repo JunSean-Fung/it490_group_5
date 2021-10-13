@@ -1,3 +1,4 @@
+#!/bin/sh
 # Control Menu script
 source ./system.sh
 # host + ip
