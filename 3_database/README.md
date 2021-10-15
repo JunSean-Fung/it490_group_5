@@ -1,1 +1,2 @@
-## This is for database only
+#### Database
+Contains mysql scripts
