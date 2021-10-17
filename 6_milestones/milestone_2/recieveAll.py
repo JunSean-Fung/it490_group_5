@@ -5,7 +5,7 @@ credentials = pika.PlainCredentials('test','test')
 
 def main():
     connection = pika.BlockingConnection(
-        pika.ConnectionParameters(host='25.51.161.242', credentials=credentials))
+        pika.ConnectionParameters(host='25.78.132.146', credentials=credentials))
     channel = connection.channel()
 
     channel.exchange_declare(exchange='logs', exchange_type='fanout')

@@ -6,9 +6,9 @@ set +vecho off
 echo Attempting to Ping Front-End server...
 ping -c 4 25.83.212.229
 echo ===================================================================
-# Messaging Server
+# Back End Server
 echo Attempting to Ping Messaging server...
-ping -c 4 25.74.57.122
+ping -c 4 25.80.87.100
 echo ===================================================================
 # Database Server
 echo Attempting to Ping Database Server...
