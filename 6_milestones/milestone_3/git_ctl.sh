@@ -1,7 +1,7 @@
 # This scrpit will be used to: reset the git, pull, 
 #and replace +update dir and files.
 # Back up location: ~/it490_backup/
-branch = "master"
+#branch = "master"
 
 # Back up the current repo in the local machine
 sudo rsync -av --delete ~/it490_group_5 ~/it490_backup # replace old backup with the current local repo
@@ -9,7 +9,8 @@ sudo rsync -av --delete ~/it490_group_5 ~/it490_backup # replace old backup with
 # Reset the git
 git reset --hard
 # Pull the repo from branch
-git pull origin $branch
+git config pull.ff only
+git pull origin master
 
 # Move replace with new contents
 sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_3/front_end /var/www/html #front_end
