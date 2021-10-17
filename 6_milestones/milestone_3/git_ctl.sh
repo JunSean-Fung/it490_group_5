@@ -9,6 +9,7 @@ sudo rsync -av --delete ~/it490_group_5 ~/it490_backup # replace old backup with
 # Reset the git
 git reset --hard
 # Pull the repo from branch
+git config pull.ff only
 git pull origin $branch
 
 # Move replace with new contents
