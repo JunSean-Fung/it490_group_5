@@ -11,4 +11,10 @@ git reset --hard
 # Pull the repo from branch
 git pull origin $branch
 
-#rsync -av  front_end/front_end.conf /etc/apache2/sites-available/ #move the conf to dir and update the confg
+# Move replace with new contents
+rsync -av --delete front_end /var/www/html #front_end
+#rsync -av  front_end/front_end.conf /etc/apache2/sites-available/ #update config file
+
+# Give execute permission to all files based on the format
+find -type f -iname "*.sh" -exec chmod +x {} \;
+find -type f -iname "*.py" -exec chmod +x {} \;
