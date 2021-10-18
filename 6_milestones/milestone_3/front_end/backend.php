@@ -1,9 +1,9 @@
 <?php
 if ($_POST) {
     require 'db_key.php';
-    header('location: works.html');
-    $conn = connect_db();
     
+    $conn = connect_db();
+    #header('location: works.html');
     //$conn = connect_db_2();
     
     if (isset($_POST['register'])) {
