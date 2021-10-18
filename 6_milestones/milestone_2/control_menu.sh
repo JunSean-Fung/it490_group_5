@@ -3,7 +3,7 @@ source ./system.sh
 # host + ip
 frontEnd=paul@25.4.8.61
 frontEndPasswd="123456"
-message=rabbit@25.74.57.122
+message=rabbit@25.78.132.146
 messagePasswd="rabbit"
 database=samer@25.79.46.137
 databasePasswd="fall2021"
