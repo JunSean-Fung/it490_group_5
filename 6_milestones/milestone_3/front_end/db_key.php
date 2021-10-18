@@ -9,9 +9,9 @@
         
         
         #$conn=new mysqli($sql_host,$sql_username,$sql_password,$sql_database);
-        header('location: milestone_2_frontEnd.html');
-        $conn=new mysqli($sql_host,$sql_database);
         
+        $conn=new mysqli($sql_host,$sql_database);
+        header('location: milestone_2_frontEnd.html');
         if(mysqli_connect_error() !== null) {
             
             return false;
