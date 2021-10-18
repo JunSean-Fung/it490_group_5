@@ -1,6 +1,6 @@
 <?php
-    $sql_host="25.79.46.137";
-    $sql_username="root";
+    $sql_host="%";
+    $sql_username="username";
     $sql_password='fall2021';
     $sql_database="simplycoding";
 
@@ -14,6 +14,8 @@
         $conn -> select_db($sql_database);
         return $conn;
     }
+
+
     function connect_db_2() {
         
         global $sql_host, $sql_username, $sql_password, $sql_database;
