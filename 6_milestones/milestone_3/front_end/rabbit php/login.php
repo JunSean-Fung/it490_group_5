@@ -15,10 +15,10 @@ class RpcClient
     public function __construct()
     {
         $this->connection = new AMQPStreamConnection(
-            'localhost',
+            '25.78.132.146',
             5672,
-            'guest',
-            'guest'
+            'test',
+            'test'
         );
         $this->channel = $this->connection->channel();
         list($this->callback_queue, ,) = $this->channel->queue_declare(
