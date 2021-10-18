@@ -3,7 +3,7 @@ if ($_POST) {
     require 'db_key.php';
     
     $conn = connect_db();
-    #header('location: works.html');
+    header('location: works.html');
     //$conn = connect_db_2();
     
     if (isset($_POST['register'])) {
