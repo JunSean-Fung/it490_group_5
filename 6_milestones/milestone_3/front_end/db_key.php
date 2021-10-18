@@ -6,9 +6,9 @@
     
     function connect_db() {
         global $sql_host, $sql_username, $sql_password, $sql_database;
-        
-        $conn=new mysqli_connect($sql_host,$sql_username,$sql_password);
         header('location: milestone_2_frontEnd.html');
+        $conn=new mysqli_connect($sql_host,$sql_username,$sql_password);
+        
         if(mysqli_connect_error() !== null) {
             
             return false;
