@@ -17,7 +17,7 @@ add_user = ("INSERT INTO users "
 def login(uName, password):
     check_user = "Select * From users Where username = " + uName
     check_password = "Select * From users Where username = " + password
-    if cursor.execute(check_user) == uName and cursor.execut(check_password) == password:
+    if cursor.execute(check_user) == uName and cursor.execute(check_password) == password:
         return true
     else:
         return false
