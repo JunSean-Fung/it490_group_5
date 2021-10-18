@@ -3,6 +3,8 @@
 # Back up location: ~/it490_backup/
 #branch = "master"
 
+# Install rsync
+sudo apt-get install rsync
 # Back up the current repo in the local machine
 sudo rsync -av --delete ~/it490_group_5 ~/it490_backup # replace old backup with the current local repo
 
