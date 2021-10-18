@@ -2,7 +2,7 @@
 if ($_POST) {
     require 'db_key.php';
     
-    #$conn = connect_db();
+    $conn = connect_db();
     header('location: works.html');
     //$conn = connect_db_2();
     
