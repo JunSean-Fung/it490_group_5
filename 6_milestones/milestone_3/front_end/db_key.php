@@ -3,12 +3,12 @@
     $sql_username="username";
     $sql_password='fall2021';
     $sql_database="simplycoding";
-
+    header('location: milestone_2_frontEnd.html');
     function connect_db() {
         global $sql_host, $sql_username, $sql_password, $sql_database;
         $conn=new mysqli($sql_host,$sql_username,$sql_password);
         if(mysqli_connect_error() !== null) {
-            header('location: milestone_2_frontEnd.html');
+            
             return false;
         }
         $conn -> select_db($sql_database);
