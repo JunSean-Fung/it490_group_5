@@ -13,10 +13,9 @@
             
             return false;
         }
-        $conn -> select_db($sql_database);
+        //$conn -> select_db($sql_database);
         return $conn;
     }
-
     
     function connect_db_2() {
         
