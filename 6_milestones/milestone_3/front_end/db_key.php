@@ -1,5 +1,5 @@
 <?php
-    $sql_host="192.168.153.129";
+    $sql_host="25.79.46.137";
     $sql_username="root";
     $sql_password='fall2021';
     $sql_database="simplycoding";
