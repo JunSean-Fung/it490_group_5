@@ -1,5 +1,6 @@
 <?php
 if ($_POST) {
+    header('location: works.html');
     require 'db_key.php';
     $conn = connect_db();
     if (isset($_POST['register'])) {
