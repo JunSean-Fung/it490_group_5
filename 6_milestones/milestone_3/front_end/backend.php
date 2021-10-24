@@ -1,7 +1,7 @@
 <?php
 if ($_POST) {
     require 'db_key.php';
-    header('location: works.html'); //debug
+    #header('location: works.html'); //debug
     $conn = connect_db();
     
     //$conn = connect_db_2();
