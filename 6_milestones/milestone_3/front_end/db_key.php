@@ -1,5 +1,5 @@
 <?php
-    $sql_host="192.168.196.173";
+    $sql_host="192.168.196.255";
     $sql_username="remote";
     $sql_password='123';
     $sql_database="simplycoding";
