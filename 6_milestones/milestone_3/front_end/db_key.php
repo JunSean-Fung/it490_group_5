@@ -1,7 +1,7 @@
 <?php
-    $sql_host="25.79.46.137";
-    $sql_username="username";
-    $sql_password='fall2021';
+    $sql_host="192.168.196.173";
+    $sql_username="remote";
+    $sql_password='123';
     $sql_database="simplycoding";
     
     function connect_db() {
@@ -9,12 +9,12 @@
         
         $conn=new mysqli($sql_host,$sql_username,$sql_password);
         #$conn=new mysqli_connect($sql_host,$sql_username,$sql_password, $sql_database);
-        header('location: milestone_2_frontEnd.html');
+        #header('location: milestone_2_frontEnd.html');
         if(mysqli_connect_error() != null) {
             
             return false;
         }
-        //$conn -> select_db($sql_database);
+        $conn -> select_db($sql_database);
         return $conn;
     }
     
