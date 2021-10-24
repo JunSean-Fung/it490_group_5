@@ -3,7 +3,7 @@ if ($_POST) {
     require 'db_key.php';
     
     $conn = connect_db();
-    #header('location: works.html');
+    #header('location: works.html'); //debug
     //$conn = connect_db_2();
     
     if (isset($_POST['register'])) {
@@ -27,7 +27,7 @@ if ($_POST) {
             $sql = $conn->query($sql);
             if ($sql) {
                 echo "Registration succesful. You may <a href= '/'>login</a> now";
-                //header('location: phplogin/index.php');
+                //header('location: phplogin/index.php'); //debug
             }
             //$sql = $sql->fetch_assoc();
             //echo $username.$email.$password;
