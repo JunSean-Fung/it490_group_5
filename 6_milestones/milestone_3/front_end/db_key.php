@@ -8,14 +8,14 @@
         global $sql_host, $sql_username, $sql_password, $sql_database;
         
         #$conn=new mysqli($sql_host,$sql_username,$sql_password);
-        $conn=new mysqli_connect($sql_host,$sql_username,$sql_password);
-        #$conn=new mysqli_connect($sql_host,$sql_username,$sql_password, $sql_database);
+        #$conn=new mysqli_connect($sql_host,$sql_username,$sql_password); # Seems to be faster 
+        $conn=new mysqli_connect($sql_host,$sql_username,$sql_password, $sql_database);
         #header('location: milestone_2_frontEnd.html'); //debug
         if(mysqli_connect_error() != null) {
             
             return false;
         }
-        $conn -> select_db($sql_database);
+        #$conn -> select_db($sql_database);
         return $conn;
     }
     
