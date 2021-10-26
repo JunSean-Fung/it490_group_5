@@ -13,7 +13,6 @@
         #header('location: milestone_2_frontEnd.html'); //debug
         if(mysqli_connect_error() != null) {
             
-            alert("There is an connection error")
             return false;
         }
         $conn -> select_db($sql_database);
