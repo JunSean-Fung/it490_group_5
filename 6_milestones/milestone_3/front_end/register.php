@@ -6,7 +6,7 @@
       <div class = 'container'>
          <div>
             <div>
-               <h1>Register your Account</h1>
+               <h1>Register your Account (Debug)</h1>
             </div>
          </div>
          <form action = 'backend.php' method = 'POST'>
