@@ -1,3 +1,6 @@
+# Navigate to the home
+cd ~
+
 # Connect to ngrok account
 ./ngrok authtoken 205dgcskzPJs4V5fCGVwGuhr9PA_3eMNs9y43qna9DoJeLbZP
 
