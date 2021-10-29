@@ -12,7 +12,8 @@ sudo rsync -av --delete ~/it490_group_5 ~/it490_backup # replace old backup with
 git reset --hard
 # Pull the repo from branch
 git config pull.ff only
-git pull origin JunSean
+#git pull origin JunSean
+git pull origin paul
 
 # Move replace with new contents
 sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_3/front_end /var/www/html #front_end
