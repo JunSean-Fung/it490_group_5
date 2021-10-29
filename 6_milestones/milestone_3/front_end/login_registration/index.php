@@ -1,6 +1,6 @@
 <?php
 require 'header.php';
-require 'db_key.php';
+require '../db_key.php';
 ?>
 <body>
 <div class = 'container'>
