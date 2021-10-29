@@ -1,5 +1,5 @@
 <?php
-    $sql_host="192.168.1.205";
+    $sql_host="192.168.196.19";
     $sql_username="test";
     $sql_password='123';
     $sql_database="simplycoding";
