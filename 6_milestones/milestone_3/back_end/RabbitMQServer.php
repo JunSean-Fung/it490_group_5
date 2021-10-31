@@ -95,10 +95,14 @@ function login($user, $pass, $db)
 
         $server = new rabbitMQServer("testRabbitMQ.ini", "test");
 
-        echo "Rabbit MQ Server Start" . PHP_EOL;
-        $server->process_requests('request_processor');
-        echo "Rabbit MQ Server Stop" . PHP_EOL;
-        exit();
+
     }
+
 }
+$server = new rabbitMQServer("testRabbitMQ.ini", "test");
+
+echo "Rabbit MQ Server Start" . PHP_EOL;
+$server->process_requests('request_processor');
+echo "Rabbit MQ Server Stop" . PHP_EOL;
+exit();
 ?>
