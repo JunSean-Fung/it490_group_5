@@ -55,5 +55,5 @@ if ($_POST) {
     header('location: index.php');
     exit();
 }
-//header('location: index.php');
+
 ?>
