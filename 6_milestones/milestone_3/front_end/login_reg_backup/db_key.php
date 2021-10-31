@@ -19,7 +19,6 @@
         return $conn;
     }
     
-    # Not used
     function connect_db_2() {
         
         global $sql_host, $sql_username, $sql_password, $sql_database;
