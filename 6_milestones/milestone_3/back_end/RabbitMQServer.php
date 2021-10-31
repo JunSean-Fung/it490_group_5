@@ -3,22 +3,19 @@
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
-const DB_SERVER = 'localhost:3036';
+const DB_SERVER = 'localhost';
 const DB_USERNAME = 'root';
-const DB_PASSWORD = 'rootpassword';
-const DB_DATABASE = 'database';
+const DB_PASSWORD = 'administratorpassword';
+const DB_DATABASE = 'test';
 
-$db = new mysqli(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
-$username = mysqli_real_escape_string($db,$_POST['username']);
-$password = mysqli_real_escape_string($db,$_POST['password']);
+$db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
 function login($user, $pass, $db)
 {
     $response = array();
     try {
-        $stmt = $db->prepare("SELECT username, password from `Users` where username = :username LIMIT 1");
-        $username = array();
-        $params = array(":username" => $username);
+        $stmt = $db->prepare("SELECT username, password from `Users` where username = :user LIMIT 1");
+        $params = array(":user" => $user);
         $stmt->execute($params);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($result) {
