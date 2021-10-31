@@ -30,7 +30,7 @@ function login($user, $pass, $db)
 
     } catch (Exception $e) {
         echo $e->getMessage();
-        $client = new rabbitMQClient("testRabbitMQ.ini", "test");
+        $client = new rabbitMQClient("rabbit.ini", "test");
         $request = array();
         $request['type'] = "Error";
         $request['message'] = strval($e->getMessage());
@@ -65,7 +65,7 @@ function login($user, $pass, $db)
             }
         } catch (Exception $e) {
             echo $e->getMessage();
-            $client = new rabbitMQClient("testRabbitMQ.ini", "test");
+            $client = new rabbitMQClient("rabbit.ini", "test");
             $request = array();
             $request['type'] = "Error";
             $request['message'] = strval($e->getMessage());
