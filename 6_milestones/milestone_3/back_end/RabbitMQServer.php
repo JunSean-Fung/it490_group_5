@@ -8,7 +8,7 @@ const DB_USERNAME = 'root';
 const DB_PASSWORD = 'rootpassword';
 const DB_DATABASE = 'database';
 
-$db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+$db = new mysqli(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 $username = mysqli_real_escape_string($db,$_POST['username']);
 $password = mysqli_real_escape_string($db,$_POST['password']);
 
