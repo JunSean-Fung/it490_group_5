@@ -3,6 +3,7 @@
     # Project X main page 
 
     #require 'db_key.php';
-    include "login.php" 
+    #include "login.php" 
+    include "mainpage.html" 
     #include "register.php" # Debugging
 ?>
