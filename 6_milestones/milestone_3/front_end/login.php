@@ -23,7 +23,7 @@
 
                             <a class="forgot text-muted" href="#">Forgot password?</a>
                             <br>
-                            <a href="register.html">Dont have an account? Click here to register one!</a>
+                            <a href="register.php">Dont have an account? Click here to register one!</a>
                         </form>
                     </div>
                 </div>
