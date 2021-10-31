@@ -9,8 +9,8 @@
         exit();
     }
     # Calling other pages
-    require 'header.php' # call the bootstrap styling
-    require 'mainpage.html'
+    #require 'header.php' # call the bootstrap styling
+    #require 'mainpage.html'
     
 ?>
 <html>
