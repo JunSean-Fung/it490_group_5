@@ -13,16 +13,21 @@
     #require 'mainpage.html'
     
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project X: Login Successful</title>
+    </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-light mb-4">
-        <!-- Links -->
-        <!--<ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="logout.php">Logout</a>
-            </li>
-        </ul>-->
-        </nav>
-        <h1>Welcome to the Project X main Page, <?php echo $_SESSION['username'] ?></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="card">
+                        <h1>Login Successful!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
