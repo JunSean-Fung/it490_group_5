@@ -93,13 +93,13 @@ function login($user, $pass, $db)
                 "message" => "Server received request and processed it");
         }
 
-        $server = new rabbitMQServer("testRabbitMQ.ini", "test");
+        $server = new rabbitMQServer("rabbit.ini", "test");
 
 
     }
 
 }
-$server = new rabbitMQServer("testRabbitMQ.ini", "test");
+$server = new rabbitMQServer("rabbit.ini", "test");
 
 echo "Rabbit MQ Server Start" . PHP_EOL;
 $server->process_requests('request_processor');
