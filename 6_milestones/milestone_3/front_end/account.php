@@ -23,6 +23,6 @@
             </li>
         </ul>-->
         </nav>
-        <h1>Welcome to the Projext main Page, <?php echo $_SESSION['username'] ?></h1>
+        <h1>Welcome to the Project X main Page, <?php echo $_SESSION['username'] ?></h1>
     </body>
 </html>
