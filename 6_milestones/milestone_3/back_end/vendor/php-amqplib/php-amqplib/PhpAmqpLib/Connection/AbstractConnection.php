@@ -232,7 +232,7 @@ abstract class AbstractConnection extends AbstractChannel
     /**
      * Connects to the AMQP server
      */
-    protected function connect()
+    function connect()
     {
         $this->blocked = false;
         try {
