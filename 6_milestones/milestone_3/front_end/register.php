@@ -21,7 +21,7 @@
                            <!-- Register Button-->
                            <input type='submit' name='register' value='Register'>
                            <br>
-                           <a href="login.html">Already registered? Click here to login</a>
+                           <a href="login.php">Already registered? Click here to login</a>
                      </form>
                   </div>
                </div>
