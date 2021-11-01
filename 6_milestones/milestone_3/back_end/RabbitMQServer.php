@@ -7,6 +7,9 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
+$server = 'localhost';
+$database = 'test';
+
 $db = new PDO('mysql:host = $server; dbname = $database', "root", "administratorpassword");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
