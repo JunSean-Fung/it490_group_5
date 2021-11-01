@@ -103,9 +103,9 @@ class rabbitMQServer
             $params = array();
             $params['host'] = $this->BROKER_HOST;
             $params['port'] = $this->BROKER_PORT;
+            $params['vhost'] = $this->VHOST;
             $params['login'] = $this->USER;
             $params['password'] = $this->PASSWORD;
-            $params['vhost'] = $this->VHOST;
             $conn = new AMQPConnection($params);
             $conn->connect();
 
