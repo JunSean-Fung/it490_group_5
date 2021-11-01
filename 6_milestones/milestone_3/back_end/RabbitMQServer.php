@@ -96,9 +96,6 @@ function register($username, $email, $password, $db)
 
         $server = new rabbitMQServer("rabbit.ini", "test");
 
-
-    }
-
 }
 $server = new rabbitMQServer("rabbit.ini", "test");
 
