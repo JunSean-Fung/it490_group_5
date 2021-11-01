@@ -6,7 +6,9 @@ error_reporting(E_ALL);
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
-require_once("config.php");
+
+$db = new PDO('mysql:host = $server; dbname = $database');
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function login($username, $password){
     global $db;
