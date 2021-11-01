@@ -70,9 +70,9 @@ function request_processor($req){
     echo $type;
     switch($type){
         case "login":
-            return loginMessage($req['username'], $req['password']);
+            return login($req['username'], $req['password']);
         case "register":
-            return registerMessage($req['username'], $req['hash']);
+            return register($req['username'], $req['hash']);
     }
 
     return array("return_code" => '0',
