@@ -8,13 +8,13 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
 
-$db = new PDO('mysql:host=localhost;dbname=test', "root", "administratorpassword");
+$db = new PDO('mysql:host=localhost;dbname=simplycoding', "test", "123");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function login($username, $password){
     global $db;
 
-    $stmt = $db->prepare('SELECT id, username, password FROM Users WHERE username = :username LIMIT 1');
+    $stmt = $db->prepare('SELECT username, password FROM Users WHERE username = :username LIMIT 1');
     $stmt->bindParam(':username', $username);
     $stmt->execute();
     $results = $stmt->fetch(PDO::FETCH_ASSOC);
