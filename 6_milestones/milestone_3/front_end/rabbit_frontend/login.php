@@ -1,33 +1,76 @@
 <?php
+session_start();
+require('RabbitMQClient.php');
 
-require_once __DIR__ . '/vendor/autoload.php';
-require_once('get_host_info.inc');
-require_once('rabbitMQLib.inc');
-use PhpAmqpLib\Connection\AMQPStreamConnection;
-
-$username = $_POST['username'];
-$password = $_POST['password'];
-$password = password_hash($password, PASSWORD_BCRYPT);
-
-
-$client = new rabbitMQClient("rabbit.ini","test");
-
-$request = array();
-
-$request['type'] = "login";
-$request['username'] = strtolower($username);
-$request['password'] = $password;
-$response = $client->send_request($request);
-
-if($response == true){
-    session_start();
-    $_SESSION['username'] = $username;
-    header("location:home.php");
-}
-
-else{
-    echo("incorrect username or password");
-    header("location:login.html");
+if(isset($_POST['submitButton'])){
+    try{
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        if($username != "" && $password != "" ){
+            $rabbitResponse = login($username, $password);
+            if($rabbitResponse == false){
+                echo "login has failed, please try again";
+                //redirect back to login page to try again
+            }else{
+                echo "You are logged in!";
+                $userSes = json_decode($rabbitResponse, true);
+                $_SESSION['logged'] = true;
+                $_SESSION['user'] = $userSes;
+                echo var_export($_SESSION['user']['name']);
+                header("location: dashboard.php");
+            }
+        }
+        else{
+            echo "username and password is empty";
+        }
+    }
+    catch(Exception $e){
+        echo $e->getMessage();
+    }
 }
 ?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<form class="form-signin" method="POST" action="#">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <input name="username" type="text" class="form-control" placeholder="Username" required autofocus/>
+    <input name="password" type="password" class="form-control" placeholder="Password" required/>
+    <input type="submit" value="Submit" name="submitButton" id="submitButton"/>
+    <div class = "register">
+        <p>Want to make an account? <a href="register.php">Register</a></p>
+    </div>
+</form>
+<?php
+include_once("blade/footer.php");
 ?>
