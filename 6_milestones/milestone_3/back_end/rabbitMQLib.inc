@@ -2,6 +2,10 @@
 
 require_once('get_host_info.inc');
 
+require_once __DIR__ . '/vendor/autoload.php';
+use PhpAmqpLib\Connection\AMQPConnection;
+use PhpAmqpLib\Message\AMQPMessage;
+
 class rabbitMQServer
 {
     private $machine = "";
