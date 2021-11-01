@@ -8,4 +8,6 @@ final class AMQPExchangeType
     const FANOUT = 'fanout';
     const TOPIC = 'topic';
     const HEADERS = 'headers';
+
 }
+

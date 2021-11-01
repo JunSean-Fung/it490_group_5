@@ -118,7 +118,7 @@ class rabbitMQServer
 
 			$channel = new AMQPChannel($conn);
 
-			$exchange = new AMQPExchangeType($channel);
+			$exchange = new AMQPExchange($channel);
       $exchange->setName($this->exchange);
       $exchange->setType($this->exchange_type);
 
