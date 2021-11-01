@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'da15ae53a0770e36ab71682fb48d1df41c271ded',
+        'reference' => '616eef48ed49e753e7e219732ab9c28c2ce14baf',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'da15ae53a0770e36ab71682fb48d1df41c271ded',
+            'reference' => '616eef48ed49e753e7e219732ab9c28c2ce14baf',
             'dev_requirement' => false,
         ),
         'videlalvaro/php-amqplib' => array(
