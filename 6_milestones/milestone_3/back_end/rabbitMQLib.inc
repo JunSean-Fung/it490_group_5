@@ -37,8 +37,7 @@ class rabbitMQServer
         $this->queue = $this->machine[$server]["QUEUE"];
     }
     function get_connection(){
-        return new AMQPStreamConnection($this->BROKER_HOST, $this->BROKER_PORT,
-            $this->USER, $this->PASSWORD);
+        return new AMQPStreamConnection($this->BROKER_HOST, $this->BROKER_PORT, $this->USER, $this->PASSWORD);
     }
     function process_message($req){
         echo "processing message \n";
