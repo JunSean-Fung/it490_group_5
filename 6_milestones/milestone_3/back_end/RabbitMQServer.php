@@ -40,8 +40,9 @@ function login($user, $pass, $db)
         echo "sent error" . PHP_EOL;
         exit("Could not login");
     }
+}
 
-    function register($username, $email, $password, $db)
+function register($username, $email, $password, $db)
     {
 
         $response = array();
