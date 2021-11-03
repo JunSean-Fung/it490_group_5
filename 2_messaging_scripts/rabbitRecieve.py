@@ -4,7 +4,7 @@ credentials = pika.PlainCredentials('test','test')
 
 def main():
     connection = pika.BlockingConnection(
-        pika.ConnectionParameters(host= '25.51.161.242', credentials=credentials))
+        pika.ConnectionParameters(host= '192.168.196.209', credentials=credentials))
     channel = connection.channel()
 
     channel.queue_declare(queue='hello')
