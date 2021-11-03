@@ -9,7 +9,7 @@ require_once('rabbitMQLib.inc');
 
 
 #$db = new PDO('mysql:host=localhost;dbname=simplycoding', "test", "123");
-$db = new PDO('mysql:host=localhost;dbname=it490_users', "root", "007008");
+$db = new PDO('mysql:host=localhost;dbname=it490_user', "root", "007008");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function login($username, $password){
