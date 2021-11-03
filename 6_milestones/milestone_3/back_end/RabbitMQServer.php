@@ -8,13 +8,13 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
 
-$db = new PDO('mysql:host=localhost;dbname=simplycoding', "test", "123");
+$db = new PDO('mysql:host=localhost;dbname=it490_users', "test", "123");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function login($username, $password){
     global $db;
 
-    $stmt = $db->prepare('SELECT username, password FROM Users WHERE username = :username LIMIT 1');
+    $stmt = $db->prepare('SELECT name, password FROM Users WHERE name = :username LIMIT 1');
     $stmt->bindParam(':username', $username);
     $stmt->execute();
     $results = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -42,7 +42,7 @@ function register($username, $hash){
     global $db;
 
     //checking if username exists already
-    $usncheck = $db->prepare('SELECT * FROM Users where username = :username');
+    $usncheck = $db->prepare('SELECT * FROM Users where name = :username');
     $usncheck->bindParam(':username', $username);
     $usncheck->execute();
     $results = $usncheck->fetch(PDO::FETCH_ASSOC);
@@ -51,7 +51,7 @@ function register($username, $hash){
         return false;
     }
     //check passed, inserts user
-    $quest = 'INSERT INTO Users (username, password) VALUES (:username, :password)';
+    $quest = 'INSERT INTO Users (name, password) VALUES (:username, :password)';
     $stmt = $db->prepare($quest);
     $stmt->bindParam(':username', $username);
     $stmt->bindParam(':password', $hash);
