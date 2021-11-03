@@ -8,13 +8,13 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
 
-$db = new PDO('mysql:host=localhost;dbname=test', "root", "administratorpassword");
+$db = new PDO('mysql:host=localhost;dbname=mysql', "root", "007008");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function login($username, $password){
     global $db;
 
-    $stmt = $db->prepare('SELECT id, username, password FROM Users WHERE username = :username LIMIT 1');
+    $stmt = $db->prepare('SELECT name, password FROM it490_user WHERE username = :username LIMIT 1');
     $stmt->bindParam(':username', $username);
     $stmt->execute();
     $results = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -22,10 +22,10 @@ function login($username, $password){
     if($results){
         $userpass = $results['password'];
         if(password_verify($password, $userpass)){ //comparing plaintext and hash
-            $stmt->bindParam(':username', $username);
+            $stmt->bindParam(':name', $username);
             $stmt->execute();
             if($results && count($results) > 0){
-                $userSes = array("name"=> $results['username'], "id"=> $results['id']);
+                $userSes = array("name"=> $results['name'], "id"=> $results['id']);
                 return json_encode($userSes);
             }
             return true;
@@ -42,8 +42,8 @@ function register($username, $hash){
     global $db;
 
     //checking if username exists already
-    $usncheck = $db->prepare('SELECT * FROM Users where username = :username');
-    $usncheck->bindParam(':username', $username);
+    $usncheck = $db->prepare('SELECT * FROM it490_users where username = :username');
+    $usncheck->bindParam(':name', $username);
     $usncheck->execute();
     $results = $usncheck->fetch(PDO::FETCH_ASSOC);
     if($results && count($results) > 0){
@@ -51,9 +51,9 @@ function register($username, $hash){
         return false;
     }
     //check passed, inserts user
-    $quest = 'INSERT INTO Users (username, password) VALUES (:username, :password)';
+    $quest = 'INSERT INTO Users (name, password) VALUES (:name, :password)';
     $stmt = $db->prepare($quest);
-    $stmt->bindParam(':username', $username);
+    $stmt->bindParam(':name', $username);
     $stmt->bindParam(':password', $hash);
     $stmt->execute();
 }
@@ -70,9 +70,9 @@ function request_processor($req){
     echo $type;
     switch($type){
         case "login":
-            return login($req['username'], $req['password']);
+            return login($req['name'], $req['password']);
         case "register":
-            return register($req['username'], $req['hash']);
+            return register($req['name'], $req['hash']);
     }
 
     return array("return_code" => '0',
