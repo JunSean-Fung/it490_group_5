@@ -7,6 +7,7 @@ Paul Arcos <br>
 JunSean Fung <br>
 Zachary Veliky <br>
 Samer Alqaralleh <br>
+Chan Park <br>
 <br>
 </b>
 <p>
