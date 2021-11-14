@@ -16,7 +16,9 @@ git pull origin JunSean
 #git pull origin paul
 
 # Move replace with new contents
-sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_4/front_end/ /var/www/html/projectX #front_end
+sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_4/front_end /var/www/html/projectX #front_end
+sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_4/back_end /var/www/html/projectX 
+
 #sudo rsync -av --delete ~/it490_group_5/1_front_end /var/www/html #1_front_end
 #rsync -av  front_end/front_end.conf /etc/apache2/sites-available/ #update config file
 
