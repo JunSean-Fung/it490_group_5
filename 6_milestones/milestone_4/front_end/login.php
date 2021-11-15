@@ -2,7 +2,7 @@
 require '../back_end/header.php';
 
 session_start();
-require('../front_end/rabbit_frontend/RabbitMQClient.php');
+require('RabbitMQClient.php');
 
 if (isset($_POST['login'])) {
     try {
