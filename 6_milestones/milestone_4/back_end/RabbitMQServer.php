@@ -2,19 +2,19 @@
 ini_set('display_errors',1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
+ 
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
 
-$db = new PDO('mysql:host=localhost;dbname=mysql', "root", "007008");
+$db = new PDO('mysql:host=localhost;dbname=simplycoding', "test", "123");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function login($username, $password){
     global $db;
 
-    $stmt = $db->prepare('SELECT name, password FROM it490_user WHERE name = :username LIMIT 1');
+    $stmt = $db->prepare('SELECT name, password FROM simplycoding_user WHERE name = :username LIMIT 1');
     $stmt->bindParam(':username', $username);
     $stmt->execute();
     $results = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -42,7 +42,7 @@ function register($username, $hash){
     global $db;
 
     //checking if username exists already
-    $usncheck = $db->prepare('SELECT * FROM it490_user where name = :username');
+    $usncheck = $db->prepare('SELECT * FROM simplycoding_user where name = :username');
     $usncheck->bindParam(':username', $username);
     $usncheck->execute();
     $results = $usncheck->fetch(PDO::FETCH_ASSOC);
