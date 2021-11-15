@@ -2,7 +2,7 @@
 #require '../back_end/header.php';
 
 session_start();
-require('RabbitMQClient.php');
+require('../front_end/rabbit_frontend/RabbitMQClient.php');
 
 if (isset($_POST['submitButton'])) {
     try {
