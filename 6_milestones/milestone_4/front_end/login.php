@@ -1,5 +1,5 @@
 <?php
-#require '../back_end/header.php';
+require '../back_end/header.php';
 
 session_start();
 require('../front_end/rabbit_frontend/RabbitMQClient.php');
