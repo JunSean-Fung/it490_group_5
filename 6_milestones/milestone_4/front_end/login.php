@@ -1,5 +1,5 @@
 <?php
-    require '../back_end/header.php';
+    #require '../back_end/header.php';
 ?>
 
 <!DOCTYPE html>
