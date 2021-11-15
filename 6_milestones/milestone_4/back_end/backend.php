@@ -47,11 +47,13 @@ if ($_POST) {
                 header('location: account.php');
             }
         } else {
+            # Might need to add something here
             header('location: index.php');
             exit();
         }
     }
 } else {
+    # Might need to add soemthing here
     header('location: index.php');
     exit();
 }
