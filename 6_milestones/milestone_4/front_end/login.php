@@ -19,7 +19,7 @@ if (isset($_POST['submitButton'])) {
                 $_SESSION['logged'] = true;
                 $_SESSION['user']   = $userSes;
                 echo var_export($_SESSION['user']['name']);
-                header("location: dashboard.php");
+                header("location: ../front_end/mainpage_logged.html");
             }
         } else {
             echo "username and password is empty";
