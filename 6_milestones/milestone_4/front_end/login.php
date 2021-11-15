@@ -41,7 +41,7 @@ if (isset($_POST['submitButton'])) {
             <div class="row">
                 <div class="col-md-7">
                     <div class="card">
-                        <form method="POST" action="../back_end/backend.php" class="box">
+                        <form method="POST" action="#" class="box">
                             <h1>Login</h1>
                             <p class="text-muted"> Please enter your login and password!</p> 
                             <!--Input Field-->
@@ -52,7 +52,7 @@ if (isset($_POST['submitButton'])) {
 
                             <a class="forgot text-muted" href="#">Forgot password?</a>
                             <br>
-                            <a href="register.php">Dont have an account? Click here to register one!</a>
+                            <a href="../front_end/register.php">Dont have an account? Click here to register one!</a>
                         </form>
                     </div>
                 </div>
