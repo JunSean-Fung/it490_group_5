@@ -17,6 +17,7 @@ git pull origin JunSean
 
 # Move replace with new contents
 sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_4/front_end /var/www/html/projectX #front_end
+sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_4/front_end/index.php /var/www/html/projectX # move and update the file to projectX folder
 sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_4/back_end /var/www/html/projectX 
 
 #sudo rsync -av --delete ~/it490_group_5/1_front_end /var/www/html #1_front_end
