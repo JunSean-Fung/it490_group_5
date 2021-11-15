@@ -6,6 +6,7 @@
 <html lang="en">
     <head>
         <title>Project X: Login</title>
+        <link rel="stylesheet" href="../front_end/css/loginNReg.css"/>
     </head>
     <body>
         <div class="container">
