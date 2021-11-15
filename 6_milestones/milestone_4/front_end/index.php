@@ -3,6 +3,6 @@
 
     #require 'db_key.php';
     #include "login.php" 
-    include "front_end/mainpage.html" 
+    include "../front_end/mainpage.html" 
     #include "register.php" # Debugging
 ?>
