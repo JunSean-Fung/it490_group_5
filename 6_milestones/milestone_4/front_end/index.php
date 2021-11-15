@@ -3,6 +3,7 @@
 
     #require 'db_key.php';
     #include "login.php" 
-    include "../front_end/mainpage.html" 
+    #include "../front_end/mainpage.html" 
+    header("Location: ../projectX/front_end/loging.php")
     #include "register.php" # Debugging
 ?>
