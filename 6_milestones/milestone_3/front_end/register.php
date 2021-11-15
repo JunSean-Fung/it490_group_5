@@ -1,29 +1,32 @@
 <?php
    require 'header.php';
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Project X: Register</title>
+   </head>
    <body>
-      <div class = 'container'>
-         <div>
-            <div>
-               <h1>Register your Account (Debug)</h1>
-            </div>
-         </div>
-         <form action = 'backend.php' method = 'POST'>
-            <div class = 'p-5 m-5'>
-               <div class="form-group">
-                  <label>Username:</label>
-                  <input class = 'form-control w-50' type="text" name="username" required>
-                  <label>Email:</label>
-                  <input class = 'form-control w-50' type="email" name="email" required>
-                  <label>Password:</label>
-                  <input class = 'form-control w-50' type="password" name="password" required>
-                  <div class ='text-center mt-3 w-50'>
-                     <button class = 'btn btn-outline-info' type = 'submit' value = 'submit' name= 'register'>Submit</button>
+      <div class="container">
+         <div class="row">
+               <div class="col-md-7">
+                  <div class="card">
+                     <form method="POST" action="backend.php" class="box">
+                           <h1>Register</h1>
+                           <p class="text-muted"> Please enter a Username, Email and Password</p> 
+                           <!--Input Field-->
+                           <input type="text" name="username" placeholder="Username"> 
+                           <input type="text" name="email" placeholder="Email">
+                           <input type="password" name="password" placeholder="Password">
+                           <!-- Register Button-->
+                           <input type='submit' name='register' value='Register'>
+                           <br>
+                           <a href="login.php">Already registered? Click here to login</a>
+                     </form>
                   </div>
                </div>
-            </div>
-         </form>
+         </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    </body>
 </html>

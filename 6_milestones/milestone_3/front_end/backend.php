@@ -44,7 +44,7 @@ if ($_POST) {
                 session_start();
                 $_SESSION['username'] = $username;
                 echo 'You have successfully logged-in';
-                header('location: account.php');
+                header('location: ../back_end/account.php');
             }
         } else {
             header('location: index.php');
@@ -55,5 +55,5 @@ if ($_POST) {
     header('location: index.php');
     exit();
 }
-//header('location: index.php');
+
 ?>
