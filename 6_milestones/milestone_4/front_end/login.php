@@ -1,5 +1,5 @@
 <?php
-    require 'header.php';
+    require '../back_end/header.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="card">
-                        <form method="POST" action="backend.php" class="box">
+                        <form method="POST" action="../back_end/backend.php" class="box">
                             <h1>Login</h1>
                             <p class="text-muted"> Please enter your login and password!</p> 
                             <!--Input Field-->

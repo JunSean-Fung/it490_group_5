@@ -11,7 +11,7 @@
          <div class="row">
                <div class="col-md-7">
                   <div class="card">
-                     <form method="POST" action="backend.php" class="box">
+                     <form method="POST" action="../back_end/backend.php" class="box">
                            <h1>Register</h1>
                            <p class="text-muted"> Please enter a Username, Email and Password</p> 
                            <!--Input Field-->
