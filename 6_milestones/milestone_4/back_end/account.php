@@ -11,7 +11,7 @@
     }
     # Calling other pages
     #require 'header.php' # call the bootstrap styling
-    header('location: mainpage_logged.html'); // Head to logged in main page
+    header('location: ../front_end/mainpage_logged.html'); // Head to logged in main page
     #require 'mainpage.html'
     
 ?>
