@@ -14,7 +14,7 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 function login($username, $password){
     global $db;
 
-    $stmt = $db->prepare('SELECT name, password FROM simplycoding_user WHERE name = :username LIMIT 1');
+    $stmt = $db->prepare('SELECT username, password FROM simplycoding_user WHERE username = :username LIMIT 1');
     $stmt->bindParam(':username', $username);
     $stmt->execute();
     $results = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -51,7 +51,7 @@ function register($username, $hash){
         return false;
     }
     //check passed, inserts user
-    $quest = 'INSERT INTO it490_user (name, password) VALUES (:username, :password)';
+    $quest = 'INSERT INTO it490_user (username, password) VALUES (:username, :password)';
     $stmt = $db->prepare($quest);
     $stmt->bindParam(':username', $username);
     $stmt->bindParam(':password', $hash);
