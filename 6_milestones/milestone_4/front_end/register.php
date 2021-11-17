@@ -46,6 +46,7 @@
                            <input type="text" name="username" placeholder="Username"> 
                            <input type="text" name="email" placeholder="Email">
                            <input type="password" name="password" placeholder="Password">
+                           <input name="confirmPassword" type="password" class="form-control" placeholder="Confirm Password" required/>
                            <!-- Register Button-->
                            <input type='submit' name='submitButton' value='Submit'>                           
                            <br>
