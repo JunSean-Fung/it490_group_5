@@ -34,6 +34,7 @@
 <html lang="en">
    <head>
       <title>Project X: Register</title>
+      <link rel="stylesheet" href="../front_end/css/loginNReg.css"/>
    </head>
    <body>
       <div class="container">
