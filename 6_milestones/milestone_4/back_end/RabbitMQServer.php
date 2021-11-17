@@ -42,7 +42,7 @@ function register($username, $hash){
     global $db;
 
     //checking if username exists already
-    $usncheck = $db->prepare('SELECT * FROM simplycoding_user where name = :username');
+    $usncheck = $db->prepare('SELECT * FROM simplycoding_user where username = :username');
     $usncheck->bindParam(':username', $username);
     $usncheck->execute();
     $results = $usncheck->fetch(PDO::FETCH_ASSOC);
@@ -51,7 +51,7 @@ function register($username, $hash){
         return false;
     }
     //check passed, inserts user
-    $quest = 'INSERT INTO it490_user (username, password) VALUES (:username, :password)';
+    $quest = 'INSERT INTO simplycoding_user (username, password) VALUES (:username, :password)';
     $stmt = $db->prepare($quest);
     $stmt->bindParam(':username', $username);
     $stmt->bindParam(':password', $hash);
