@@ -51,7 +51,7 @@ function register($username, $hash){
         return false;
     }
     //check passed, inserts user
-    $quest = 'INSERT INTO simplycoding_user (username, password) VALUES (:username, :password)';
+    $quest = 'INSERT INTO simplycoding_user (username, email, password) VALUES (:username, "", :password)';
     $stmt = $db->prepare($quest);
     $stmt->bindParam(':username', $username);
     $stmt->bindParam(':password', $hash);
