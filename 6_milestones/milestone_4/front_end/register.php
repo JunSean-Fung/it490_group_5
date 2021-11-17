@@ -47,7 +47,7 @@
                            <input type="text" name="email" placeholder="Email">
                            <input type="password" name="password" placeholder="Password">
                            <!-- Register Button-->
-                           <input type='submit' name='register' value='Register'>
+                           <input type='submit' name='submitButton' value='Submit'>                           
                            <br>
                            <a href="../front_end/login.php">Already registered? Click here to login</a>
                      </form>
