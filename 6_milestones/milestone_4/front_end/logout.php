@@ -40,7 +40,7 @@
 <body class="text-center">
 <?php echo $msg; ?>
 <br>
-<a href="login.php">Login?</a> <a href="register.php">Register?</a>
+<a href="../front_end/login.php">Login?</a> <a href="../front_end/register.php">Register?</a>
 <?php
     include_once ("blade/footer.php");
 ?>
