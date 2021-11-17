@@ -1,5 +1,5 @@
 <?php
-   require 'header.php';
+   require '../back_end/header.php';
    require('RabbitMQClient.php');
    if(isset($_POST['submitButton'])){
       $username = $_POST['username'];
