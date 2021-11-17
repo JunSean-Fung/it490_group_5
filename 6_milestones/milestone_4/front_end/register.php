@@ -21,7 +21,7 @@
          }else{
 
                echo "Account is created";
-               header("Location: login.php");
+               header("Location: ../front_end/login.php");
 
          }
       }else{
@@ -39,7 +39,7 @@
          <div class="row">
                <div class="col-md-7">
                   <div class="card">
-                     <form method="POST" action="../back_end/backend.php" class="box">
+                     <form method="POST" action="#" class="box">
                            <h1>Register</h1>
                            <p class="text-muted"> Please enter a Username, Email and Password</p> 
                            <!--Input Field-->
@@ -49,7 +49,7 @@
                            <!-- Register Button-->
                            <input type='submit' name='register' value='Register'>
                            <br>
-                           <a href="login.php">Already registered? Click here to login</a>
+                           <a href="../front_end/login.php">Already registered? Click here to login</a>
                      </form>
                   </div>
                </div>
