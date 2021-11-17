@@ -27,6 +27,7 @@
       }else{
          echo "Nothing entered";
       }
+   }
 ?>
 <!DOCTYPE html>
 <html lang="en">
