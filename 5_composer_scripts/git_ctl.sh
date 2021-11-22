@@ -1,5 +1,6 @@
 # This scrpit will be used to: reset the git, pull, 
 #and replace +update dir and files.
+# This script is from composer_scripts
 # Back up location: ~/it490_backup/
 #branch = "master"
 
@@ -16,8 +17,7 @@ git pull origin JunSean
 #git pull origin paul
 
 # Move replace with new contents
-sudo rsync -av --delete ~/it490_group_5/6_milestones/milestone_3/front_end /var/www/html #front_end
-sudo rsync -av --delete ~/it490_group_5/1_front_end /var/www/html #1_front_end
+sudo rsync -av --delete ~/it490_group_5/1_front_end/ /var/www/html/projectX #front_end
 #rsync -av  front_end/front_end.conf /etc/apache2/sites-available/ #update config file
 
 # Give execute permission to all files based on the format

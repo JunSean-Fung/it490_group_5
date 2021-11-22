@@ -13,13 +13,16 @@
           rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
      <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+    
+
+    
 
     <!-- Bootstrap core CSS -->
 <link href="../css/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/headers.css" rel="stylesheet">
 <link href="../css/product.css" rel="stylesheet">
 <link href="../css/footers.css" rel="stylsheet">
-
+<link href="../css/carousel.css" rel="stylsheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -34,74 +37,6 @@
           font-size: 3.5rem;
         }
       }
-      body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
     </style>
 
     
@@ -146,73 +81,151 @@ html {
       <h1>Project X</h1>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li>
-            <a href="../front_end/mainpage_logged.html" class="nav-link px-2 link-secondary">Home</a>
-        </li>
-        <!--This is where Forum page link will go-->
-        <li>
-           <a href="../front_end/forum.html" class="nav-link px-2 link-dark">Forum</a>
-        </li>
-        <!--This is where donation page link will go-->
-        <li>
-           <a href="../front_end/donation.html" class="nav-link px-2 link-dark">Donation</a>
-        </li>
-        <!--This is where About page link will go-->
-        <li>
-           <a href="../front_end/about.html" class="nav-link px-2 link-dark">About</a>
-        </li>
-        <!--This is where About page link will go-->
-     </ul>
+        <li><a href="../html/mainpage.html" class="nav-link px-2 link-secondary">Home</a></li><!--This should be added on other pages to return to home page-->
+        <li><a href="#" class="nav-link px-2 link-dark">Forum</a></li><!--This is where Forum page link will go-->
+        <li><a href="#" class="nav-link px-2 link-dark">Donation</a></li><!--This is where donation page link will go-->
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
+      </ul>
 
-      <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          <svg class="bi d-block mx-auto mb-1" width="20" height="20">
-            <use xlink:href="#people-circle" />
-          </svg>
-          Profile
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Setting</a></li>                
-          <li><a class="dropdown-item" href="../front_end/logout.php">Sign Out</a></li>
-          
-        </ul>
+      <div class="col-md-3 text-end">
+       <a href = '../html/login.html'><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
+        <a href = '../html/register.html'><button type="button" class="btn btn-primary">Register</button></a>
       </div>
-
-     <!-- <a href="#" class="nav-link text-white">-->   <!--This is where link to profile page will go-->
-        <!--<svg class="bi d-block mx-auto mb-1" width="20" height="20"><use xlink:href="#people-circle"/></svg>
+      <!--<a href="#" class="nav-link text-white"> --> <!--This is where link to profile page will go-->
+       <!-- <svg class="bi d-block mx-auto mb-1" width="20" height="20"><use xlink:href="#people-circle"/></svg>
         Profile
-      </a> -->  <!-- Add this link when user login is correct in 2nd main html page-->
-
+      </a> -->
     </header>
   </div>
 
 
 
-<main> 
-    <div class="about-section">
-        <h1>This will be forum Page, using one of the API to set up the rest</h1>
+<main>
+
+  <section class="py-5 text-center container"> <!--Need to make the container height bigger-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p>Some representative placeholder content for the first slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href= "../html/register.html">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+    
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+    </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image width= "200" height ="100" xlink:href = "../images/image1.png"/><!--Trying to add image in this area-->
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"/>
+              </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
+    </div>
+  </div>
+
 </main>
 
 <footer  class="py-3 my-4">
   <div class = "container">
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="../front_end/mainpage_logged.html" class="nav-link px-2 link-secondary">Home</a></li>
-        <!--This is where Forum page link will go-->
-        <li>
-           <a href="../front_end/forum.html" class="nav-link px-2 link-dark">Forum</a>
-        </li>
-        <!--This is where donation page link will go-->
-        <li>
-           <a href="../front_end/donation.html" class="nav-link px-2 link-dark">Donation</a>
-        </li>
-        <!--This is where About page link will go-->
-        <li>
-           <a href="../front_end/about.html" class="nav-link px-2 link-dark">About</a>
-        </li>
-        <!--This is where About page link will go-->
-    </ul>
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <!--<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>-->     <!--Link to home page on other pages-->
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Forum</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Donation</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+  </ul>
 
   <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
   
