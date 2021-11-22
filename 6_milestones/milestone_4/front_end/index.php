@@ -2,8 +2,8 @@
     # Purpose: Landing page
     
     # Call header
-    require '../front_end/header.php';
-    #NEEDS authentication on the specific user
+    #require '../front_end/header.php';
+    
 ?>
 
 <!doctype html>
