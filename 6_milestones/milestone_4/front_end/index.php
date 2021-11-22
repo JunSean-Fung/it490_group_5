@@ -2,7 +2,7 @@
     # Purpose: Landing page
     
     # Call header
-    #require '../front_end/header.php';
+    require '../front_end/header.php';
     
 ?>
 
