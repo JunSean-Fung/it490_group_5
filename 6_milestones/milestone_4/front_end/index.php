@@ -97,8 +97,13 @@
 
       </main>
       <!-- Footer -->
-      <footer class="text-muted py-5">
-         
+      <footer class="text-muted py-5 footer">
+         <div>
+            <ul>
+               <li><a href="https://twitter.com/julesforrest">About Us</a></li>
+               <li><a href="https://github.com/JunSean-Fung/it490_group_5">Github</a></li>
+            </ul>
+         </div>
       </footer>
       <!-- Script -->
       <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
