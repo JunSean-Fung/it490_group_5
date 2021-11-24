@@ -15,6 +15,7 @@
       <link href="../front_end/css/headers.css" rel="stylesheet">
       <link href="../front_end/css/product.css" rel="stylesheet">
       <link href="../front_end/css/mainPage.css" rel="stylesheet">
+      <link href="../front_end/css/footer.css" rel="stylesheet">
    </head>
    <body>
       
