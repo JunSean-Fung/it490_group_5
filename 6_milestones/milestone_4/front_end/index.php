@@ -20,34 +20,10 @@
    <body>
       
       <!--This is the topbar-->
-      <div class="container">         
-         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-            <h1>Project X</h1>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">               
-               
-            </ul>
-            <div class="col-md-3 text-end">
-               <!-- 
-                  <a href='login.php'>
-                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                  </a>
-                  -->
-               <a href='../front_end/login.php'>
-                  <button type="button" class="btn btn-outline-primary me-2">Login/Register</button>
-               </a>
-               <!-- <a href='register.php'>
-                  <button type="button" class="btn btn-primary">Register</button>
-               </a>  -->
-               <!--
-                  -->
-            </div>
-            <!--This is where link to profile page will go-->
-            <!-- <a href="#" class="nav-link text-black">
-               <svg class="bi d-block mx-auto mb-1" width="20" height="20">
-                 <use xlink:href="#people-circle" />
-               </svg> Profile
-               </a> -->
-         </header>
+      <div id = "topBar">
+         <?php 
+            include('../front_end/topBar.php')
+         ?>
       </div>
       <main>
          <!-- Two Side of Guides -->
