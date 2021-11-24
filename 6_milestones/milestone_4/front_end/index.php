@@ -98,7 +98,7 @@
 
       </main>
       <!-- Footer -->
-      <footer class="text-muted py-5 footer">
+      <footer class="text-muted footer">
          <div>
             <ul>
                <li><a href="https://twitter.com/julesforrest">About Us</a></li>
