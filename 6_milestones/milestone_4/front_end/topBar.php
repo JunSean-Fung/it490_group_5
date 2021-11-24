@@ -3,6 +3,7 @@
     This file will be called everytime a page is loaded 
     and will prompt to authenticate user session/ profile 
     */
+    
 ?>
 <div class="container">         
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
