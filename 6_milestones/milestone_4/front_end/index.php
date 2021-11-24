@@ -22,7 +22,7 @@
       <!--This is the topbar-->
       <div id = "topBar">
          <?php 
-            include('../front_end/topBar.php')
+            include('../front_dend/topBar.php')
          ?>
       </div>
       <main>
