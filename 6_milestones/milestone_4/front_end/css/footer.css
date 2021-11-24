@@ -22,7 +22,7 @@
     box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
 }
 
-.footer > li:last-child {
+li:last-child {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
