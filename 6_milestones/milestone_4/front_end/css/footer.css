@@ -1,4 +1,4 @@
-.footer > ul {
+ul {
     display: inline-grid;
     grid-auto-flow: row;
     grid-gap: 24px;
