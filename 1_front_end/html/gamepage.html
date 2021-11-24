@@ -23,6 +23,7 @@
 <link href="../css/product.css" rel="stylesheet">
 <link href="../css/footers.css" rel="stylsheet">
 <link href="../css/carousel.css" rel="stylsheet">
+<link href="../css/gamepage.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -37,6 +38,8 @@
           font-size: 3.5rem;
         }
       }
+    
+
     </style>
 
     
@@ -84,7 +87,7 @@
         <li><a href="../html/mainpage.html" class="nav-link px-2 link-secondary">Home</a></li><!--This should be added on other pages to return to home page-->
         <li><a href="#" class="nav-link px-2 link-dark">Forum</a></li><!--This is where Forum page link will go-->
         <li><a href="#" class="nav-link px-2 link-dark">Donation</a></li><!--This is where donation page link will go-->
-        <li><a href="#" class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
+        <li><a href="../html/about.html"  class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
       </ul>
 
       <div class="col-md-3 text-end">
@@ -102,57 +105,31 @@
 
 <main>
 
-  <section class="py-5 text-center container"> <!--Need to make the container height bigger-->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href= "../html/register.html">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-    
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+  <section class = "intro"> <!--Need to make the container height bigger-->
+    <div class="bg-image h-100"><!--Add image inside this div-->
+    <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0,0,0, 0.5);">
+      <div class="container">
+        <p class="h4 mb-4 text-white">Every adventure begins with a search</p>
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <div class="input-group">
+                  <div class="form-outline flex-fill">
+                    <input type="search" id="form1" class="form-control form-control-lg" />
+                    
+                    <label class="form-label" for="form1">Search for Games</label>
+                    
+                  </div>
+                  <!--Need to add search button next to input-->
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> 
+      </div>
+    </div>
+  </div>
     </section>
 
   <div class="album py-5 bg-light">
