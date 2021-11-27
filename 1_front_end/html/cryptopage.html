@@ -22,6 +22,8 @@
 <link href="../css/headers.css" rel="stylesheet">
 <link href="../css/product.css" rel="stylesheet">
 <link href="../css/footers.css" rel="stylsheet">
+<link href="../css/carousel.css" rel="stylsheet">
+<link href="../css/gamepage.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -36,6 +38,8 @@
           font-size: 3.5rem;
         }
       }
+    
+
     </style>
 
     
@@ -80,22 +84,20 @@
       <h1>Project X</h1>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <!--<li><a href="../html/mainpage.html" class="nav-link px-2 link-secondary">Home</a></li>--> <!--This should be added on other pages to return to home page-->
+        <li><a href="../html/mainpage.html" class="nav-link px-2 link-secondary">Home</a></li><!--This should be added on other pages to return to home page-->
         <li><a href="#" class="nav-link px-2 link-dark">Forum</a></li><!--This is where Forum page link will go-->
         <li><a href="#" class="nav-link px-2 link-dark">Donation</a></li><!--This is where donation page link will go-->
-        <li><a href="#" class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
+        <li><a href="../html/about.html"  class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
       </ul>
 
       <div class="col-md-3 text-end">
-       <a href = '../html/login.html'><button type="button" class="btn btn-outline-primary me-2">Login</button></a> <!--Remove login  and register on 2nd main html page where profile button will be added-->
+       <a href = '../html/login.html'><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
         <a href = '../html/register.html'><button type="button" class="btn btn-primary">Register</button></a>
       </div>
-
-     <!-- <a href="#" class="nav-link text-white">-->   <!--This is where link to profile page will go-->
-        <!--<svg class="bi d-block mx-auto mb-1" width="20" height="20"><use xlink:href="#people-circle"/></svg>
+      <!--<a href="#" class="nav-link text-white"> --> <!--This is where link to profile page will go-->
+       <!-- <svg class="bi d-block mx-auto mb-1" width="20" height="20"><use xlink:href="#people-circle"/></svg>
         Profile
-      </a> -->  <!-- Add this link when user login is correct in 2nd main html page-->
-
+      </a> -->
     </header>
   </div>
 
@@ -103,84 +105,24 @@
 
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-      <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Gaming <br>Guides</h2>
-          
-          <p class="lead">Get all your gaming information up to speed to help you enjoy the most of the your gaming experience</p>
-          
-    
-          <a class="btn btn-outline-secondary" href="../html/gamepage.html">Learn More</a><!--This where gaming page link will go-->
-        </div>
-    
-        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Crypto-Trading Guides</h2>
-          <p class="lead">Learn about crypto-trading curated to help ypu get started and up to-date with its current event</p>
-          <a class="btn btn-outline-secondary" href="../html/cryptopage.html">Learn More</a><!--This is where Crypto page will go-->
-        </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  
+  <section class = "intro"> <!--Need to make the container height bigger-->
+    <div class="bg-image h-100"><!--Add image inside this div-->
+    <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0,0,0, 0.5);">
+      <div class="container">
+        <p class="h4 mb-4 text-white">Every road to riches begins with a search</p>
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <div class="input-group">
+                  <div class="form-outline flex-fill">
+                    <input type="search" id="form1" class="form-control form-control-lg" />
+                    
+                    <label class="form-label" for="form1">Search for Crypto</label>
+                    
+                  </div>
+                  <!--Need to add search button next to input-->
                 </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <image width= "200" height ="100" xlink:href = "../images/image1.png"/><!--Trying to add image in this area-->
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"/>
-              </svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  
-                </div>
-                
               </div>
             </div>
           </div>
@@ -188,6 +130,14 @@
       </div>
     </div>
   </div>
+    </section>
+    <div class="album py-5 bg-light">
+        <div class="container">
+    
+        </div>
+    </div>
+
+  
 
 </main>
 
