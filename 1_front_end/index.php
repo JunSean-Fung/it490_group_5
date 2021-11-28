@@ -77,7 +77,7 @@
       <footer class="text-muted footer">
          <div>
             <ul>
-               <li><a href="../projectX/about.html">About Us</a></li>
+               <li><a href="../projectX/php/about.php">About Us</a></li>
                <li><a href="https://github.com/JunSean-Fung/it490_group_5">Github</a></li>
             </ul>
          </div>
