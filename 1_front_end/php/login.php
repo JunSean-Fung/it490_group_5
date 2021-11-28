@@ -2,7 +2,7 @@
 require '../projectX/php/head.php';
 
 session_start();
-require('RabbitMQClient.php');
+require('../projectX/php/RabbitMQClient.php');
 
 if (isset($_POST['login'])) {
     try {
