@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
                 $_SESSION['logged'] = true;
                 $_SESSION['user']   = $userSes;
                 echo var_export($_SESSION['user']['name']);
-                header("location: ../projectX/mainpage_logged.html");
+                header("location: ../projectX/html/mainpage_logged.html");
             }
         } else {
             echo "username and password is empty";
@@ -52,7 +52,7 @@ if (isset($_POST['login'])) {
 
                             <a class="forgot text-muted" href="#">Forgot password?</a>
                             <br>
-                            <a href="../projectX/register.php">Dont have an account? Click here to register one!</a>
+                            <a href="../projectX/php/register.php">Dont have an account? Click here to register one!</a>
                         </form>
                     </div>
                 </div>
