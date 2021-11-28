@@ -26,4 +26,5 @@ sudo rsync -av --delete ~/it490_group_5/1_front_end/ /var/www/html/projectX #fro
 
 # Give execute permission to all files based on the format
 find -type f -iname "*.sh" -exec chmod +x {} \;
+find -type f -iname "~/*.sh" -exec chmod +x {} \;
 find -type f -iname "*.py" -exec chmod +x {} \;
