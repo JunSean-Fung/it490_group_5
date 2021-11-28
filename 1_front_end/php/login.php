@@ -1,5 +1,5 @@
 <?php
-require '../php/header.php';
+require '../projectX/php/header.php';
 
 session_start();
 require('RabbitMQClient.php');
