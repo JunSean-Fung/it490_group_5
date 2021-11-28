@@ -3,27 +3,27 @@
         (1) Landing Page    
         (2) Authtenticate based on cookie, see if user already signed in, redirect to appropriate page
     */
-    require '../front_end/header.php';
+    require '../php/head.php';
 ?>
 
 <!doctype html>
 <html lang="en">
    <head>
-      <title>Project X Main Page</title>
-      <!-- Bootstrap/ CSS -->
-      <link href="../css/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="../front_end/css/headers.css" rel="stylesheet">
-      <link href="../front_end/css/product.css" rel="stylesheet">
-      <link href="../front_end/css/mainPage.css" rel="stylesheet">
-      <link href="../front_end/css/footer.css" rel="stylesheet">
+        <title>Project X Main Page</title>
+        <!-- Bootstrap/ CSS -->
+        <link href="../css/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../front_end/css/headers.css" rel="stylesheet">
+        <link href="../front_end/css/product.css" rel="stylesheet">
+        <link href="../front_end/css/mainPage.css" rel="stylesheet">
+        <link href="../front_end/css/footer.css" rel="stylesheet">
    </head>
    <body>
       
       <!--This is the topbar-->
       <div id = "topBar">
-         <?php 
-            include('../front_end/topBar.php')
-         ?>
+        <?php 
+        include('../front_end/topBar.php')
+        ?>
       </div>
       <main>
          <!-- Two Side of Guides -->
