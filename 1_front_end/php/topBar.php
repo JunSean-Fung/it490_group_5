@@ -1,7 +1,7 @@
 <?php 
     /* 
-    This file will be called everytime a page is loaded 
-    and will prompt to authenticate user session/ profile 
+        This file will be called everytime a page is loaded 
+        and will prompt to authenticate user session/ profile 
     */
     
 ?>
@@ -13,7 +13,7 @@
     </ul>
     <!-- Login section -->
     <div class="col-md-3 text-end">
-        <a href='../front_end/login.php'>
+        <a href='../projectX/login.php'>
             <button type="button" class="btn btn-outline-primary me-2">Login/Register</button>
         </a>
     </div>
