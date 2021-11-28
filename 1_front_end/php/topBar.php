@@ -13,7 +13,7 @@
     </ul>
     <!-- Login section -->
     <div class="col-md-3 text-end">
-        <a href='../projectX/login.php'>
+        <a href='../projectX/php/login.php'>
             <button type="button" class="btn btn-outline-primary me-2">Login/Register</button>
         </a>
     </div>
