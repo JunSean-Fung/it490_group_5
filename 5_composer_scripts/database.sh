@@ -5,7 +5,7 @@ db_two=samer@10.242.92.23
 db_three=samer@10.242.14.143
 
 #Status Check
-status = $(systemctl check mysql)
+#status = $(systemctl check mysql)
 system_check()
 {
 	if [ "$status" = "inactive" ]; 
@@ -19,7 +19,7 @@ system_check()
 start_mysql()
 {
 	# $1 = Machine ip
-	# Pause
+	ssh $1 sudo systemctl start mysql
 	ssh $1 sudo mysql -u root -p
 }
 cluster_start()
