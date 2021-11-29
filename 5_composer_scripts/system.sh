@@ -1,3 +1,4 @@
+# Purpose: Store functions for control_menu.sh to access
 lineSeperate(){
     printf '=%.0s' {1..25}
     msg=${1:-=}
