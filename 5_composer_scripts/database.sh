@@ -1,8 +1,8 @@
 set +v echo off
 # database machine ips
-db_one= samer@10.242.54.98
-db_two= samer@10.242.92.23
-db_three= samer@10.242.14.143
+db_one=samer@10.242.54.98
+db_two=samer@10.242.92.23
+db_three=samer@10.242.14.143
 
 #Status Check
 status = $(systemctl check mysql)
