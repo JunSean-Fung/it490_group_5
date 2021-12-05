@@ -27,7 +27,9 @@
             include('../php/topBar.php')
         ?>
     </div>
+    <main>
 
+    </main>
     <!-- Teseting Table with API data -->
     <table class="table table-bordered" style="margin-top:20px">
         <thead>
@@ -54,6 +56,6 @@
 
     <!-- Calling the Crypto API via the JS -->
     <!-- <script src="../js/crypto.js"></script> -->
-    
+
 </body>
 </html>
