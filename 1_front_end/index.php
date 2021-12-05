@@ -76,6 +76,7 @@
       <!-- Footer -->
       <?php 
          include('../projectX/php/footer.php')
+         include('../projectX/php/donation.php')
       ?>
 
       <!-- Script -->
