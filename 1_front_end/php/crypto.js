@@ -10,7 +10,12 @@ fetch(`${proxyUrl}${baseUrl}`, {
         'Access-Control-Allow-Origin': "*"
     }
 }).then((response) => {
-    console.log(response)
+    if(response.ok) {
+        response.json().then((json) => {
+            console.log(json)
+        })
+    }
+    
 }).catch((error) => {
     console.log(error)
 })
