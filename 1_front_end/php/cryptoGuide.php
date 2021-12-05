@@ -53,6 +53,6 @@
     </footer>
 
     <!-- Calling the Crypto API via the JS -->
-    <script src="crypto.js"></script>
+    <script src="../projectX/js/crypto.js"></script>
 </body>
 </html>
