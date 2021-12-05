@@ -2,7 +2,7 @@
     /* Purpose: 
         (1) Crypto-related
     */
-    require '../projectX/php/head.php';
+    include '../projectX/php/head.php';
 ?>
 
 <!doctype html>
@@ -23,7 +23,9 @@
                 include('../projectX/php/topBar.php')
             ?>
         </div>
-
+        <main>
+            HELLO
+        </main>
         <!-- Footer -->
         <footer class="text-muted footer">
             <div>
