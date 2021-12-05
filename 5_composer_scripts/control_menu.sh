@@ -59,8 +59,8 @@ run (){
                             ;;
             6)  turnOffOneService
                             ;;
-            z)  echo -e "Ping Test"
-                ping $database
+            z)  echo -e "Ping Test\n"
+                ping 10.242.54.98
                             ;;
             *)  echo exit
     esac
