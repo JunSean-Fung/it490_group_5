@@ -21,9 +21,9 @@
       
       <!--This is the topbar-->
       <div id = "topBar">
-        <?php 
-        include('../projectX/php/topBar.php')
-        ?>
+         <?php 
+            include('../projectX/php/topBar.php')
+         ?>
       </div>
       <main>
          <!-- Two Side of Guides -->
@@ -76,7 +76,6 @@
       <!-- Footer -->
       <?php 
          include('../projectX/php/footer.php')
-         #include('../projectX/php/donation.php')
       ?>
 
       <!-- Script -->

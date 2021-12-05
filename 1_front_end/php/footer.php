@@ -9,6 +9,9 @@
             <ul>
                 <li><a href="../projectX/php/about.php">About Us</a></li>
                 <li><a href="https://github.com/JunSean-Fung/it490_group_5">Github</a></li>
+                <?php 
+                    include('../projectX/php/donation.php')
+                ?>
             </ul>
         </div>
     </footer>    
