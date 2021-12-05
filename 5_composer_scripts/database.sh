@@ -19,19 +19,26 @@ system_check()
 start_mysql()
 {
 	# $1 = Machine ip
-	ssh $1 sudo systemctl start mysql
-	ssh $1 sudo mysql -u root -p
+	ssh $1 sudo systemctl start mysql	
+}
+go_mysql()
+{
+	sudo mysql -u root -p
 }
 cluster_start()
 {
 	# $1 = Machine ip
-	ssh $1 SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;
-	ssh $l START GROUP_REPLICATION;
-	SSH $1 SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=OFF;
+	ssh $1 go_mysql | SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;
+	ssh $l go_mnysql | START GROUP_REPLICATION;
+	SSH $1 go_mysql | SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=OFF;
 }
 cluster_check()
 {
 	return
+}
+test()
+{
+	
 }
 start_mysdql $db_one
 cluster_start $db_one
