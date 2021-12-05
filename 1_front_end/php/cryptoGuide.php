@@ -29,7 +29,7 @@
     </div>
 
     <!-- Teseting Table with API data -->
-    <table class="table table-bordered" style="margin-top:90px">
+    <table class="table table-bordered" style="margin-top:20px">
         <thead>
             <th scope="col">UUID</th>
             <th scope="col">BTC Price</th>
