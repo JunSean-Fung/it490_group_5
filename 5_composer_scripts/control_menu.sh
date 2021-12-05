@@ -59,7 +59,8 @@ run (){
                             ;;
             6)  turnOffOneService
                             ;;
-            z)  checkActive $debugTest apache2
+            z)  echo -e "Ping Test"
+                ping $database
                             ;;
             *)  echo exit
     esac
