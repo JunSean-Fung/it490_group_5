@@ -12,7 +12,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
 }).then((response) => {
     if(response.ok) {
         response.json().then((json) => {
-            console.log(json)
+            console.log(json.data.coins)
         })
     }
     
