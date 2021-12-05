@@ -29,7 +29,7 @@ fetch(`${proxyUrl}${baseUrl}`, {
                 cryptoCoins += `<td> ${coin.tier} </td>`;
                 cryptoCoins += `<td> ${coin.name} </td>`;
                 cryptoCoins += `<td> ${coin.price} </td>`;
-                cryptoCoins += `<td> ${coin.symbole} </td>`;"<"<tr>";"
+                cryptoCoins += `<td> ${coin.symbole} </td>`;"<tr>";
             })
             document.getElementById("data").innerHTML = cryptoCoins
         })
