@@ -24,7 +24,7 @@
     <!--This is the topbar-->
     <div id = "topBar">
         <?php 
-            include('../projectX/php/topBar.php')
+            include('../php/topBar.php')
         ?>
     </div>
 
@@ -53,6 +53,7 @@
     </footer>
 
     <!-- Calling the Crypto API via the JS -->
-    <script src="../js/crypto.js"></script>
+    <!-- <script src="../js/crypto.js"></script> -->
+    
 </body>
 </html>
