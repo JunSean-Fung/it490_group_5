@@ -39,6 +39,7 @@
             <th scope="col">Price</th>
             <th scope="col">Symbol</th>
         </thead>
+        <tbody id="data">
     </table>    
 
     <!-- Footer -->
