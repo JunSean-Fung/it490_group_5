@@ -1,7 +1,6 @@
 <?php
     /* Purpose: 
-        (1) Landing Page    
-        (2) Authtenticate based on cookie, see if user already signed in, redirect to appropriate page
+        (1) Crypto-related
     */
     require '../projectX/php/head.php';
 ?>
@@ -21,7 +20,7 @@
         <!--This is the topbar-->
         <div id = "topBar">
         <?php 
-        include('../projectX/php/topBar.php')
+            include('../projectX/php/topBar.php')
         ?>
         </div>
         <main>
