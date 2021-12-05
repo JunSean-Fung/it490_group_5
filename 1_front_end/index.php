@@ -74,14 +74,9 @@
 
       </main>
       <!-- Footer -->
-      <footer class="text-muted footer">
-         <div>
-            <ul>
-               <li><a href="../projectX/php/about.php">About Us</a></li>
-               <li><a href="https://github.com/JunSean-Fung/it490_group_5">Github</a></li>
-            </ul>
-         </div>
-      </footer>
+      <?php 
+         include('../projectX/php/footer.php')
+      ?>
 
       <!-- Script -->
       <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
