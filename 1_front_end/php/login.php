@@ -1,5 +1,5 @@
 <?php
-#require '../projectX/php/head.php';
+#require '../php/head.php';
 function exceptions_error_handler($severity, $message, $filename, $lineno) {
     throw new ErrorException($message, 0, $severity, $filename, $lineno);
 }
@@ -7,7 +7,7 @@ function exceptions_error_handler($severity, $message, $filename, $lineno) {
 set_error_handler('exceptions_error_handler');
 
 session_start();
-require('RabbitMQClient.php');
+#require('../php/RabbitMQClient.php');
 
 if (isset($_POST['login'])) {
     try {
@@ -49,7 +49,7 @@ if (isset($_POST['login'])) {
         <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
 
         <title>Project X: Login</title>
-        <link rel="stylesheet" href="../projectX/css/loginNReg.css"/>
+        <link rel="stylesheet" href="../css/loginNReg.css"/>
     </head>
     <body>
         <div class="container">
