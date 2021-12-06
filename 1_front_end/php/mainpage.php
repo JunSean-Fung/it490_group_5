@@ -1,3 +1,4 @@
+<!-- This is outdated, the new one is the -> 1_front_end/index.php -->
 <!doctype html>
 <html lang="en">
    <head>
