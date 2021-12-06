@@ -40,5 +40,5 @@ test()
 {
 	
 }
-start_mysdql $db_one
-cluster_start $db_one
+start_mysql $db_one
+#cluster_start $db_one
