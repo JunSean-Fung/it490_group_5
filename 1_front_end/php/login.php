@@ -1,8 +1,13 @@
 <?php
 #require '../projectX/php/head.php';
+function exceptions_error_handler($severity, $message, $filename, $lineno) {
+    throw new ErrorException($message, 0, $severity, $filename, $lineno);
+}
+
+set_error_handler('exceptions_error_handler');
 
 session_start();
-#require('../projectX/php/RabbitMQClient.php');
+require('../projectX/php/RabbitMQClient.php');
 
 if (isset($_POST['login'])) {
     try {
