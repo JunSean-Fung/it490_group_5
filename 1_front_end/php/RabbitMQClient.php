@@ -1,7 +1,7 @@
 <?php
-require_once('../rabbit/path.inc');
-require_once('../rabbit/get_host_info.inc');
-require_once('../rabbit/rabbitMQLib.inc');
+require_once('path.inc');
+require_once('get_host_info.inc');
+require_once('rabbitMQLib.inc');
 
 function register($username, $hash){
     $client = new RabbitMQClient('rabbit.ini', 'it490Server');
