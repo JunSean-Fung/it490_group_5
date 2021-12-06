@@ -3,6 +3,7 @@ set +v echo off
 db_one=samer@10.242.54.98
 db_two=samer@10.242.92.23
 db_three=samer@10.242.14.143
+password="fall2021"
 
 #Status Check
 #status = $(systemctl check mysql)
@@ -19,7 +20,7 @@ system_check()
 start_mysql()
 {
 	# $1 = Machine ip
-	ssh $1 sudo systemctl start mysql	
+	ssh $1 sudo -S systemctl start mysql
 }
 go_mysql()
 {
@@ -28,9 +29,10 @@ go_mysql()
 cluster_start()
 {
 	# $1 = Machine ip
-	ssh $1 go_mysql | SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;
-	ssh $l go_mnysql | START GROUP_REPLICATION;
-	SSH $1 go_mysql | SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=OFF;
+	ssh $1 "mysql database -e 'SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;'"
+	ssh $1 go_mysql SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON; # Has to be on for the first process to replicate
+	ssh $l go_mnysql START GROUP_REPLICATION; #Start the cluster, has to be typed individiualy
+	SSH $1 go_mysql SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=OFF; # 
 }
 cluster_check()
 {
@@ -38,7 +40,8 @@ cluster_check()
 }
 test()
 {
-	return
+	ssh $1 "mysql database -e 'SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;'"
 }
-start_mysql $db_one
+test $db_one
+#start_mysql $db_one
 #cluster_start $db_one
