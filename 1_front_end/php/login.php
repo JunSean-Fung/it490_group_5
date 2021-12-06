@@ -3,7 +3,7 @@
 
 session_start();
 
-require('../php/RabbitMQClient.php');
+require('RabbitMQClient.php');
 header('Location: about.php');
 
 if (isset($_POST['login'])) {
