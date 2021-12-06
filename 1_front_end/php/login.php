@@ -7,7 +7,7 @@ function exceptions_error_handler($severity, $message, $filename, $lineno) {
 set_error_handler('exceptions_error_handler');
 
 session_start();
-#require('../php/RabbitMQClient.php');
+require('../php/RabbitMQClient.php');
 
 if (isset($_POST['login'])) {
     try {
