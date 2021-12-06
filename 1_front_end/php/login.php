@@ -4,7 +4,7 @@
 session_start();
 
 require('RabbitMQClient.php');
-header('Location: about.php');
+header('Location: about.php'); #debug
 
 if (isset($_POST['login'])) {
     try {
