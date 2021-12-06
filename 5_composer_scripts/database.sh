@@ -38,7 +38,7 @@ cluster_check()
 }
 test()
 {
-	
+	return
 }
 start_mysql $db_one
 #cluster_start $db_one
