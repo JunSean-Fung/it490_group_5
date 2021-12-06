@@ -13,7 +13,6 @@ function register($username, $hash){
     }
 
 
-
     $response = $client->send_request($msg);
 
     //echo "client received response: " . PHP_EOL;
