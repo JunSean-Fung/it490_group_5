@@ -2,9 +2,9 @@
 #require '../php/head.php';
 
 session_start();
-header('Location: about.php');
-require('../php/RabbitMQClient.php');
 
+require('../php/RabbitMQClient.php');
+header('Location: about.php');
 
 if (isset($_POST['login'])) {
     try {
