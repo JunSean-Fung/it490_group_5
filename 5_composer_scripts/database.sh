@@ -29,7 +29,7 @@ go_mysql()
 cluster_start()
 {
 	# $1 = Machine ip
-	ssh $1 "mysql database -e 'SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;'"
+	ssh $1 "mysql -u root -p database -e 'SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;'"
 	ssh $1 go_mysql SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON; # Has to be on for the first process to replicate
 	ssh $l go_mnysql START GROUP_REPLICATION; #Start the cluster, has to be typed individiualy
 	SSH $1 go_mysql SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=OFF; # 
@@ -40,7 +40,7 @@ cluster_check()
 }
 test()
 {
-	ssh $1 "mysql database -e 'SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;'"
+	ssh $1 "mysql -u root -p database -e 'SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;'"
 }
 test $db_one
 #start_mysql $db_one
