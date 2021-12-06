@@ -40,7 +40,7 @@ cluster_check()
 }
 test()
 {
-	ssh $1 "mysql -u root -p database -e 'SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;'"
+	ssh $1 "mysql -u root -p simplycoding -e 'SET GLOBAL GROUP_REPLICATION_BOOTSTRAP_GROUP=ON;'"
 }
 test $db_one
 #start_mysql $db_one
