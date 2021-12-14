@@ -36,3 +36,4 @@ sudo apt-get install -y erlang-base \
 sudo apt-get install rabbitmq-server -y --fix-missing
 
 sudo echo listeners.tcp.1 = 10.242.187.72:5672 /etc/rabbitmq/rabbitmq.conf
+sudo rabbitmq-plugins enable rabbitmq_management
