@@ -25,7 +25,7 @@
         <!-- Login section -->
         <div class="col-md-3 text-end loginBtn">
             <a href='../projectX/php/login.php'>
-                <button type="button" class="btn btn-outline-warning me-2">Login/Register</button>
+                <button type="button" class="btn btn-outline-primary me-2">Login/Register</button>
             </a>
         </div>
     </header>
