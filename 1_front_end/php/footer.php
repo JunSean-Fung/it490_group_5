@@ -29,10 +29,7 @@
                 </li>
                 <!--This is where donation page link will go-->
                 <li>
-                    <!-- <a href="../front_end/donation.html" class="nav-link px-2 link-dark">Donation</a> -->
-                    <?php 
-                        include('../projectX/php/donation.php')
-                    ?>
+                    <a href="../projectX/php/donation.php" class="nav-link px-2 link-dark">Donation</a>
                 </li>
                 <!--This is where About page link will go-->
                 <li>
