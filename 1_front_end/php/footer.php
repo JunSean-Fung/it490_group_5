@@ -25,11 +25,14 @@
                 </li>
                 <!--This is where Forum page link will go-->
                 <li>
-                    <a href="../front_end/forum.html" class="nav-link px-2 link-dark">Forum</a>
+                    <a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 link-dark">Github</a>
                 </li>
                 <!--This is where donation page link will go-->
                 <li>
-                    <a href="../front_end/donation.html" class="nav-link px-2 link-dark">Donation</a>
+                    <!-- <a href="../front_end/donation.html" class="nav-link px-2 link-dark">Donation</a> -->
+                    <?php 
+                        include('../projectX/php/donation.php')
+                    ?>
                 </li>
                 <!--This is where About page link will go-->
                 <li>
@@ -38,20 +41,5 @@
             </ul>
             <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
         </div>
-    </footer>
-
-    <footer class="text-muted footer">
-        <div>
-            <ul>
-                <!-- About Us -->
-                <li><a href="../projectX/php/about.php">About Us</a></li>
-                <!-- Github Link-->
-                <li><a href="https://github.com/JunSean-Fung/it490_group_5">Github</a></li>                
-                <!-- Donation -->
-                <?php 
-                    include('../projectX/php/donation.php')
-                ?>
-            </ul>
-        </div>
-    </footer>    
+    </footer>  
 </html>
