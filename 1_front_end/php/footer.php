@@ -17,7 +17,7 @@
     <head>
         <link rel="stylesheet" href="../projectX/css/footer.css">
     </head>
-    <footer  class="py-3 my-4">
+    <footer  class="mt-auto py-3 my-4">
         <div class = "container">
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <!-- Home page -->
