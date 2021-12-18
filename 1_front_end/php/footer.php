@@ -9,7 +9,7 @@
 
         Task:
         1) make it look nice
-        2) Figure out the donation button location
+        2) Figure out the donation button location, put it all the way to the right side?
     */
 ?>
 <!doctype html>
@@ -33,7 +33,7 @@
                     <a href="../projectX/php/about.php" class="nav-link px-2 link-dark">About Us</a>
                 </li>
                 <!--Donation button-->
-                <li>
+                <li class= >
                     <!-- <a href="../projectX/php/donation.php" class="nav-link px-2 link-dark">Donation</a> -->
                     <?php 
                         include('../projectX/php/donation.php') #<-- this trigger the button instead of going to that page
