@@ -31,7 +31,7 @@
             include('../projectX/php/topBar.php') 
          ?>
       </div>
-      <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div class="container-fluid px-0">
          <main>
             <div class= "container-fluid px-0">
                <!-- Two Side of Guides -->
