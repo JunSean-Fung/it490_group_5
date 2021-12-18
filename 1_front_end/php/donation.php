@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-    Donation button
     <div id="donate-button-container">
     <div id="donate-button"></div>
     <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>

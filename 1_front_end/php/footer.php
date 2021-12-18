@@ -20,20 +20,24 @@
     <footer  class="py-3 my-4">
         <div class = "container">
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <!-- Home page -->
                 <li>
                     <a href="../projectX/" class="nav-link px-2 link-secondary">Home</a>
                 </li>
-                <!--This is where Forum page link will go-->
+                <!--Forum page-->
                 <li>
                     <a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 link-dark">Github</a>
                 </li>
-                <!--This is where donation page link will go-->
-                <li>
-                    <a href="../projectX/php/donation.php" class="nav-link px-2 link-dark">Donation</a>
-                </li>
-                <!--This is where About page link will go-->
+                <!--About page-->
                 <li>
                     <a href="../projectX/php/about.php" class="nav-link px-2 link-dark">About Us</a>
+                </li>
+                <!--Donation button-->
+                <li>
+                    #<a href="../projectX/php/donation.php" class="nav-link px-2 link-dark">Donation</a>
+                    <?php 
+                        include('../projectX/php/donation.php') #<-- this trigger the button instead of going to that page
+                    ?>
                 </li>
             </ul>
             <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
