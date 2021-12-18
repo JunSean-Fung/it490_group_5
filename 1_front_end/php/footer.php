@@ -1,12 +1,20 @@
 <?php 
-    # Purpose: Called from all other web page to set up the header and also authenticate the correct user
-    # NEEDS authentication on the specific user
-    
+
+    /* Purpose: 
+        (1) Display the footer on all the webpages     
+
+        Note:
+        1) [Path]: Since this is in the php folder, path is this: ../folderName/fileName.fileType
+
+        Task:
+        1) make it look nice
+        2) Figure out the donation button location
+    */
 ?>
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="../css/footer.css">
     </head>
     <footer class="text-muted footer">
         <div>
