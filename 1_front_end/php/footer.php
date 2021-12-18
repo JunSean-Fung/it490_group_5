@@ -4,7 +4,8 @@
         (1) Display the footer on all the webpages     
 
         Note:
-        1) [Path]: Since this is in the php folder, path is this: ../folderName/fileName.fileType
+        1) [Path]: For some reason, php folder path is this: ../folderName/fileName.fileType 
+                    but the correct path for this folder is this: ../projectX/folderName/fileName.filetype
 
         Task:
         1) make it look nice
@@ -14,7 +15,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../projectX/css/footer.css">
     </head>
     <footer class="text-muted footer">
         <div>
