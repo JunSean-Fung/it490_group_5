@@ -34,7 +34,7 @@
                 </li>
                 <!--Donation button-->
                 <li>
-                    <a href="../projectX/php/donation.php" class="nav-link px-2 link-dark">Donation</a>
+                    <!-- <a href="../projectX/php/donation.php" class="nav-link px-2 link-dark">Donation</a> -->
                     <?php 
                         include('../projectX/php/donation.php') #<-- this trigger the button instead of going to that page
                     ?>
