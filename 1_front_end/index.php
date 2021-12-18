@@ -17,12 +17,11 @@
 <!doctype html>
 <html lang="en">
    <head>
-        <title>Project X Home</title>
+        <title>Home</title>
         <!-- Bootstrap/ CSS -->
-        <!-- <link href="../projectX/css/assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-        <link href="../projectX/css/headers.css" rel="stylesheet">
+        <!-- <link href="../projectX/css/headers.css" rel="stylesheet">
         <link href="../projectX/css/product.css" rel="stylesheet">
-        <link href="../projectX/css/mainPage.css" rel="stylesheet">
+        <link href="../projectX/css/mainPage.css" rel="stylesheet"> -->
    </head>
    <body>
       
