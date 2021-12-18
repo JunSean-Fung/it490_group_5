@@ -19,9 +19,9 @@
    <head>
         <title>Home</title>
         <!-- Bootstrap/ CSS -->
-        <!-- <link href="../projectX/css/headers.css" rel="stylesheet">
-        <link href="../projectX/css/product.css" rel="stylesheet">
-        <link href="../projectX/css/mainPage.css" rel="stylesheet"> -->
+        <link href="../projectX/css/headers.css" rel="stylesheet">
+        <!-- <link href="../projectX/css/product.css" rel="stylesheet"> -->
+        <link href="../projectX/css/mainPage.css" rel="stylesheet">
    </head>
    <body>
       
