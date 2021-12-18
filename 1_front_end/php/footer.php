@@ -17,6 +17,29 @@
     <head>
         <link rel="stylesheet" href="../projectX/css/footer.css">
     </head>
+    <footer  class="py-3 my-4">
+        <div class = "container">
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li>
+                    <a href="../projectX/" class="nav-link px-2 link-secondary">Home</a>
+                </li>
+                <!--This is where Forum page link will go-->
+                <li>
+                    <a href="../front_end/forum.html" class="nav-link px-2 link-dark">Forum</a>
+                </li>
+                <!--This is where donation page link will go-->
+                <li>
+                    <a href="../front_end/donation.html" class="nav-link px-2 link-dark">Donation</a>
+                </li>
+                <!--This is where About page link will go-->
+                <li>
+                    <a href="../projectX/php/about.php" class="nav-link px-2 link-dark">About Us</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
+        </div>
+    </footer>
+
     <footer class="text-muted footer">
         <div>
             <ul>
