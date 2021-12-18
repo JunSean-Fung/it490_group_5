@@ -13,7 +13,7 @@
         1) Add the ability to know which type of top bar to show: Guest mode or with User account
     */
 ?>
-<div class="container-fluid">         
+<div class="container">         
     <head>
         <!-- Linked to topBar.css -->
         <link href="../projectX/css/topBar.css" rel="stylesheet">
