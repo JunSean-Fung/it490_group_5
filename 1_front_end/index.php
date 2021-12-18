@@ -32,7 +32,7 @@
          ?>
       </div>
       <main>
-         <div class= "container-fluid">
+         <div class= "container-fluid px-0">
             <!-- Two Side of Guides -->
             <section class="text-center showcase">
                <div class="d-md-flex flex-md-equal w-100">
@@ -59,7 +59,7 @@
                </div>
             </section>
             <!-- Description about ProjectX -->
-            <section class="showcase">
+            <!-- <section class="showcase">
                <div class="container-fluid p-0">
                   <div class="row g-0">
                      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../projectX/assets/img/img_1.jpg')"></div>
@@ -76,7 +76,7 @@
                      </div>
                   </div>                
                </div>
-            </section>
+            </section> -->
          </div>     
       </main>
       <!-- Footer -->
