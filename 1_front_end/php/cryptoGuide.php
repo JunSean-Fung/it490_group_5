@@ -31,6 +31,10 @@
 
     </main>
     <!-- Teseting Table with API data -->
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
     <table class="table table-bordered" style="margin-top:20px">
         <thead>
             <th scope="col">UUID</th>
