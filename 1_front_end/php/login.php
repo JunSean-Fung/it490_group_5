@@ -13,7 +13,7 @@
     # Get header file
     require '../php/head.php'; # Needs to be "../php/head.php"
     session_start();
-    #require '../php/RabbitMQClient.php';
+    require '../php/RabbitMQClient.php';
 
     if (isset($_POST['login'])) {
         try {
