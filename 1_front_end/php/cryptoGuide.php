@@ -35,8 +35,7 @@
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><i class="fa fa-search"></i> Search</button>
     </form>
-    <SearchBar type='text' placeholder='Search'/>
-    
+
     <!-- Teseting Table with API data -->
     <table class="table table-bordered" style="margin-top:20px">
         <thead>
