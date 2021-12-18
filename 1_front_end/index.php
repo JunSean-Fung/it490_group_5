@@ -17,7 +17,7 @@
 <!doctype html>
 <html lang="en">
    <head>
-        <title>Project X Main Page</title>
+        <title>Project X Home</title>
         <!-- Bootstrap/ CSS -->
         <!-- <link href="../projectX/css/assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
         <link href="../projectX/css/headers.css" rel="stylesheet">
