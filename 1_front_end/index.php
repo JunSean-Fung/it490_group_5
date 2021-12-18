@@ -3,7 +3,7 @@
         (1) Landing Page    
         (2) Authtenticate based on cookie, see if user already signed in, redirect to appropriate page
     */
-    require '../projectX/php/head.php';
+    require '../php/head.php';
 ?>
 
 <!doctype html>
@@ -22,7 +22,7 @@
       <!--This is the topbar-->
       <div id = "topBar">
          <?php 
-            include('../projectX/php/topBar.php')
+            include('../php/topBar.php')
          ?>
       </div>
       <main>
