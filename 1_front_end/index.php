@@ -2,6 +2,11 @@
     /* Purpose: 
         (1) Landing Page    
         (2) Authtenticate based on cookie, see if user already signed in, redirect to appropriate page
+      
+
+        Task:
+        1) Refine the responsiveness with bootstrap
+        
     */
     require '../projectX/php/head.php';
 ?>
@@ -22,7 +27,7 @@
       <!--This is the topbar-->
       <div id = "topBar">
          <?php 
-            include('../php/topBar.php')
+            include('../php/topBar.php') 
          ?>
       </div>
       <main>
