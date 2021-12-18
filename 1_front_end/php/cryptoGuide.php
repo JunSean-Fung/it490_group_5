@@ -31,9 +31,9 @@
 
     </main>
     <!-- Teseting Table with API data -->
-    <form action="/action_page.php">
+    <form action="*">
       <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button type="submit"><i class="fa fa-search"></i> Search</button>
     </form>
     <table class="table table-bordered" style="margin-top:20px">
         <thead>
