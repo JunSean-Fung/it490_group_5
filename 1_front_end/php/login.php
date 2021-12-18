@@ -1,36 +1,36 @@
 <?php
-require '../php/head.php'; # Needs to be "../php/head.php"
+    require '../php/head.php'; # Needs to be "../php/head.php"
 
-session_start();
+    session_start();
 
-#require '..projectX/php/RabbitMQClient.php';
-#header('Location: about.php'); #debug
+    require '../php/RabbitMQClient.php';
+    #header('Location: about.php'); #debug
 
-if (isset($_POST['login'])) {
-    try {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        if ($username != "" && $password != "") {
-            $rabbitResponse = login($username, $password);
-            if ($rabbitResponse == false) {
-                echo "login has failed, please try again";
-                //redirect back to login page to try again
+    if (isset($_POST['login'])) {
+        try {
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            if ($username != "" && $password != "") {
+                $rabbitResponse = login($username, $password);
+                if ($rabbitResponse == false) {
+                    echo "login has failed, please try again";
+                    //redirect back to login page to try again
+                } else {
+                    echo "You are logged in!";
+                    $userSes            = json_decode($rabbitResponse, true);
+                    $_SESSION['logged'] = true;
+                    $_SESSION['user']   = $userSes;
+                    echo var_export($_SESSION['user']['name']);
+                    header("location: ../html/mainpage_logged.html");
+                }
             } else {
-                echo "You are logged in!";
-                $userSes            = json_decode($rabbitResponse, true);
-                $_SESSION['logged'] = true;
-                $_SESSION['user']   = $userSes;
-                echo var_export($_SESSION['user']['name']);
-                header("location: ../html/mainpage_logged.html");
+                echo "username and password is empty";
             }
-        } else {
-            echo "username and password is empty";
+        }
+        catch (Exception $e) {
+            echo $e->getMessage();
         }
     }
-    catch (Exception $e) {
-        echo $e->getMessage();
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
