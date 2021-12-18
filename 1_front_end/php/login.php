@@ -1,5 +1,5 @@
 <?php
-#require '../php/head.php';
+require '../php/head.php'; # Needs to be "../php/head.php"
 
 session_start();
 

@@ -6,9 +6,9 @@
 
         Task:
         1) Refine the responsiveness with bootstrap
-        
+
     */
-    require '../projectX/php/head.php';
+    require '../projectX/php/head.php'; # need to be ../projectX/php/head.php
 ?>
 
 <!doctype html>
