@@ -10,7 +10,7 @@
     <meta name="description" content="IT490 project">
     <meta name="author" content="Group 5">    
     <!-- Favicon -->
-    <link rel="../projectX/assets/img/ProjectX_favicon.png">
+    <link rel="icon" href="../projectX/assets/img/ProjectX_favicon.png">
     <!-- Bootstrap 5 -->
     <!-- Core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
