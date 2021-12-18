@@ -1,10 +1,19 @@
 <?php
+    /* Purpose: 
+        (1) Allow user to login an account
+        (2) Allow user to sign up an account
+
+        Note:
+        1) [Path]: Since this is in the php folder, path is this: ../folderName/fileName.fileType
+
+        Task:
+        1) Refine the responsiveness with bootstrap
+        2) Additional interactions such as: go back to the main page, reset password? , 
+    */
+    # Get header file
     require '../php/head.php'; # Needs to be "../php/head.php"
-
     session_start();
-
     require '../php/RabbitMQClient.php';
-    #header('Location: about.php'); #debug
 
     if (isset($_POST['login'])) {
         try {
@@ -21,7 +30,7 @@
                     $_SESSION['logged'] = true;
                     $_SESSION['user']   = $userSes;
                     echo var_export($_SESSION['user']['name']);
-                    header("location: ../html/mainpage_logged.html");
+                    header("location: ../html/mainpage_logged.html"); 
                 }
             } else {
                 echo "username and password is empty";

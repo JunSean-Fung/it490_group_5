@@ -1,9 +1,17 @@
 <?php 
     /* 
-        This file will be called everytime a page is loaded 
-        and will prompt to authenticate user session/ profile 
+        
     */
-    
+    /* Purpose: 
+        (1) Display the top bar and detect if user is logged in or not, will show differnt type of links based on it
+        (2) will prompt to authenticate user session/ profile         
+
+        Note:
+        1) [Path]: Since this is in the php folder, path is this: ../folderName/fileName.fileType
+
+        Task:
+        1) Add the ability to know which type of top bar to show: Guest mode or with User account
+    */
 ?>
 <div class="container">         
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">

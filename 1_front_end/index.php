@@ -1,14 +1,17 @@
 <?php
-    /* Purpose: 
-        (1) Landing Page    
-        (2) Authtenticate based on cookie, see if user already signed in, redirect to appropriate page
-      
+      /* Purpose: 
+         (1) Landing Page    
+         (2) Authtenticate based on cookie, see if user already signed in, redirect to appropriate page
+         
+         Note:
+         1) [Path]: must have projectX in the path like this: ../projectX/folderName/fileName.fileType
+         
+         Task:
+         1) Refine the responsiveness with bootstrap
 
-        Task:
-        1) Refine the responsiveness with bootstrap
-
-    */
-    require '../projectX/php/head.php'; # need to be ../projectX/php/head.php
+      */
+      # Get the header file
+      require '../projectX/php/head.php'; # need to be ../projectX/php/head.php
 ?>
 
 <!doctype html>
@@ -27,7 +30,7 @@
       <!--This is the topbar-->
       <div id = "topBar">
          <?php 
-            include('../php/topBar.php') 
+            include('../projectX/php/topBar.php') 
          ?>
       </div>
       <main>
