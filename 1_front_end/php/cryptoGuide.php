@@ -3,6 +3,7 @@
         (1) Crypto-related
     */
     #include '../projectX/php/head.php';
+    
 ?>
 
 <!doctype html>
@@ -32,7 +33,16 @@
 
     <input type="text" placeholder="Search for Coin" name="search" id="CoinSearchInput">
     <button onClick="searchCoin()" ><i class="fa fa-search"></i> Search</button>
-
+    
+    <!-- Table with search result from the API data -->
+    <table class="table table-bordered" style="margin-top:20px">
+        <thead>            
+            <th scope="col">Name</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Price</th>
+        </thead>
+        <tbody id="data">
+    </table>    
     <!-- Calling the Crypto API via the JS -->
     <!-- <script src="../js/crypto.js"></script> -->
     <script src="../js/crypto_searchBar.js"></script>
