@@ -91,5 +91,9 @@ $(document).ready(function() {
         }).catch((error) => {
             console.log(error) 
         })
-    } 
+    }
+    $('#xmlname')/change(function () {
+        var searchInput = document.formxml.xmlname.value;
+        searchCoin(searchInput);
+    }) 
 })
