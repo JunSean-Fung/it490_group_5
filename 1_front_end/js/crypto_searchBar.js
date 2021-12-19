@@ -1,6 +1,6 @@
 // Use CoinRanking API and for the search bar
 
-$(document).read(function() {
+$(document).ready(function() {
     'user strict'; //Strict mode
     const bitcoin = "Qwsogvtv82FCd"
     var uuid = bitcoin;
