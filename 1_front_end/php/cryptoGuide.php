@@ -31,7 +31,21 @@
             <h1>Every Road to riches start with a search</h1>
         </div>
     </div>
-    
+    <!-- Search bar -->
+    <form action="" method="post" name="formxml">
+        <input type="text" name="xmlname" value="123" id="xmlname">
+        <input type="button" onclick="searchCoin();">
+    </form>
+    <!-- Table with search result from the API data -->
+    <table class="table table-bordered" style="margin-top:20px">
+        <h1>Top Five Crypto</h1>
+        <thead>            
+            <th scope="col">Name</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Price</th>
+        </thead>
+        <tbody id="searchResultCoin">
+    </table>
     <!-- Calling the Crypto API via the JS -->
     <!-- <script src="../js/crypto.js"></script> -->
     <!-- <script src="../js/crypto.js"></script> -->

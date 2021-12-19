@@ -4,11 +4,12 @@ $(document).ready(function() {
     'user strict'; //Strict mode
 
     // Might need an event handler
-    var searchInput = document.getElementById("CoinSearchInput")
+    // var searchInput = document.getElementById("CoinSearchInput")
+    var searchInput = document.formxml.xmlname.value;
     var bitCoin = "Qwsogvtv82FCd" 
 
     // searchCoin(searchInput);
-    rankCoin()
+    // rankCoin()
     // Functions
     function searchCoin(searchInput) {
         console.log("SearchCoin Sucess");
@@ -43,7 +44,7 @@ $(document).ready(function() {
                         cryptoCoins += `<td> ${coin.symbol} </td>`;
                         cryptoCoins += `<td> ${coin.price} </td>`;"<tr>";
                     })
-                    document.getElementById("data").innerHTML = cryptoCoins
+                    document.getElementById("searchResultCoin").innerHTML = cryptoCoins
                 })
             }
         }).catch((error) => {
