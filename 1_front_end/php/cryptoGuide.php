@@ -23,11 +23,7 @@
 </head>
 <body>
     <!--This is the topbar-->
-    <div id = "topBar">
-        <?php 
-            include('../php/topBar.php')
-        ?>
-    </div>
+    
     <main>
 
     </main>
