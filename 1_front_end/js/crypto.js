@@ -8,7 +8,7 @@ $(document).ready(function() {
     var bitCoin = "Qwsogvtv82FCd" 
 
     // searchCoin(searchInput);
-
+    rankCoin()
     // Functions
     function searchCoin(searchInput) {
         console.log("SearchCoin Sucess");
