@@ -4,11 +4,13 @@ $(document).ready(function() {
     'user strict'; //Strict mode
     const bitcoin = "Qwsogvtv82FCd"
     var uuid = bitcoin;
+    var search = "bitco"
+    searchCoin(search);
 
     // Functions
-    function searchCoin(currency) {
+    function searchCoin(searchInput) {
         console.log("SearchCoin Sucess");
-        var baseUrl = "https://api.coinranking.com/v2/search-suggestions?query=" + currency;
+        var baseUrl = "https://api.coinranking.com/v2/search-suggestions?query=" + searchInput;
         var proxyUrl = "https://cors-anywhere.herokuapp.com/" // From CORS Anwhere  <-- This one works, but only 50 per 3 minutes, so becareful
         var apiKey = "coinranking8f1fe4cf0e85fa1c2360a15f9e3ba860fb49a89b674f1022"
 
