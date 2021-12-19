@@ -110,7 +110,29 @@ $(document).ready(function () {
         })
     }
     // ######
-    
+    // Currency type selector
+    // Will update the drop down selection
+    $('#cryptoList').change(function () {
+        var selectedValueCurrency = parseInt($(this).val());
+
+        //Depends on Value 0-2 respective function gets called. 
+        switch (selectedValueCurrency) {
+            case 0:
+                console.log("radio BTC success");
+                uuid = bitcoin;
+                getCoinData(uuid, time);
+                break;
+            case 1:
+                console.log("radio ETH success");
+                uuid = ethereum;
+                getCoinData(uuid, time);
+                break;
+            case 2:
+                console.log("radio LTC success");
+                uuid = litecoin;
+                getCoinData(uuid, time);
+        }
+    });
     // ######
     // Timeframe selector
     $('input:radio[name=options]').on("click", function () {
