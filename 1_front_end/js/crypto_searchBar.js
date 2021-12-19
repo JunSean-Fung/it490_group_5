@@ -47,6 +47,4 @@ $(document).ready(function() {
             }
         })
     }
-}).catch((error) => {
-    console.log(error)
 })
