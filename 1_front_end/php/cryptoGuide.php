@@ -25,8 +25,12 @@
 <body>
     <!--This is the topbar-->
 
-    <!-- Slogan with search bar -->
-    
+    <!-- Slogan -->
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Every Road to riches start with a search</h1>
+        </div>
+    </div>
     <!-- Table with search result from the API data -->
     <table class="table table-bordered" style="margin-top:20px">
         <h1>Top Five Crypto</h1>
