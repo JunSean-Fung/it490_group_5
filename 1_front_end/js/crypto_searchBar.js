@@ -35,11 +35,7 @@ $(document).ready(function() {
                     
                     // For each loop to populate the search resulte
                     coinsData.forEach((coin) => {
-                        cryptoCoins += "<tr>"
-                        cryptoCoins += `<td> ${coin.uuid} </td>`;
-                        cryptoCoins += `<td> ${coin.btcPrice} </td>`;
-                        cryptoCoins += `<td> ${coin.rank} </td>`;
-                        cryptoCoins += `<td> ${coin.tier} </td>`;
+                        cryptoCoins += "<tr>"                        
                         cryptoCoins += `<td> ${coin.name} </td>`;
                         cryptoCoins += `<td> ${coin.price} </td>`;
                         cryptoCoins += `<td> ${coin.symbol} </td>`;"<tr>";
