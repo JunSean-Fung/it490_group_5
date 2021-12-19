@@ -45,6 +45,15 @@
                     <i class="fas fa-search"></i>
                 </button>
             </div>
+            <div class="search">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <div class="search-2"> <i class='bx bxs-map'></i> <input type="text" placeholder="San Francisco,USA"> <button>Search</button> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
