@@ -13,6 +13,7 @@
           rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
      <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link for star rating-->
     
 
     
@@ -20,10 +21,10 @@
     <!-- Bootstrap core CSS -->
 <link href="../css/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/headers.css" rel="stylesheet">
-<link href="../css/product.css" rel="stylesheet">
 <link href="../css/footers.css" rel="stylsheet">
 <link href="../css/carousel.css" rel="stylsheet">
-<link href="../css/gamepage.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--For star rating-->
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -38,8 +39,19 @@
           font-size: 3.5rem;
         }
       }
-    
-
+   .checked {
+      color: orange;
+   } 
+  .center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+     
+     }
+     img {
+       border: 5px solid;
+     } 
     </style>
 
     
@@ -104,10 +116,49 @@
 
 
 
-<main>
-
+<main>   
   
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      
+      <h2 class="featurette-heading">Fornite</h2>
+      <br>
+      <p class="lead">Fortnite is an online video game developed by Epic Games and released in 2017.
+         It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World, 
+         a cooperative hybrid-tower defense-shooter-survival game for up to four players to fight off zombie-like creatures and defend objects with traps and fortifications 
+         they can build; Fortnite Battle Royale, a free-to-play battle royale game in which up to 100 players fight to be the last person standing; and Fortnite Creative,
+          in which players are given complete freedom to create worlds and battle arenas. Save the World and Battle Royale were released in 2017 as early access titles,
+           while Creative was released on December 6, 2018. While the Save the World and Creative versions have been successful for Epic Games, 
+           Fortnite Battle Royale in particular became an overwhelming success and a cultural phenomenon, drawing more than 125 million players in less than a year, 
+           earning hundreds of millions of dollars per month. Fortnite as a whole generated $9 billion in gross revenue up until December 2019.
 
+      </p>
+        <br>
+        <h3>Star Rating</h3>
+      
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <br>
+      <br>
+      <h4>Platforms</h4>
+        <ul>
+          <li>PC</li>
+          <li>Mobile</li>
+          <li>PlayStation</li>
+          <li>Xbox</li>
+          <li>Ninentdo Switch</li>
+        </ul>
+
+    </div>
+    <div class="col-md-5 order-md-1">
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="700" height="600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 700x600" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <image  href="../images/image5.png" class = "center" ></image>
+      </svg>
+    </div>
+    <hr class="featurette-divider">
 </main>
 
 <footer  class="py-3 my-4">
@@ -122,12 +173,7 @@
   <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
   
   </div>
- <!--<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-  </ul> --> 
-  <!--un comment this if we want instagram, facebook and twitter link-->
+ 
 </footer>
 
 

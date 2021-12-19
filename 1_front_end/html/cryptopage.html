@@ -24,6 +24,7 @@
 <link href="../css/footers.css" rel="stylsheet">
 <link href="../css/carousel.css" rel="stylsheet">
 <link href="../css/gamepage.css" rel="stylesheet">
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -115,13 +116,16 @@
             <div class="row">
               <div class="col-12 mb-4">
                 <div class="input-group">
-                  <div class="form-outline flex-fill">
-                    <input type="search" id="form1" class="form-control form-control-lg" />
+                  <div class="form-outline flex-fill" id = "searchWrapper">
+                    <input type="search" id="form1" class="form-control form-control-lg" 
+                    name = "searchBar"
+                    id = "searchBar"
+                    placeholder="search for crypto"/>
                     
-                    <label class="form-label" for="form1">Search for Crypto</label>
                     
                   </div>
                   <!--Need to add search button next to input-->
+                  <input type="submit" class="button" id="searchbtn" value="Search">
                 </div>
               </div>
             </div>
