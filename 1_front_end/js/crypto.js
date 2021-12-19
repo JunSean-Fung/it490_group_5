@@ -9,7 +9,7 @@ $(document).ready(function() {
     var searchInput = document.formxml.xmlname.value;
     var bitCoin = "Qwsogvtv82FCd" 
 
-    // searchCoin(searchInput);
+    searchCoin(searchInput);
     // rankCoin()
     // Functions
     function searchCoin(searchInput) {
