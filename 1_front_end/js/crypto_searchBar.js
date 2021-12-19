@@ -45,6 +45,7 @@ $(document).ready(function() {
                     document.getElementById("data").innerHTML = cryptoCoins
                 })
             }
-        })
+        }).catch((error) => {
+            console.log(error)
     }
 })
