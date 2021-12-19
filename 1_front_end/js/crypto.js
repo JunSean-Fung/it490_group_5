@@ -6,7 +6,7 @@ $(document).ready(function() {
     // Might need an event handler
     // var searchInput = document.getElementById("CoinSearchInput")
     var searchInput = "bitcoin"
-    var searchInput = document.formxml.xmlname.value;
+    // var searchInput = document.formxml.xmlname.value;
     var bitCoin = "Qwsogvtv82FCd" 
 
     searchCoin(searchInput);
