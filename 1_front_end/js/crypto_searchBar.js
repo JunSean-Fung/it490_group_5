@@ -2,9 +2,8 @@
 
 $(document).ready(function() {
     'user strict'; //Strict mode
-    const bitcoin = "Qwsogvtv82FCd"
-    var uuid = bitcoin;
-    var search = "bitco"
+
+    var search = document.getElementById("")
     searchCoin(search);
 
     // Functions
