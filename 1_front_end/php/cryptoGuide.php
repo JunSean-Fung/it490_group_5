@@ -27,12 +27,12 @@
     <!-- Search Bar link to API-->
     <form action="*">
       <input type="text" placeholder="Search for Coin" name="search" id="CoinSearchInput">
-      <button type="submit"><i class="fa fa-search"></i> Search</button>
+      <button onClick="searchCoin()" ><i class="fa fa-search"></i> Search</button>
     </form>
 
     <!-- Calling the Crypto API via the JS -->
     <!-- <script src="../js/crypto.js"></script> -->
-    <!-- <script src="../js/crypto_searchBar.js"></script> -->
+    <script src="../js/crypto_searchBar.js"></script>
 
 </body>
 </html>

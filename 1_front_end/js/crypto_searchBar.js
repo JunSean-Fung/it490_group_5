@@ -3,8 +3,8 @@
 $(document).ready(function() {
     'user strict'; //Strict mode
 
-    var search = document.getElementById("CoinSearchInput")
-    searchCoin(search);
+    var searchInput = document.getElementById("CoinSearchInput")
+    searchCoin(searchInput);
 
     // Functions
     function searchCoin(searchInput) {
@@ -28,9 +28,9 @@ $(document).ready(function() {
                     console.log("searchCoinResponse Success");
                     let coinsData = json.data.coins
                     
-                    // If Coin result is found
+                    // If Coin result is found, clear old data
                     if(coinsData.length > 0) {
-                        var cryptoCoins = ""
+                        var cryptoCions = ""
                     }
                     
                     // For each loop to populate the search resulte
