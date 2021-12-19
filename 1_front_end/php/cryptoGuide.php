@@ -25,10 +25,13 @@
     <!--This is the topbar-->
 
     <!-- Search Bar link to API-->
-    <form action="*">
+    <!-- <form action="*">
       <input type="text" placeholder="Search for Coin" name="search" id="CoinSearchInput">
       <button onClick="searchCoin()" ><i class="fa fa-search"></i> Search</button>
-    </form>
+    </form> -->
+
+    <input type="text" placeholder="Search for Coin" name="search" id="CoinSearchInput">
+    <button onClick="searchCoin()" ><i class="fa fa-search"></i> Search</button>
 
     <!-- Calling the Crypto API via the JS -->
     <!-- <script src="../js/crypto.js"></script> -->
