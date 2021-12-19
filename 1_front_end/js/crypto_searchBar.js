@@ -38,8 +38,8 @@ $(document).ready(function() {
                     coinsData.forEach((coin) => {
                         cryptoCoins += "<tr>"                        
                         cryptoCoins += `<td> ${coin.name} </td>`;
-                        cryptoCoins += `<td> ${coin.price} </td>`;
-                        cryptoCoins += `<td> ${coin.symbol} </td>`;"<tr>";
+                        cryptoCoins += `<td> ${coin.symbol} </td>`;
+                        cryptoCoins += `<td> ${coin.price} </td>`;"<tr>";
                     })
                     document.getElementById("data").innerHTML = cryptoCoins
                 })

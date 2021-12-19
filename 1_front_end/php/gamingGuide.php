@@ -7,5 +7,6 @@
 <!doctype html>
 <html lang="en">
 
-hi
+Placeholder For the GamingGuide Page
+UNDERCONSTRUCTION
 </html>
