@@ -17,7 +17,8 @@ $(document).ready(function () {
     function getCoinData(currency, timeframe) {
         console.log("getCoinData Success");
         var baseUrl = "https://api.coinranking.com/v2/coin/" + currency + "?timePeriod=" + timeframe;
-        var proxyUrl = "https://cors.bridged.cc/";
+        // var proxyUrl = "https://cors.bridged.cc/";
+        var proxyUrl = "https://cors-anywhere.herokuapp.com/"
         var apiKey = "coinranking8f1fe4cf0e85fa1c2360a15f9e3ba860fb49a89b674f1022"
         $(`#${timeframe}`).prop("checked", true).css("border", "4px solid green");
         fetch(`${proxyUrl}${baseUrl}`, {
