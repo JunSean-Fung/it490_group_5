@@ -92,7 +92,7 @@ $(document).ready(function() {
             console.log(error) 
         })
     }
-    $('#xmlname')/change(function () {
+    $('#xmlname').change(function () {
         var searchInput = document.formxml.xmlname.value;
         searchCoin(searchInput);
     }) 
