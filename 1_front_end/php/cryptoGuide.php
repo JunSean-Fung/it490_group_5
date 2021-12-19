@@ -48,16 +48,6 @@
         </div>
     </div>
     
-    <div class="justify-content-center">
-        <div class="justify-content-center">
-        </div>
-        
-            <hr class="my-3">
-        </div>
-    </div>
-
-
-
     <input type="text" placeholder="Search for Coin" name="search" id="CoinSearchInput">
     <button onClick="searchCoin()" ><i class="fa fa-search"></i> Search</button>
     
