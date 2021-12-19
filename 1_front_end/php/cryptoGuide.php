@@ -36,6 +36,7 @@
     
     <!-- Table with search result from the API data -->
     <table class="table table-bordered" style="margin-top:20px">
+        Top Five Crypto
         <thead>            
             <th scope="col">Name</th>
             <th scope="col">Symbol</th>
@@ -46,6 +47,7 @@
     <!-- Calling the Crypto API via the JS -->
     <!-- <script src="../js/crypto.js"></script> -->
     <script src="../js/crypto_searchBar.js"></script>
+
 
 </body>
 </html>
