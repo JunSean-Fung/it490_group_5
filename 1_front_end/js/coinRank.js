@@ -19,7 +19,7 @@ $(document).ready(function () {
         console.log("getCoinData Success");
         var baseUrl = "https://api.coinranking.com/v2/coin/" + currency + "?timePeriod=" + timeframe;
         // var proxyUrl = "https://cors.bridged.cc/"; //Waiting for response, From CORS Bridged 
-        //var proxyUrl = "https://cors-anywhere.herokuapp.com/" // From CORS Anwhere  <-- This one works, but only 50 per 3 minutes, so becareful
+        var proxyUrl = "https://cors-anywhere.herokuapp.com/" // From CORS Anwhere  <-- This one works, but only 50 per 3 minutes, so becareful
         //var proxyUrl = "https://cors-proxy.htmldriven.com/" // From CORS HTMLDriven
         var apiKey = "coinranking8f1fe4cf0e85fa1c2360a15f9e3ba860fb49a89b674f1022"
         $(`#${timeframe}`).prop("checked", true).css("border", "4px solid green");
