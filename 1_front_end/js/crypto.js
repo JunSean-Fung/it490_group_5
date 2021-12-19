@@ -35,7 +35,7 @@ $(document).ready(function() {
                     
                     // If Coin result is found, clear old data
                     if(coinsData.length > 0) {
-                        var cryptoCions = ""
+                        var cryptoCoins = ""
                     }
                     
                     // For each loop to populate the search resulte
