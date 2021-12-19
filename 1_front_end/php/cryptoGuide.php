@@ -31,6 +31,33 @@
       <button onClick="searchCoin()" ><i class="fa fa-search"></i> Search</button>
     </form> -->
 
+    <div class="container-fluid text-center">
+    <div class="jumbotron p-3 p-md-5 d-flex align-items-center text-white rounded bg-dark">
+        <div class="px-0">
+          <h1 class="middleText">Every Road to riches start with a search</h1>
+            <!--Search Bar-->
+            <div class="input-group">
+                <div class="form-outline">
+                    <input type="search" id="search-input" class="form-control" />
+                    <label class="form-label" for="form1">Search</label>
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="justify-content-center">
+        <div class="justify-content-center">
+        </div>
+        
+            <hr class="my-3">
+        </div>
+    </div>
+
+
+
     <input type="text" placeholder="Search for Coin" name="search" id="CoinSearchInput">
     <button onClick="searchCoin()" ><i class="fa fa-search"></i> Search</button>
     
