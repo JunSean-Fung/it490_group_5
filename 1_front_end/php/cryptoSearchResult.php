@@ -8,7 +8,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>ProjectX: Crypto</title>
+    <title>Search Result</title>
     <!-- Bootstrap/ CSS -->
     <!-- Meta-->
     <meta charset="utf-8">
