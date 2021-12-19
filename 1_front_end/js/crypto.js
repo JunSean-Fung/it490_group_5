@@ -4,11 +4,14 @@ $(document).ready(function() {
     'user strict'; //Strict mode
 
     // Might need an event handler
-    // var searchInput = document.getElementById("CoinSearchInput")
+    //var searchInput = document.getElementById("CoinSearchInput")
     var searchInput = "bitcoin"
     // var searchInput = document.formxml.xmlname.value;
     var bitCoin = "Qwsogvtv82FCd" 
-
+    function foo () {
+        var name = document.formxml.xmlname.value;
+        alert(name);
+    }
     //searchCoin(searchInput);
     // rankCoin()
     // Functions

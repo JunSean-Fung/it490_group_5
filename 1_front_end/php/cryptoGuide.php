@@ -34,7 +34,7 @@
     <!-- Search bar -->
     <form action="" method="post" name="formxml">
         <input type="text" name="xmlname" value="Bitcoin" id="xmlname">
-        <input type="button" onclick="searchCoin();">
+        <input type="button" onclick="foo();">
     </form>
     <!-- Table with search result from the API data -->
     <table class="table table-bordered" style="margin-top:20px">
