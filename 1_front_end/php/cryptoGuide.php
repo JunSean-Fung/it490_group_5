@@ -23,10 +23,10 @@
 </head>
 <body>
     <!--This is the topbar-->
-    
+
     <!-- Search Bar link to API-->
     <form action="*">
-      <input type="text" placeholder="Search.." name="search">
+      <input type="text" placeholder="Search for Coin" name="search" id="CoinSearchInput">
       <button type="submit"><i class="fa fa-search"></i> Search</button>
     </form>
 
