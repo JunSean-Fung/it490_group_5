@@ -38,7 +38,8 @@
     </form>
     <!-- Table with search result from the API data -->
     <table class="table table-bordered" style="margin-top:20px">
-        <h1>Top Five Crypto</h1>
+        <!-- <h1>Top Five Crypto</h1> -->
+        <h1>Search Result</h1>
         <thead>            
             <th scope="col">Name</th>
             <th scope="col">Symbol</th>
