@@ -3,7 +3,7 @@
 $(document).ready(function() {
     'user strict'; //Strict mode
 
-    var search = "bitco"
+    var search = document.getElementById("")
     searchCoin(search);
 
     // Functions

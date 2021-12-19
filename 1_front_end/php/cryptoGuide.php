@@ -24,38 +24,11 @@
 <body>
     <!--This is the topbar-->
     
-    <main>
-
-    </main>
-    <!-- Testing Coingecko API -->
+    <!-- Search Bar link to API-->
     <form action="*">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><i class="fa fa-search"></i> Search</button>
     </form>
-
-    <!-- Teseting Table with API data -->
-    <table class="table table-bordered" style="margin-top:20px">
-        <thead>
-            <th scope="col">UUID</th>
-            <th scope="col">BTC Price</th>
-            <th scope="col">Rank</th>
-            <th scope="col">Tier</th>
-            <th scope="col">Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Symbol</th>
-        </thead>
-        <tbody id="data">
-    </table>    
-
-    <!-- Footer -->
-    <footer class="text-muted footer">
-        <div>
-        <ul>
-            <li><a href="../projectX/php/about.php">About Us</a></li>
-            <li><a href="https://github.com/JunSean-Fung/it490_group_5">Github</a></li>
-        </ul>
-        </div>
-    </footer>
 
     <!-- Calling the Crypto API via the JS -->
     <!-- <script src="../js/crypto.js"></script> -->
