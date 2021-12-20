@@ -42,7 +42,7 @@
    <body>
       
       <!--This is the topbar-->
-      <div id = "topBar">
+      <div class = "container-fluid">
          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
             <!-- <h1 href="../projectX/index.php" id="title" >Project X</h1> -->
             <a class="navbar-brand title" href="../projectX/index.php">Project X</a>
