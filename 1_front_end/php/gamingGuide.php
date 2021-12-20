@@ -108,9 +108,6 @@
                     name = "searchBar"
                     id = "searchBar"
                     placeholder="search for games"/>
-
-                    
-                    
                   </div>
                   
                     <input type="submit" class="button" id="searchbtn" value="Search">
