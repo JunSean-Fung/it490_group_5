@@ -61,7 +61,7 @@
             </div>
          </header>
       </div>
-      <div class="container-fluid  w-100 h-100 mx-auto flex-column px-0">
+      <div class="container-fluid mx-auto flex-column px-0">
          <main>
             <div class= "container-fluid px-0">
                <!-- Two Side of Guides -->
