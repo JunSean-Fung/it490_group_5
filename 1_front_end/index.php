@@ -88,7 +88,7 @@
                         <div class="col-lg-6 text-white showcase-img" style="background-image: url('../projectX/assets/img/img_2.jpg')"></div>
                         <div class="col-lg-6 my-auto showcase-text">
                               <h2>View Most Up-to-date info about Crypto</h2>
-                              <p class="lead mb-0">You can see the top trending games and find any games review that you want to see in just 3 clicks</p>
+                              <p class="lead mb-0">ProjectX uses CoinRanking API that allows you to search up-to-date and see the trending Crypto coins</p>
                         </div>
                      </div>                
                   </div>
@@ -97,13 +97,15 @@
          </main>
       </div>
       
-      <!-- Footer -->
-      <?php 
-         include('../projectX/php/footer.php')
-      ?>
-
+   
       <!-- Script -->
       <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    </body>
+   <Footer>
+      <!-- Footer -->
+      <?php 
+         include('../projectX/php/footer.php')
+      ?>
+   </footer>
 </html>
