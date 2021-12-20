@@ -46,11 +46,14 @@
          <?php 
             include('../projectX/php/topBar.php') 
          ?>
+         <!-- DarkMode Switch -->
+         <!--          
          <div class="form-check form-switch">
             <input type="checkbox" class="form-check-input" id="darkSwitch" />
             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
          </div>
          <script src="../projectX/bootstrap_test/dark_mode/dark-mode-switch.min.js"></script>
+          -->
       </div>
       <div class="container-fluid  w-100 h-100 mx-auto flex-column px-0">
          <main>
