@@ -89,7 +89,10 @@
     </svg>
     
 <!--TOPBAR-->
-
+<!--This is the topbar-->
+<?php 
+  include("../php/topBar.php");
+?>
 <!--TOPBAR END-->
 <main>
 
