@@ -52,7 +52,6 @@ if (isset($_POST['login'])) {
 
                             <!-- Maybe forgot password could be to read and write -->
                             <!-- <a class="forgot text-muted" href="#">Forgot password?</a>  -->
-                            <br>
                             <a href="register.php">Dont have an account? Click here to register one!</a>
                         </form>
                     </div>
