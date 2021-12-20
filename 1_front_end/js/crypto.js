@@ -85,13 +85,14 @@ $(document).ready(function() {
                     // For each loop to populate the search resulte
                     coinsData.forEach((coin) => {
                         let orginalPrice = Number(coin.price);
-                        let USDPrice = USDFormatter.format(orginalPrice);                        
-                        let price = orginalPrice.toFixed(2);
+                        let USDPrice = USDFormatter.format(orginalPrice);  
+                        let USDSymbol = "$";                      
+                        // let price = orginalPrice.toFixed(2);
 
                         cryptoCoins += "<tr>"                        
                         cryptoCoins += `<td> ${coin.name} </td>`;
                         cryptoCoins += `<td> ${coin.symbol} </td>`;
-                        cryptoCoins += `<td> ${price} </td>`;"<tr>";
+                        cryptoCoins += `<td> ${USDSymbol + USDPrice} </td>`;"<tr>";
                     })
                     document.getElementById("data").innerHTML = cryptoCoins
                 })
