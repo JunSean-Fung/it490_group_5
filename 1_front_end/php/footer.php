@@ -17,26 +17,18 @@
     <head>
         <link rel="stylesheet" href="../projectX/css/footer.css">
     </head>
-    <footer  class="mt-auto py-3 my-4">
-        <div class = "container">
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <!--Forum page-->
-                <li>
-                    <a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 link-dark">Github</a>
-                </li>
-                <!--About page-->
-                <li>
-                    <a href="../php/about.php" class="nav-link px-2 link-dark">About Us</a>
-                </li>
-                <!--Donation button-->
-                <li class= >
-                    <!-- <a href="../projectX/php/donation.php" class="nav-link px-2 link-dark">Donation</a> -->
-                    <?php 
-                        include('../projectX/php/donation.php') #<-- this trigger the button instead of going to that page
-                    ?>
-                </li>
-            </ul>
-            <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
-        </div>
-    </footer>  
+    <footer  class="container-fluid py-3 my-4">
+      <div class = "container">
+         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 text-muted">Github</a></li>
+            <li class="nav-item">
+               <?php 
+                  include('../php/donation.php') #<-- this trigger the button instead of going to that page
+               ?>
+            </li>
+         </ul>
+
+         <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
+      </div>
+   </footer> 
 </html>
