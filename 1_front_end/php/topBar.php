@@ -13,9 +13,12 @@
         1) Add the ability to know which type of top bar to show: Guest mode or with User account
     */
 ?>
+<head>
+    <link href="../css/topBar.css" rel="stylesheet">
+</head>
 <div class = "container-fluid">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-    <h1 href="../index.php" class="title" >Project X</h1>
+    <h1 class="title" >Project X</h1>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="../php/gamingGuide.php" class="nav-link px-2 link-dark">Gaming</a></li><!--This is where Forum page link will go-->
         <li><a href="../php/cryptoGuide.php" class="nav-link px-2 link-dark">Crypto</a></li><!--This is where donation page link will go-->
