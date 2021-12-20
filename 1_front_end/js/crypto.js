@@ -82,7 +82,8 @@ $(document).ready(function() {
                     
                     // For each loop to populate the search resulte
                     coinsData.forEach((coin) => {
-                        let price = coin.price.toFixed(2);
+                        let orginalPrice = coin.price;
+                        let price = orginalPrice.toFixed(2);
                         cryptoCoins += "<tr>"                        
                         cryptoCoins += `<td> ${coin.name} </td>`;
                         cryptoCoins += `<td> ${coin.symbol} </td>`;
