@@ -52,7 +52,7 @@
             <!-- Just an image -->
             <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="../projectX/index.php">
-               <img src="../projectX/assets/img/ProjectX_Icon.png" width="1em" height="1em">
+               <img src="../projectX/assets/img/ProjectX_Icon.png" width="50" height="50">
                
             </a>
             </nav>
