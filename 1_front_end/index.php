@@ -123,7 +123,9 @@
       <div class = "container">
          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 text-muted">Github</a></li>
-            <li class="nav-item"><a href="../projectX/php/donation.php" class="nav-link px-2 text-muted"></a></li>
+            <li class="nav-item"><a <?php 
+                        include('../projectX/php/donation.php') #<-- this trigger the button instead of going to that page
+                    ?>class="nav-link px-2 text-muted"></a></li>
          </ul>
 
          <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
