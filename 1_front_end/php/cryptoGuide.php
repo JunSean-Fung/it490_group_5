@@ -32,7 +32,9 @@
 </head>
 <body>
     <!--This is the topbar-->
-    
+    <?php 
+        include("../php/topBar.php");
+    ?>
     <main>
         <section class = "intro">
         <!--Need to make the container height bigger-->
