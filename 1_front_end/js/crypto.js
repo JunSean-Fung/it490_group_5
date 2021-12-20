@@ -86,12 +86,12 @@ $(document).ready(function() {
                     coinsData.forEach((coin) => {
                         let orginalPrice = Number(coin.price);
                         let USDPrice = USDFormatter.format(orginalPrice);                        
-                        let price = orginalPrice.toFixed(2);
+                        // let price = orginalPrice.toFixed(2);
 
                         cryptoCoins += "<tr>"                        
                         cryptoCoins += `<td> ${coin.name} </td>`;
                         cryptoCoins += `<td> ${coin.symbol} </td>`;
-                        cryptoCoins += `<td> ${price} </td>`;"<tr>";
+                        cryptoCoins += `<td> ${USDPrice} </td>`;"<tr>";
                     })
                     document.getElementById("data").innerHTML = cryptoCoins
                 })
