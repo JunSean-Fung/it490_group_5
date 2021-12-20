@@ -45,7 +45,7 @@
       <div class = "container-fluid">
          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
             <!-- <h1 href="../projectX/index.php" id="title" >Project X</h1> -->
-            <a class="navbar-brand title" href="../projectX/index.php">Project X</a>
+            <a class="navbar-brand" href="../projectX/index.php">Project X</a>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">               
             </ul>
             <!-- Login section -->
