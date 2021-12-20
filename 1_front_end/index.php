@@ -54,11 +54,11 @@
                <li><a href="../projectX/php/about.php"  class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
             </ul>
             <!-- Login section -->
-            <div class="col-md-3 text-end loginBtn">
+            <!-- <div class="col-md-3 text-end loginBtn">
                   <a href='../projectX/php/login.php'>
                      <button type="button" class="btn btn-outline-primary me-2">Login/Register</button>
                   </a>
-            </div>
+            </div> -->
          </header>
       </div>
       <div class="container-fluid mx-auto flex-column px-0">
