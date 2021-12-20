@@ -56,6 +56,7 @@ function register($username, $password){
     $stmt->bindParam(':username', $username);
     $stmt->bindParam(':password', $password);
     $stmt->execute();
+    return true;
 }
 
 function request_processor($req){
