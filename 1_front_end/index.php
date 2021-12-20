@@ -22,7 +22,7 @@
         <link href="../projectX/css/headers.css" rel="stylesheet">
         <!-- <link href="../projectX/css/product.css" rel="stylesheet"> -->
         <link href="../projectX/css/mainPage.css" rel="stylesheet">
-        <!-- <link href="../projectX/css/topBar.css" rel="stylesheet"> -->
+        <link href="../projectX/css/topBar.css" rel="stylesheet">
         <style>
          .bd-placeholder-img {
          font-size: 1.125rem;
@@ -45,7 +45,7 @@
       <!--This is the topbar-->
       <div class = "container-fluid">
          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-            <h1 href="../projectX/index.php" id="title" >Project X</h1>
+            <h1 href="../projectX/index.php" class="title" >Project X</h1>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                <li><a href="../projectX/php/gamingGuide.php" class="nav-link px-2 link-dark">Gaming</a></li><!--This is where Forum page link will go-->
                <li><a href="../projectX/php/cryptoGuide.php" class="nav-link px-2 link-dark">Crypto</a></li><!--This is where donation page link will go-->
