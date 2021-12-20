@@ -99,7 +99,7 @@
                         </div>
                      </div>
                      <div class="row g-0">
-                        <div class="col-lg-6 text-white showcase-img" style="background-image: url('../projectX/assets/img/img_2.jpg')"></div>
+                        <div class="col-lg-6 text-white showcase-img" style="background-image: url('../assets/img/img_2.jpg')"></div>
                         <div class="col-lg-6 my-auto showcase-text">
                               <h2>View Most Up-to-date info about Crypto</h2>
                               <p class="lead mb-0">ProjectX uses CoinRanking API that allows you to search up-to-date and see the trending Crypto coins</p>
