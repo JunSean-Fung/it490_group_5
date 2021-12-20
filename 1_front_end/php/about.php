@@ -19,10 +19,10 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href="../css/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/headers.css" rel="stylesheet">
-<link href="../css/product.css" rel="stylesheet">
-<link href="../css/footers.css" rel="stylsheet">
+  <link href="../css/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/headers.css" rel="stylesheet">
+  <link href="../css/product.css" rel="stylesheet">
+  <link href="../css/footers.css" rel="stylsheet">
 
     <style>
       .bd-placeholder-img {
@@ -215,12 +215,12 @@ html {
       
         <div class="column">
           <div class="card">
-            <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+            <img src="../images/photo4.png" alt="Zach" style="width:100%">
             <div class="container">
-              <h2>Zach</h2>
+              <h2>Zachary Veliky</h2>
               <p class="title">Messaging</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>mike@example.com</p>
+              <p>Senior at NJIT </p>
+              <p>zjv2@njit.edu</p>
               <p><button class="button">Contact</button></p>
             </div>
           </div>
