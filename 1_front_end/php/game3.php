@@ -1,9 +1,3 @@
-<?php
-    /* Purpose: 
-        (1) Gaming-related
-    */
-    include '../php/head.php';
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,6 +13,7 @@
           rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
      <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link for star rating-->
     
 
     
@@ -26,12 +21,9 @@
     <!-- Bootstrap core CSS -->
 <link href="../css/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/headers.css" rel="stylesheet">
-<link href="../css/product.css" rel="stylesheet">
 <link href="../css/footers.css" rel="stylsheet">
 <link href="../css/carousel.css" rel="stylsheet">
-<link href="../css/gamepage.css" rel="stylesheet">
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--For star rating-->
 
     <style>
       .bd-placeholder-img {
@@ -47,8 +39,19 @@
           font-size: 3.5rem;
         }
       }
-    
-
+   .checked {
+      color: orange;
+   } 
+  .center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+     
+     }
+     img {
+       border: 5px solid;
+     } 
     </style>
 
     
@@ -88,118 +91,75 @@
       </symbol>
     </svg>
     
-<!--TOPBAR-->
 
-<!--TOPBAR END-->
-<main>
+  <div class="container"> <!--This is the topbar-->
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <h1>Project X</h1>
 
-  <section class = "intro"> <!--Need to make the container height bigger-->
-    <div class="bg-image h-100" style = "background-image: url(../images/image1.png)"><!--Add image inside this div-->
-    <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0,0,0, 0.5);">
-      <div class="container">
-        <p class="h4 mb-4 text-white">Every adventure begins with a search</p>
-        <div class="card">
-          <div class="card-body p-4">
-            <div class="row">
-              <div class="col-12 mb-4">
-                <div class="input-group">
-                  <div class="form-outline flex-fill" id = "searchWrap">
-                    <input type="text" id="form1" class="form-control form-control-lg" 
-                    name = "searchBar"
-                    id = "searchBar"
-                    placeholder="search for games"/>
-                  </div>
-                  
-                    <input type="submit" class="button" id="searchbtn" value="Search">
-                  
-                  <!--Need to add search button next to input-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="../html/mainpage.html" class="nav-link px-2 link-secondary">Home</a></li><!--This should be added on other pages to return to home page-->
+        <li><a href="#" class="nav-link px-2 link-dark">Forum</a></li><!--This is where Forum page link will go-->
+        <li><a href="#" class="nav-link px-2 link-dark">Donation</a></li><!--This is where donation page link will go-->
+        <li><a href="../html/about.html"  class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
+      </ul>
+
+      <div class="col-md-3 text-end">
+       <a href = '../html/login.html'><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
+        <a href = '../html/register.html'><button type="button" class="btn btn-primary">Register</button></a>
       </div>
-    </div>
-  </div>
-    </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <h2>Top 3 Games</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              
-              <image href="../images/image3.png" height="100%" width="100%"/>
-              </svg>
-
-            <div class="card-body">
-              <p class="card-text">MineCraft</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <a  href="../html/gamePage1.html"> -->
-                  <a href="../php/game1.php">
-                  <button type="button" class="btn btn-sm btn-outline-secondary" >View</button>
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              
-              <image href="../images/image4.png" height = "100%" width="100%"></image>
-            </svg>
-
-            <div class="card-body">
-              <p class="card-text">Grand Theft Auto V</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <a href="../html/gamepage2.html"> -->
-                  <a href="../php/game2.php">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <!--Trying to add image in this area-->
-              
-              
-              <image  href="../images/image5.png" width= "100%" height ="100%"></image>
-              </svg>
-
-            <div class="card-body">
-              <p class="card-text">Fornite</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <!-- <a href="../html/gamepage3.html"> -->
-                  <a href="../php/game3.php">
-
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!--<a href="#" class="nav-link text-white"> --> <!--This is where link to profile page will go-->
+       <!-- <svg class="bi d-block mx-auto mb-1" width="20" height="20"><use xlink:href="#people-circle"/></svg>
+        Profile
+      </a> -->
+    </header>
   </div>
 
+
+
+<main>   
+  
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      
+      <h2 class="featurette-heading">Fornite</h2>
+      <br>
+      <p class="lead">Fortnite is an online video game developed by Epic Games and released in 2017.
+         It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World, 
+         a cooperative hybrid-tower defense-shooter-survival game for up to four players to fight off zombie-like creatures and defend objects with traps and fortifications 
+         they can build; Fortnite Battle Royale, a free-to-play battle royale game in which up to 100 players fight to be the last person standing; and Fortnite Creative,
+          in which players are given complete freedom to create worlds and battle arenas. Save the World and Battle Royale were released in 2017 as early access titles,
+           while Creative was released on December 6, 2018. While the Save the World and Creative versions have been successful for Epic Games, 
+           Fortnite Battle Royale in particular became an overwhelming success and a cultural phenomenon, drawing more than 125 million players in less than a year, 
+           earning hundreds of millions of dollars per month. Fortnite as a whole generated $9 billion in gross revenue up until December 2019.
+
+      </p>
+        <br>
+        <h3>Star Rating</h3>
+      
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <br>
+      <br>
+      <h4>Platforms</h4>
+        <ul>
+          <li>PC</li>
+          <li>Mobile</li>
+          <li>PlayStation</li>
+          <li>Xbox</li>
+          <li>Ninentdo Switch</li>
+        </ul>
+
+    </div>
+    <div class="col-md-5 order-md-1">
+      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="700" height="600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 700x600" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <image  href="../images/image5.png" class = "center" ></image>
+      </svg>
+    </div>
+    <hr class="featurette-divider">
 </main>
-
 <!-- Footer -->
 <footer  class="container-fluid py-3 my-4">
       <div class = "container">
@@ -207,7 +167,7 @@
             <li class="nav-item"><a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 text-muted">Github</a></li>
             <li class="nav-item">
                <?php 
-                  include('../php/donation.php') #<-- this trigger the button instead of going to that page
+                  include('../projectX/php/donation.php') #<-- this trigger the button instead of going to that page
                ?>
             </li>
          </ul>
@@ -215,7 +175,6 @@
          <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
       </div>
    </footer>
-
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
