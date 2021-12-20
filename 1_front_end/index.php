@@ -58,7 +58,7 @@
                            <h2 class="display-5">Gaming <br>Guides </h2>
                            <p class="lead">Get all your gaming information up to speed to help you enjoy the most of the your gaming experience</p>
                            <!-- <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/php/gamingGuide.php">Learn More</a> -->
-                           <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/html/gamePage.html">Learn More</a>
+                           <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/html/gamepage.html">Learn More</a>
                            <!--This where gaming page link will go-->
                         </div>
 
