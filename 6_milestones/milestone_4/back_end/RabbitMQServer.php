@@ -21,7 +21,7 @@ function login($username, $password){
 
     if($results){
         $userpass = $results['password'];
-        if(password_verify($password, $userpass)){ //comparing plaintext and hash
+        if(password_verify($password, $userpass)){ //comparing plaintext and password
             $stmt->bindParam(':username', $username);
             $stmt->execute();
             if($results && count($results) > 0){
@@ -38,7 +38,7 @@ function login($username, $password){
     }
 }
 
-function register($username, $hash){
+function register($username, $password){
     global $db;
 
     //checking if username exists already
@@ -54,7 +54,7 @@ function register($username, $hash){
     $quest = 'INSERT INTO simplycoding_user (username, email, password) VALUES (:username, "", :password)';
     $stmt = $db->prepare($quest);
     $stmt->bindParam(':username', $username);
-    $stmt->bindParam(':password', $hash);
+    $stmt->bindParam(':password', $password);
     $stmt->execute();
 }
 
@@ -72,7 +72,7 @@ function request_processor($req){
         case "login":
             return login($req['username'], $req['password']);
         case "register":
-            return register($req['username'], $req['hash']);
+            return register($req['username'], $req['password']);
     }
 
     return array("return_code" => '0',
