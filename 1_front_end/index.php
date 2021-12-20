@@ -57,7 +57,8 @@
                         <div class="my-3 py-3">
                            <h2 class="display-5">Gaming <br>Guides </h2>
                            <p class="lead">Get all your gaming information up to speed to help you enjoy the most of the your gaming experience</p>
-                           <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/php/gamingGuide.php">Learn More</a>
+                           <!-- <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/php/gamingGuide.php">Learn More</a> -->
+                           <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/html/gamePage.html">Learn More</a>
                            <!--This where gaming page link will go-->
                         </div>
 
@@ -67,7 +68,8 @@
                         <div class="my-3 p-3">
                            <h2 class="display-5">Crypto-Trading <br>Guides</h2>
                            <p class="lead">Learn about crypto-trading curated to help you get started and up to-date with its current event</p>
-                           <a class="btn btn-crypto btn-outline-secondary text-dark" href="../projectX/php/cryptoGuide.php">Learn More</a>
+                           <!-- <a class="btn btn-crypto btn-outline-secondary text-dark" href="../projectX/php/cryptoGuide.php">Learn More</a> -->
+                           <a class="btn btn-crypto btn-outline-secondary text-dark" href="../projectX/html/cryptopage.html">Learn More</a>
                            <!--This is where Crypto page will go-->
                         </div>
                         <!-- <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
