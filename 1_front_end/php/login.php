@@ -30,7 +30,7 @@
                     $_SESSION['logged'] = true;
                     $_SESSION['user']   = $userSes;
                     echo var_export($_SESSION['user']['name']);
-                    header("location: ../html/mainpage_logged.html"); 
+                    header("location: ../projectX/"); 
                 }
             } else {
                 echo "username and password is empty";
