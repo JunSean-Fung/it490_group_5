@@ -71,8 +71,8 @@
                         <div class="my-3 py-3">
                            <h2 class="display-5">Gaming <br>Guides </h2>
                            <p class="lead">Get all your gaming information up to speed to help you enjoy the most of the your gaming experience</p>
-                           <!-- <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/php/gamingGuide.php">Learn More</a> -->
-                           <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/html/gamepage.html">Learn More</a>
+                           <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/php/gamingGuide.php">Learn More</a>
+                           <!-- <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/html/gamepage.html">Learn More</a> -->
                            <!--This where gaming page link will go-->
                         </div>
 
@@ -118,7 +118,7 @@
       <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    </body>
-   
+   <!-- Footer -->
    <footer  class="container-fluid py-3 my-4">
       <div class = "container">
          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -133,9 +133,5 @@
          <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
       </div>
    </footer>
-   <!-- Footer -->
-   <?php 
-      // include('../projectX/php/footer.php')
-   ?>
 
 </html>
