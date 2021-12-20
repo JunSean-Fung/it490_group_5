@@ -34,7 +34,7 @@ if (isset($_POST['login'])) {
 <html lang="en">
     <head>
         <title>Project X: Login</title>
-        <link rel="stylesheet" href="/css/loginNReg.css"/>
+        <link rel="stylesheet" href="../css/loginNReg.css"/>
     </head>
     <body>
         <div class="container">
