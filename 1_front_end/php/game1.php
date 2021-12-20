@@ -92,7 +92,10 @@
     </svg>
 
 <main>   
-  
+  <!--This is the topbar-->
+  <?php 
+         include("../php/topBar.php");
+      ?>
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
       
