@@ -141,7 +141,7 @@
         <li class="nav-item"><a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 text-muted">Github</a></li>
         <li class="nav-item">
             <?php 
-                include('../projectX/php/donation.php') #<-- this trigger the button instead of going to that page
+                include('../php/donation.php') #<-- this trigger the button instead of going to that page
             ?>
         </li>
         </ul>

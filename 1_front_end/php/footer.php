@@ -20,17 +20,13 @@
     <footer  class="mt-auto py-3 my-4">
         <div class = "container">
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <!-- Home page -->
-                <li>
-                    <a href="../projectX/" class="nav-link px-2 link-secondary">Home</a>
-                </li>
                 <!--Forum page-->
                 <li>
                     <a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 link-dark">Github</a>
                 </li>
                 <!--About page-->
                 <li>
-                    <a href="../projectX/php/about.php" class="nav-link px-2 link-dark">About Us</a>
+                    <a href="../php/about.php" class="nav-link px-2 link-dark">About Us</a>
                 </li>
                 <!--Donation button-->
                 <li class= >
