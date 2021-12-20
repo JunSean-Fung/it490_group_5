@@ -51,7 +51,7 @@
             <!-- <a class="navbar-brand" href="../projectX/index.php">Project X</a> -->
             <!-- Just an image -->
             <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../projectX/index.php">
                <img src="../projectX/assets/img/img_1" width="30" height="30" alt="">
             </a>
             </nav>
