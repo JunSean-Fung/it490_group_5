@@ -43,22 +43,7 @@
    <body>
       
       <!--This is the topbar-->
-      <div class = "container-fluid">
-         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-            <h1 href="../index.php" class="title" >Project X</h1>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-               <li><a href="../php/gamingGuide.php" class="nav-link px-2 link-dark">Gaming</a></li><!--This is where Forum page link will go-->
-               <li><a href="../php/cryptoGuide.php" class="nav-link px-2 link-dark">Crypto</a></li><!--This is where donation page link will go-->
-               <li><a href="../php/about.php"  class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
-            </ul>
-            <!-- Login section -->
-            <!-- <div class="col-md-3 text-end loginBtn">
-                  <a href='../projectX/php/login.php'>
-                     <button type="button" class="btn btn-outline-primary me-2">Login/Register</button>
-                  </a>
-            </div> -->
-         </header>
-      </div>
+      
       <div class="container-fluid mx-auto flex-column px-0">
          <main>
             <div class= "container-fluid px-0">
