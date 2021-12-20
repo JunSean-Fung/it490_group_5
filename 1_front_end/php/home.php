@@ -43,7 +43,9 @@
    <body>
       
       <!--This is the topbar-->
-      
+      <?php 
+         include("../php/topBar.php");
+      ?>
       <div class="container-fluid mx-auto flex-column px-0">
          <main>
             <div class= "container-fluid px-0">
