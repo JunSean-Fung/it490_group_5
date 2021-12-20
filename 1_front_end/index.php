@@ -43,17 +43,18 @@
       
       <!--This is the topbar-->
       <div id = "topBar">
-         <?php 
-            include('../projectX/php/topBar.php') 
-         ?>
-         <!-- DarkMode Switch -->
-         <!--          
-         <div class="form-check form-switch">
-            <input type="checkbox" class="form-check-input" id="darkSwitch" />
-            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-         </div>
-         <script src="../projectX/bootstrap_test/dark_mode/dark-mode-switch.min.js"></script>
-          -->
+         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
+            <!-- <h1 href="../projectX/index.php" id="title" >Project X</h1> -->
+            <a class="navbar-brand title" href="../projectX/index.php">Project X</a>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">               
+            </ul>
+            <!-- Login section -->
+            <div class="col-md-3 text-end loginBtn">
+                  <a href='../projectX/php/login.php'>
+                     <button type="button" class="btn btn-outline-primary me-2">Login/Register</button>
+                  </a>
+            </div>
+         </header>
       </div>
       <div class="container-fluid  w-100 h-100 mx-auto flex-column px-0">
          <main>
