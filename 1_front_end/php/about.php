@@ -148,46 +148,11 @@ html {
     </svg>
     
 
-  <div class="container"> <!--This is the topbar-->
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <h1>Project X</h1>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-         
-        <!--This is where Forum page link will go-->
-        <li>
-           <a href="../front_end/forum.html" class="nav-link px-2 link-dark">Forum</a>
-        </li>
-        <!--This is where donation page link will go-->
-        <li>
-           <a href="../front_end/donation.html" class="nav-link px-2 link-dark">Donation</a>
-        </li>
-        <!--This is where About page link will go-->
-        <li>
-           <a href="../front_end/about.html" class="nav-link px-2 link-dark">About</a>
-        </li>
-        <!--This is where About page link will go-->
-     </ul>
-
-      <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          <svg class="bi d-block mx-auto mb-1" width="20" height="20">
-            <use xlink:href="#people-circle" />
-          </svg>
-          Profile
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Setting</a></li>                
-          <li><a class="dropdown-item" href="../front_end/logout.php">Sign Out</a></li>
-          
-        </ul>
-      </div>
-
-    </header>
-  </div>
-
-
-
+  <!--This is the topbar-->
+  <?php 
+    include("../php/topBar.php");
+  ?>
+  
 <main> 
     <div class="about-section">
         <h1>About Us</h1>
