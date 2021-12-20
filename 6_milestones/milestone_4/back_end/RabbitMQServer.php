@@ -8,7 +8,7 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
 
-$db = new PDO('mysql:host=10.242.97.132;dbname=simplycoding', "test", "");
+$db = new PDO('mysql:host=10.242.97.132;dbname=simplycoding', "test2", "123");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 function login($username, $password){
@@ -25,7 +25,7 @@ function login($username, $password){
             $stmt->bindParam(':username', $username);
             $stmt->execute();
             if($results && count($results) > 0){
-                $userSes = array("name"=> $results['username']);
+                $userSes = array("name"=> $results['username'], "id"=> $results['id']);
                 return json_encode($userSes);
             }
             return true;
