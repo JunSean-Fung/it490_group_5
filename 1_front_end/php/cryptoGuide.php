@@ -157,6 +157,6 @@
         </div>
     </main>
     <!-- Calling the Crypto API via the JS -->
-    <script src="../js/crypto.js"></script>
+    <!-- <script src="../js/crypto.js"></script> -->
 </body>
 </html>
