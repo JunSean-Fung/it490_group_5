@@ -52,7 +52,7 @@
             <!-- Just an image -->
             <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="../projectX/index.php">
-               <img src="../projectX/assets/img/ProjectX_Icon" width="30" height="30">
+               <img src="../assets/img/ProjectX_Icon" width="30" height="30">
             </a>
             </nav>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">               
