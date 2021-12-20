@@ -1,6 +1,6 @@
 <?php
    require '../php/head.php'; # Needs to be "../php/head.php"
-   require('RabbitMQClient.php');
+   #require('RabbitMQClient.php');
 
    if(isset($_POST['submitButton'])){
       $username = $_POST['username'];
@@ -22,7 +22,7 @@
          }else{
 
                echo "Account is created";
-               header("Location: ../front_end/login.php");
+               header("Location: ../php/login.php");
 
          }
       }else{
