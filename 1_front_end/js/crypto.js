@@ -8,10 +8,8 @@ $(document).ready(function() {
     var searchInput = "bitcoin"
     // var searchInput = document.formxml.xmlname.value;
     var bitCoin = "Qwsogvtv82FCd" 
-    function foo () {
-        var name = document.formxml.xmlname.value;
-        alert(name);
-    }
+    
+    searchBar.addEventListener('click', )
     //searchCoin(searchInput);
     // rankCoin()
     // Functions
