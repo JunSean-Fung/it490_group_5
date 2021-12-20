@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     //searchCoin(searchInput);
     rankCoin()
-    // Functions
+    // Main Functions
     function searchCoin(searchInput) {
         console.log("SearchCoin Sucess");
         var baseUrl = "https://api.coinranking.com/v2/search-suggestions?query=" + searchInput;
@@ -39,6 +39,7 @@ $(document).ready(function() {
                     if(coinsData.length > 0) {
                         var cryptoCoins = ""
                     }
+                    var USDFormatter = new Intl.NumberFormat('en-US', {Style:'currency',currency: 'USD',});
                     
                     // For each loop to populate the search resulte
                     coinsData.forEach((coin) => {
@@ -79,11 +80,14 @@ $(document).ready(function() {
                     if(coinsData.length > 0) {
                         var cryptoCoins = " "
                     }
-                    
+                    var USDFormatter = new Intl.NumberFormat('en-US', {Style:'currency',currency: 'USD',});
+
                     // For each loop to populate the search resulte
                     coinsData.forEach((coin) => {
                         let orginalPrice = Number(coin.price);
+                        let USDPrice = USDFormatter.format(orginalPrice);                        
                         let price = orginalPrice.toFixed(2);
+
                         cryptoCoins += "<tr>"                        
                         cryptoCoins += `<td> ${coin.name} </td>`;
                         cryptoCoins += `<td> ${coin.symbol} </td>`;
