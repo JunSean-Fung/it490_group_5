@@ -66,6 +66,16 @@
         <div class="album py-5 bg-light">
         <div class="container">
             <h4>Trending Crypto</h4>
+            <!-- Table with search result from the API data -->
+            <table class="table table-dark table-striped" >
+                <thead>            
+                    <th scope="col">Name</th>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Price</th>
+                </thead>
+                <tbody id="data">
+            </table> 
+            <!--             
             <table class = "table table-dark table-striped">
                 <thred>
                     <tr>
@@ -114,6 +124,9 @@
                     </tr>
                 </tbody>
             </table>
+             -->
+            <!-- Crypto Exchanges -->
+
             <table class = "table table-bordered table-striped table-dark w-25">
                 <thread>
                     <h5>Top 5 Crypto Exchanges</h5>
@@ -139,5 +152,7 @@
         </div>
         </div>
     </main>
+    <!-- Calling the Crypto API via the JS -->
+    <script src="../js/crypto.js"></script>
 </body>
 </html>

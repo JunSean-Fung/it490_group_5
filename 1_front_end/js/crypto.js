@@ -9,9 +9,10 @@ $(document).ready(function() {
     // var searchInput = document.formxml.xmlname.value;
     var bitCoin = "Qwsogvtv82FCd" 
     
-    searchBar.addEventListener('click', )
+    // searchBar.addEventListener('click', )
+
     //searchCoin(searchInput);
-    // rankCoin()
+    rankCoin()
     // Functions
     function searchCoin(searchInput) {
         console.log("SearchCoin Sucess");
