@@ -11,7 +11,7 @@
 
       */
       # Get the header file
-      require '../projectX/php/head.php'; # need to be ../projectX/php/head.php
+      require '../php/head.php'; # need to be ../projectX/php/head.php
 ?>
 
 <!doctype html>
@@ -19,10 +19,10 @@
    <head>
         <title>Home</title>
         <!-- Bootstrap/ CSS -->
-        <link href="../projectX/css/headers.css" rel="stylesheet">
+        <link href="../css/headers.css" rel="stylesheet">
         <!-- <link href="../projectX/css/product.css" rel="stylesheet"> -->
-        <link href="../projectX/css/mainPage.css" rel="stylesheet">
-        <link href="../projectX/css/topBar.css" rel="stylesheet">
+        <link href="../css/mainPage.css" rel="stylesheet">
+        <link href="../css/topBar.css" rel="stylesheet">
         <style>
          .bd-placeholder-img {
          font-size: 1.125rem;
@@ -45,11 +45,11 @@
       <!--This is the topbar-->
       <div class = "container-fluid">
          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-            <h1 href="../projectX/index.php" class="title" >Project X</h1>
+            <h1 href="../index.php" class="title" >Project X</h1>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-               <li><a href="../projectX/php/gamingGuide.php" class="nav-link px-2 link-dark">Gaming</a></li><!--This is where Forum page link will go-->
-               <li><a href="../projectX/php/cryptoGuide.php" class="nav-link px-2 link-dark">Crypto</a></li><!--This is where donation page link will go-->
-               <li><a href="../projectX/php/about.php"  class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
+               <li><a href="../php/gamingGuide.php" class="nav-link px-2 link-dark">Gaming</a></li><!--This is where Forum page link will go-->
+               <li><a href="../php/cryptoGuide.php" class="nav-link px-2 link-dark">Crypto</a></li><!--This is where donation page link will go-->
+               <li><a href="../php/about.php"  class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
             </ul>
             <!-- Login section -->
             <!-- <div class="col-md-3 text-end loginBtn">
@@ -69,7 +69,7 @@
                         <div class="my-3 py-3">
                            <h2 class="display-5">Gaming <br>Guides </h2>
                            <p class="lead">Get all your gaming information up to speed to help you enjoy the most of the your gaming experience</p>
-                           <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/php/gamingGuide.php">Learn More</a>
+                           <a class="btn btn-game btn-outline-secondary text-dark" href="../php/gamingGuide.php">Learn More</a>
                            <!-- <a class="btn btn-game btn-outline-secondary text-dark" href="../projectX/html/gamepage.html">Learn More</a> -->
                            <!--This where gaming page link will go-->
                         </div>
@@ -80,7 +80,7 @@
                         <div class="my-3 p-3">
                            <h2 class="display-5">Crypto-Trading <br>Guides</h2>
                            <p class="lead">Learn about crypto-trading curated to help you get started and up to-date with its current event</p>
-                           <a class="btn btn-crypto btn-outline-secondary text-dark" href="../projectX/php/cryptoGuide.php">Learn More</a>
+                           <a class="btn btn-crypto btn-outline-secondary text-dark" href="../php/cryptoGuide.php">Learn More</a>
                            <!-- <a class="btn btn-crypto btn-outline-secondary text-dark" href="../projectX/html/cryptopage.html">Learn More</a> -->
                            <!--This is where Crypto page will go-->
                         </div>
@@ -92,7 +92,7 @@
                <section class="showcase">
                   <div class="container-fluid p-0">
                      <div class="row g-0">
-                        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../projectX/assets/img/img_1.jpg')"></div>
+                        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../assets/img/img_1.jpg')"></div>
                         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                               <h2>Find any Games Reviews</h2>
                               <p class="lead mb-0">You can see the top trending games and find any games review that you want to see in just 3 clicks</p>
@@ -123,7 +123,7 @@
             <li class="nav-item"><a href="https://github.com/JunSean-Fung/it490_group_5" class="nav-link px-2 text-muted">Github</a></li>
             <li class="nav-item">
                <?php 
-                  include('../projectX/php/donation.php') #<-- this trigger the button instead of going to that page
+                  include('../php/donation.php') #<-- this trigger the button instead of going to that page
                ?>
             </li>
          </ul>
