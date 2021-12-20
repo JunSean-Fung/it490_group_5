@@ -1,5 +1,5 @@
 <?php
-   require '../back_end/header.php';
+   require '../php/head.php'; # Needs to be "../php/head.php"
    require('RabbitMQClient.php');
 
    if(isset($_POST['submitButton'])){
