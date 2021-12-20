@@ -16,19 +16,28 @@
          $hash = password_hash($password, PASSWORD_BCRYPT);
          $rabbitResponse = register($username, $hash);
 
+         $view_variable = $rabbitResponse; //TESTING
+
          if($rabbitResponse==false){
-               echo "account already created";
-
+            echo "account already created";
          }else{
-
-               echo "Account is created";
-               header("Location: ../front_end/login.php");
+   
+            echo "Account is created";
+            header("Location: ../front_end/login.php");
 
          }
       }else{
          echo "Nothing entered";
       }
    }
+   function console_log($output, $with_script_tags = true) {
+      $js_code = 'console.log('.json_encode($output, JSON_HEX_TAG).');';
+      if ($with_script_tags) {
+         $js_code = '<script>' . $js_code . '</script>';
+      }
+      echo $js_code;
+   }
+   console_log($view_variable);
 ?>
 <!DOCTYPE html>
 <html lang="en">
