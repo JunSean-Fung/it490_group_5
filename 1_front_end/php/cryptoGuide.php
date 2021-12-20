@@ -32,23 +32,11 @@
 </head>
 <body>
     <!--This is the topbar-->
-    <div class="container-fluid">         
-        <head>
-            <!-- Linked to topBar.css -->
-            <link href="../projectX/css/topBar.css" rel="stylesheet">
-        </head>
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-            <h1 id="title" >Project X</h1>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">               
-            </ul>
-            <!-- Login section -->
-            <div class="col-md-3 text-end loginBtn">
-                <a href='../projectX/php/login.php'>
-                    <button type="button" class="btn btn-outline-primary me-2">Login/Register</button>
-                </a>
-            </div>
-        </header>
-    </div>
+    <div id = "topBar">
+         <?php 
+            include('../php/topBar.php') 
+         ?>
+      </div>
     <main>
         <section class = "intro">
         <!--Need to make the container height bigger-->
