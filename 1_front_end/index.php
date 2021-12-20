@@ -22,7 +22,7 @@
         <link href="../projectX/css/headers.css" rel="stylesheet">
         <!-- <link href="../projectX/css/product.css" rel="stylesheet"> -->
         <link href="../projectX/css/mainPage.css" rel="stylesheet">
-
+        <link href="../projectX/css/topBar.css" rel="stylesheet">
         <style>
          .bd-placeholder-img {
          font-size: 1.125rem;

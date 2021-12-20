@@ -16,7 +16,7 @@
 <div class="container-fluid">         
     <head>
         <!-- Linked to topBar.css -->
-        <link href="../projectX/css/topBar.css" rel="stylesheet">
+        
         <link href="../css/topBar.css" rel="stylesheet">
     </head>
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
