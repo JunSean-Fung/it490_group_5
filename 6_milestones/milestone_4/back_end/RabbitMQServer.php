@@ -25,7 +25,7 @@ function login($username, $password){
             $stmt->bindParam(':username', $username);
             $stmt->execute();
             if($results && count($results) > 0){
-                $userSes = array("name"=> $results['username'], "id"=> $results['id']);
+                $userSes = array("name"=> $results['username']);
                 return json_encode($userSes);
             }
             return true;
