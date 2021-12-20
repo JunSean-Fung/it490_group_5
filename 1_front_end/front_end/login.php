@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
                 $_SESSION['logged'] = true;
                 $_SESSION['user']   = $userSes;
                 echo var_export($_SESSION['user']['name']);
-                header("location: ../front_end/mainpage_logged.html");
+                header("location: ../html/mainpage_logged.html");
             }
         } else {
             echo "username and password is empty";
