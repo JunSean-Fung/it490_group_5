@@ -105,7 +105,7 @@
    <Footer>
       <!-- Footer -->
       <?php 
-         include('../projectX/php/footer.php')
+         // include('../projectX/php/footer.php')
       ?>
    </footer>
 </html>
