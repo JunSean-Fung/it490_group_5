@@ -49,8 +49,8 @@ if (isset($_POST['login'])) {
                             <input type="password" name="password" placeholder="Password"> 
                             <!--Login Button-->
                             <input type="submit" value="Login" name="login">
-
-                            <a class="forgot text-muted" href="#">Forgot password?</a>
+                            
+                            <a class="forgot text-muted" href="#">Forgot password?</a> <!-- Maybe forgot password could be to read and write -->
                             <br>
                             <a href="register.php">Dont have an account? Click here to register one!</a>
                         </form>
