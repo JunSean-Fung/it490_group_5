@@ -37,9 +37,7 @@
             font-size: 3.5rem;
          }
          }
-         .navbar-brand {
-            color: red;
-         }
+
       </style>
    </head>
    <body>
