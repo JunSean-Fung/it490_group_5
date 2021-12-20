@@ -60,7 +60,10 @@ html {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+  max-width: 500px;
+  
+  margin: auto;
+  text-align: center;
 }
 
 .about-section {
@@ -150,9 +153,7 @@ html {
       <h1>Project X</h1>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-         <li>
-           <a href="../front_end/mainpage_logged.html" class="nav-link px-2 link-dark">Home</a>
-        </li>
+         
         <!--This is where Forum page link will go-->
         <li>
            <a href="../front_end/forum.html" class="nav-link px-2 link-dark">Forum</a>
@@ -189,21 +190,24 @@ html {
 
 <main> 
     <div class="about-section">
-        <h1>About Us Page</h1>
-        <p>Some text about who we are and what we do.</p>
-        <p>Resize the browser window to see that this page is responsive by the way.</p>
+        <h1>About Us</h1>
+        <p>A little bit about us. We are 5 seniors attending NJIT with a passion for technology. We worked together as a group to 
+          create Project X to showcase our ability to create a multi server cluster with basic networkig, communication, database and security cluster.
+          We show our knowledge by creating this website for gameing and crypto lovers. 
+        </p>
+        
       </div>
       
       <h2 style="text-align:center">Our Team</h2>
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+            <img src="../images/ProfilePic1.jpg" alt="June" style="width:100%">
             <div class="container">
               <h2>JunSean Fung</h2>
               <p class="title">Project Manager</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>jane@example.com</p>
+              <p>NJIT Senior, Likes to draw and play video games.</p>
+              <p>jf333@njit.edu</p>
               <p><button class="button">Contact</button></p>
             </div>
           </div>
@@ -224,36 +228,36 @@ html {
       
         <div class="column">
           <div class="card">
-            <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+            <img src="../images/photo2.jpg" alt="Samer" style="width:100%" style="height: 50%;">
             <div class="container">
-              <h2>Samer</h2>
+              <h2>Samer Alqaralleh</h2>
               <p class="title">Database</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>john@example.com</p>
+              <p>Senior IT Major with specialization in network and information security.Enjoys playing video games and 3d printing in my spare time</p>
+              <p>sa977@njit.edu</p>
               <p><button class="button">Contact</button></p>
             </div>
           </div>
         </div>
         <div class="column">
             <div class="card">
-              <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+              <img src="../images/photo1.png" alt="Paul Arcos" style="width:100%">
               <div class="container">
                 <h2>Paul Arcos</h2>
-                <p class="title">Fron-End</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>john@example.com</p>
+                <p class="title">Fron-End Design</p>
+                <p>Senior at NJIT who loves technology, gaming, and sports</p>
+                <p>pa344@njit.edu</p>
                 <p><button class="button">Contact</button></p>
               </div>
             </div>
           </div>
           <div class="column">
             <div class="card">
-              <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+              <img src="../images/photo3.png" alt="John" style="width:100%">
               <div class="container">
-                <h2>Chan</h2>
-                <p class="title">Designer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>john@example.com</p>
+                <h2>Chan Park</h2>
+                <p class="title">Project Documentation</p>
+                <p>Senior at NJIT with a specialization in multimedia.Interest are hikinh and art.</p>
+                <p>cp393@njit.edu</p>
                 <p><button class="button">Contact</button></p>
               </div>
             </div>
