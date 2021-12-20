@@ -87,7 +87,7 @@ $(document).ready(function() {
                         cryptoCoins += `<td> ${coin.symbol} </td>`;
                         cryptoCoins += `<td> ${coin.price} </td>`;"<tr>";
                     })
-                    // document.getElementById("data").innerHTML = cryptoCoins
+                    document.getElementById("data").innerHTML = cryptoCoins
                 })
             }
         }).catch((error) => {
