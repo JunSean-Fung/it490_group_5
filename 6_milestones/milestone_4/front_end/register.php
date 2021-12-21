@@ -1,27 +1,58 @@
 <?php
-   require 'header.php';
+   require '../back_end/header.php';
+   require('RabbitMQClient.php');
+
+   if(isset($_POST['submitButton'])){
+      $username = $_POST['username'];
+      $password = $_POST['password'];
+      $confirm = $_POST['confirmPassword'];
+      if($password != $confirm)
+      {
+         echo "Passwords dont match";
+         exit();
+      }
+
+      if ($username != "" && $password != ""){
+         $hash = password_hash($password, PASSWORD_BCRYPT);
+         $rabbitResponse = register($username, $hash);
+
+         if($rabbitResponse==false){
+               echo "account already created";
+
+         }else{
+
+               echo "Account is created";
+               header("Location: ../front_end/login.php");
+
+         }
+      }else{
+         echo "Nothing entered";
+      }
+   }
 ?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <title>Project X: Register</title>
+      <link rel="stylesheet" href="../front_end/css/loginNReg.css"/>
    </head>
    <body>
       <div class="container">
          <div class="row">
                <div class="col-md-7">
                   <div class="card">
-                     <form method="POST" action="../back_end/backend.php" class="box">
+                     <form method="POST" action="#" class="box">
                            <h1>Register</h1>
                            <p class="text-muted"> Please enter a Username, Email and Password</p> 
                            <!--Input Field-->
                            <input type="text" name="username" placeholder="Username"> 
                            <input type="text" name="email" placeholder="Email">
                            <input type="password" name="password" placeholder="Password">
+                           <input name="confirmPassword" type="password" class="form-control" placeholder="Confirm Password" required/>
                            <!-- Register Button-->
-                           <input type='submit' name='register' value='Register'>
+                           <input type='submit' name='submitButton' value='Submit'>                           
                            <br>
-                           <a href="login.php">Already registered? Click here to login</a>
+                           <a href="../front_end/login.php">Already registered? Click here to login</a>
                      </form>
                   </div>
                </div>

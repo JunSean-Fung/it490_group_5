@@ -1,13 +1,13 @@
 # Control Menu script
 source ./system.sh
 # host + ip
-frontEnd=paul@25.4.8.61
+frontEnd=junseanf@10.242.142.11
 frontEndPasswd="123456"
-message=rabbit@25.78.132.146
+message=rabbit@10.242.187.72
 messagePasswd="rabbit"
-database=samer@25.79.46.137
+database=samer@10.242.54.98
 databasePasswd="fall2021"
-debugTest=junseanfung@25.80.87.100
+debugTest=junseanfung@10.242.142.11
 debugTestPasswd="1234"
 
 run (){
@@ -59,7 +59,8 @@ run (){
                             ;;
             6)  turnOffOneService
                             ;;
-            z)  checkActive $debugTest apache2
+            z)  echo -e "Ping Test\n"
+                ping 10.242.54.98
                             ;;
             *)  echo exit
     esac
