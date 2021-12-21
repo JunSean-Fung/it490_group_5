@@ -108,7 +108,7 @@
   /* New added*/
   .aboutDes{
     margin: 0rem 10rem 0rem 10rem;
-    max-width: 5rem;
+    max-width: 50rem;
   }
 </style>
 
