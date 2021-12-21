@@ -24,7 +24,7 @@
                 if ($rabbitResponse == false) {
                     $wrongPassMsg = True;
                     
-                    // echo "login has failed, please try again";
+                    echo "login has failed, please try again";
                     //redirect back to login page to try again
                 } else {
                     echo "You are logged in!";
