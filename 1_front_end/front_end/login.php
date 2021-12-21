@@ -19,7 +19,7 @@ if (isset($_POST['login'])) {
                 $_SESSION['logged'] = true;
                 $_SESSION['user']   = $userSes;
                 echo var_export($_SESSION['user']['name']);
-                header("location: ../front_end/mainpage_logged.html");
+                header("location: ../php/home.php");
             }
         } else {
             echo "username and password is empty";
@@ -41,7 +41,7 @@ if (isset($_POST['login'])) {
             <div class="row">
                 <div class="col-md-7">
                     <div class="card">
-                        <form method="POST" action="#" class="box">
+                        <form method="POST" class="box">
                             <h1>Login</h1>
                             <p class="text-muted"> Please enter your login and password!</p> 
                             <!--Input Field-->
