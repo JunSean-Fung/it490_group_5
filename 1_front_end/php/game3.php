@@ -96,30 +96,6 @@
     </svg>
     
 
-  <div class="container"> <!--This is the topbar-->
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <h1>Project X</h1>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="../html/mainpage.html" class="nav-link px-2 link-secondary">Home</a></li><!--This should be added on other pages to return to home page-->
-        <li><a href="#" class="nav-link px-2 link-dark">Forum</a></li><!--This is where Forum page link will go-->
-        <li><a href="#" class="nav-link px-2 link-dark">Donation</a></li><!--This is where donation page link will go-->
-        <li><a href="../html/about.html"  class="nav-link px-2 link-dark">About</a></li><!--This is where About page link will go-->
-      </ul>
-
-      <div class="col-md-3 text-end">
-       <a href = '../html/login.html'><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
-        <a href = '../html/register.html'><button type="button" class="btn btn-primary">Register</button></a>
-      </div>
-      <!--<a href="#" class="nav-link text-white"> --> <!--This is where link to profile page will go-->
-       <!-- <svg class="bi d-block mx-auto mb-1" width="20" height="20"><use xlink:href="#people-circle"/></svg>
-        Profile
-      </a> -->
-    </header>
-  </div>
-
-
-
 <main>   
   
   <div class="row featurette">
