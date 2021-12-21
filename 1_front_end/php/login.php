@@ -22,8 +22,6 @@
             if ($username != "" && $password != "") {
                 $rabbitResponse = login($username, $password);
                 if ($rabbitResponse == false) {
-                    $wrongPassMsg = True;
-                    
                     echo "login has failed, please try again";
                 } else {
                     echo "You are logged in!";
@@ -69,7 +67,6 @@
                             <!--Input Field-->
                             <input type="text" name="username" placeholder="Username">
                             <input type="password" name="password" placeholder="Password"> 
-                            
                             <!--Login Button-->
                             <input type="submit" value="Login" name="login">
                             <a class="forgot text-muted" href="#">Forgot password?</a>
