@@ -64,7 +64,11 @@
                             
                             <!--Login Button-->
                             <input type="submit" value="Login" name="login">
-                            
+                            <?php 
+                                if (isset($wrongPasswdMsg)){
+                                    echo "Wrong password"
+                                }
+                            ?>
                             <a class="forgot text-muted" href="#">Forgot password?</a>
                             <br>
                             <a href="../php/register.php">Dont have an account? Click here to register one!</a>
