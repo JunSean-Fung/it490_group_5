@@ -232,37 +232,9 @@ html {
 
 </main>
 
-<footer  class="py-3 my-4">
-  <div class = "container">
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li>
-          <a href="../front_end/mainpage_logged.html" class="nav-link px-2 link-secondary">Home</a>
-      </li>
-      <!--This is where Forum page link will go-->
-      <li>
-         <a href="../front_end/forum.html" class="nav-link px-2 link-dark">Forum</a>
-      </li>
-      <!--This is where donation page link will go-->
-      <li>
-         <a href="../front_end/donation.html" class="nav-link px-2 link-dark">Donation</a>
-      </li>
-      <!--This is where About page link will go-->
-      <li>
-         <a href="../front_end/about.html" class="nav-link px-2 link-dark">About</a>
-      </li>
-      <!--This is where About page link will go-->
-   </ul>
-
-  <p class="text-center text-muted">&copy; 2021 Project X, Inc</p>
-  
-  </div>
- <!--<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-  </ul> --> 
-  <!--un comment this if we want instagram, facebook and twitter link-->
-</footer>
+<?php
+  include("../php/footer.php");
+?>
 
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
