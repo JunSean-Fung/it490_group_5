@@ -34,7 +34,7 @@
 <html lang="en">
    <head>
       <title>Project X: Register</title>
-      <link rel="stylesheet" href="../front_end/css/loginNReg.css"/>
+      <link rel="stylesheet" href="../css/loginNReg.css"/>
    </head>
    <body>
       <div class="container">
@@ -52,7 +52,7 @@
                            <!-- Register Button-->
                            <input type='submit' name='submitButton' value='Submit'>                           
                            <br>
-                           <a href="../front_end/login.php">Already registered? Click here to login</a>
+                           <a href="../php/login.php">Already registered? Click here to login</a>
                      </form>
                   </div>
                </div>
