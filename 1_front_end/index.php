@@ -58,21 +58,23 @@
       </nav>
     </div>
   </header>
-
-  <div class="row rounded overlay-dark">
-      <div class="col">
-        <p class="lead">Our Website inspires gaming and crypto enthusiats to come together to be able to find up todate infromation of their choosing.
-          Want to be part of this new growing community? Click below to sign up and register. 
-        </p>
-      </div>
-    </div>
+  <div class="container-fluid rounded overlay-dark">
     <div class="row">
-      <div class="col">
-        <p class="lead">
-          <a href="../php/register.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Click Here to register</a>
-        </p>
+        <div class="col">
+          <p class="lead">Our Website inspires gaming and crypto enthusiats to come together to be able to find up todate infromation of their choosing.
+            Want to be part of this new growing community? Click below to sign up and register. 
+          </p>
+        </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <p class="lead">
+            <a href="../php/register.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Click Here to register</a>
+          </p>
+        </div>
+    </div>
   </div>
+  
   <!-- <main class="px-3" >
     <br>
     <h1>Project X</h1>
