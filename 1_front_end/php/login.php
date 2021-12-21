@@ -66,7 +66,7 @@
                             <input type="submit" value="Login" name="login">
                             <?php 
                                 if (isset($wrongPasswdMsg)){
-                                    echo "Wrong password"
+                                    echo "Wrong password";
                                 }
                             ?>
                             <a class="forgot text-muted" href="#">Forgot password?</a>
