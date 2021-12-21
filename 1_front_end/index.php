@@ -37,6 +37,9 @@
         background-position: center;
 
       }
+      .overlay-dark {
+        background-color: rgba(black, 0.4);
+      }
     </style>
 
     
@@ -56,7 +59,21 @@
     </div>
   </header>
 
-  <main class="px-3" >
+  <div class="row rounded overlay-dark">
+      <div class="col">
+        <p class="lead">Our Website inspires gaming and crypto enthusiats to come together to be able to find up todate infromation of their choosing.
+          Want to be part of this new growing community? Click below to sign up and register. 
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="lead">
+          <a href="../php/register.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Click Here to register</a>
+        </p>
+      </div>
+  </div>
+  <!-- <main class="px-3" >
     <br>
     <h1>Project X</h1>
     <p class="lead">Our Website inspires gaming and crypto enthusiats to come together to be able to find up todate infromation of their choosing.
@@ -65,7 +82,7 @@
     <p class="lead">
       <a href="../projectX/php/register.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Click Here to register</a>
     </p>
-  </main>
+  </main> -->
 
   <footer class="mt-auto text-white-50">
     
