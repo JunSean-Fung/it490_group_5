@@ -107,7 +107,7 @@
   }
   /* New added*/
   .aboutDes{
-    margin: 0rem 2rem 0rem 2rem;
+    margin: 0rem 5rem 0rem 5rem;
   }
 </style>
 
