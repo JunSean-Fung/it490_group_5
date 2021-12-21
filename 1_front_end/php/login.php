@@ -65,7 +65,7 @@
                             <!--Login Button-->
                             <input type="submit" value="Login" name="login">
                             <?php 
-                                if (isset($wrongPasswdMsg)){
+                                if (isset($wrongPassMsg)){
                                     echo "Wrong password";
                                 }
                             ?>
