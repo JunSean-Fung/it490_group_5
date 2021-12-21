@@ -4,44 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Group 5">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Album example · Bootstrap v5.1</title>
+    <title>About Us</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
           rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
-     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
-     
-    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
 
-    
-
-    <!-- Bootstrap core CSS -->
+  <!-- Bootstrap core CSS -->
   <link href="../css/assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/headers.css" rel="stylesheet">
   <link href="../css/product.css" rel="stylesheet">
   <link href="../css/footers.css" rel="stylsheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+  <style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
 
 html {
   box-sizing: border-box;
@@ -155,12 +151,14 @@ html {
   
 <main> 
     <div class="about-section">
+      <div class="container-fluid">
         <h1>About Us</h1>
         <p>A little bit about us. We are 5 seniors attending NJIT with a passion for technology. We worked together as a group to 
           create Project X to showcase our ability to create a multi server cluster with basic networkig, communication, database and security cluster.
           We show our knowledge by creating this website for gameing and crypto lovers. 
         </p>
-        
+      </div>  
+      
       </div>
       
       <h2 style="text-align:center">Our Team</h2>
