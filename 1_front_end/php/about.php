@@ -151,7 +151,7 @@ html {
   
 <main> 
     <div class="about-section">
-      <div class="container-fluid">
+      <div class="container-fluid px-2">
         <h1>About Us</h1>
         <p>A little bit about us. We are 5 seniors attending NJIT with a passion for technology. We worked together as a group to 
           create Project X to showcase our ability to create a multi server cluster with basic networkig, communication, database and security cluster.
