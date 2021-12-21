@@ -46,7 +46,7 @@
     <!-- Custom styles for this template -->
     <link href="../projectX/css/cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+  <body class="d-flex h-100 text-center text-white bg-dark overlay-dark">
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
@@ -59,7 +59,7 @@
     </div>
   </header>
 
-  <div class="row rounded overlay-dark">
+  <div class="row rounded">
       <div class="col">
         <p class="lead">Our Website inspires gaming and crypto enthusiats to come together to be able to find up todate infromation of their choosing.
           Want to be part of this new growing community? Click below to sign up and register. 
