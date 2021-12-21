@@ -38,7 +38,7 @@
 
       }
       .overlay-dark {
-        background-color: rgba(black, 0.4);
+        background: rgba(0, 0, 0, 0.5);
       }
     </style>
 
