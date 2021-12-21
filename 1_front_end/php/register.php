@@ -1,6 +1,6 @@
 <?php
    require '../php/head.php'; # Needs to be "../php/head.php"
-   #require('RabbitMQClient.php');
+   require('RabbitMQClient.php');
 
    if(isset($_POST['submitButton'])){
       $username = $_POST['username'];
