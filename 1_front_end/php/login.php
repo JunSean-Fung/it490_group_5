@@ -64,9 +64,11 @@
                             
                             <!--Login Button-->
                             <input type="submit" value="Login" name="login">
+                            
                             <?php 
                                 if (isset($wrongPassMsg)){
-                                    echo "Wrong password";
+                                    // echo "Wrong password";
+                                    echo '<div> Wrong password hahahahahahahaha</div>';
                                 }
                             ?>
                             <a class="forgot text-muted" href="#">Forgot password?</a>
