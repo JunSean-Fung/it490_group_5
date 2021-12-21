@@ -13,7 +13,7 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../projectX/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -41,7 +41,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="../css/cover.css" rel="stylesheet">
+    <link href="../projectX/css/cover.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
     
@@ -51,7 +51,7 @@
       <h3 class="float-md-start mb-0">Project X</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <!-- <a class="nav-link active" aria-current="page" href="../html/mainpage.html">Home</a> -->
-        <a class="nav-link active" aria-current="page" href="../php/login.php">Login</a>
+        <a class="nav-link active" aria-current="page" href="../projectX/php/login.php">Login</a>
       </nav>
     </div>
   </header>
@@ -63,7 +63,7 @@
       Want to be part of this new growing community? Click below to sign up and register. 
     </p>
     <p class="lead">
-      <a href="../php/register.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Click Here to register</a>
+      <a href="../projectX/php/register.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Click Here to register</a>
     </p>
   </main>
 
