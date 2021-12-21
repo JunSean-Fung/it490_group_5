@@ -30,7 +30,7 @@
         }
       }
       body {
-        background-image: url(../images/landingpage.png);
+        background-image: url(../projectX/images/landingpage.png);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
