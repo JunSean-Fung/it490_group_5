@@ -60,7 +60,7 @@
   </header>
   <div class="container-fluid rounded overlay-dark">
     <div class="row">
-        <div class="col">
+        <div class="col mt-3">
           <p class="lead">Our Website inspires gaming and crypto enthusiats to come together to be able to find up todate infromation of their choosing.
             Want to be part of this new growing community? Click below to sign up and register. 
           </p>
