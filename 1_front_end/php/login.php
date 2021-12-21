@@ -22,7 +22,9 @@
             if ($username != "" && $password != "") {
                 $rabbitResponse = login($username, $password);
                 if ($rabbitResponse == false) {
-                    echo "login has failed, please try again";
+                    $wrongPassMsg = True;
+                    
+                    // echo "login has failed, please try again";
                     //redirect back to login page to try again
                 } else {
                     echo "You are logged in!";
@@ -59,9 +61,10 @@
                             <!--Input Field-->
                             <input type="text" name="username" placeholder="Username">
                             <input type="password" name="password" placeholder="Password"> 
+                            
                             <!--Login Button-->
                             <input type="submit" value="Login" name="login">
-
+                            <?php if (wrongPasswdMsg == True){echo "Wrong password"}?>
                             <a class="forgot text-muted" href="#">Forgot password?</a>
                             <br>
                             <a href="../php/register.php">Dont have an account? Click here to register one!</a>
