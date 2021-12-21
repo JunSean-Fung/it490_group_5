@@ -25,7 +25,6 @@
                     $wrongPassMsg = True;
                     
                     echo "login has failed, please try again";
-                    //redirect back to login page to try again
                 } else {
                     echo "You are logged in!";
                     $userSes            = json_decode($rabbitResponse, true);
@@ -73,13 +72,6 @@
                             
                             <!--Login Button-->
                             <input type="submit" value="Login" name="login">
-                            
-                            <?php 
-                                if (isset($wrongPassMsg)){
-                                    // echo "Wrong password";
-                                    echo '<div> Wrong password hahahahahahahaha</div>';
-                                }
-                            ?>
                             <a class="forgot text-muted" href="#">Forgot password?</a>
                             <br>
                             <a href="../php/register.php">Dont have an account? Click here to register one!</a>
